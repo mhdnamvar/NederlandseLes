@@ -38,7 +38,7 @@ public final class JsonDao {
         }
     }
 
-    public static List<String> getChapters() {
+    public static List<String> getSections() {
         try {
             JSONArray hoofdstukken = jsonObject.getJSONArray("hoofdstukken");
             List<String> titles = new ArrayList<>();
@@ -46,6 +46,26 @@ public final class JsonDao {
                 titles.add(hoofdstukken.getJSONObject(i).getString("titel"));
             }
             return titles;
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static List<String> getSection(int section) {
+        try {
+            JSONArray hoofdstukken = jsonObject.getJSONArray("hoofdstukken");
+            List<String> examples = new ArrayList<>();
+            JSONArray exercises = hoofdstukken.getJSONObject(section).getJSONArray("oefeningen");
+            for (int i = 0; i < exercises.length(); i++) {
+                JSONObject exercise = exercises.getJSONObject(i);
+                String question = exercise.getString("vraag");
+                JSONArray answers = exercise.getJSONArray("antwoorden");
+                if (answers.length() > 0 ) {
+                    examples.add(question + " " + answers.getString(0));
+                }
+            }
+            return examples;
         } catch (JSONException e) {
             e.printStackTrace();
         }
