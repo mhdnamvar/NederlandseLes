@@ -24,7 +24,6 @@ import java.util.Objects;
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
-    private SharedViewModel model;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container,
