@@ -1,0 +1,1617 @@
+{
+    "hoofdstukken": [
+        {
+            "id": 1,
+            "titel" : "Zinnen afmaken",
+            "gramatica": ["Wie?", "Verbum", "Waneer?", "Hoelang?", "Wat?", "Waar?"],
+            "voorbeeld": "Ik drink elke dag 10 minuten koffie in de koken",
+            "opdracht": ["Make de zinnen af"],
+            "tijd": "10 minuten",
+            "oefeningen": [
+                {
+                    "vraag" : "Mijn huis",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "De tuin",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "De kinderen",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "Twee honden",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "Onze katten",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "De school",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "Ik heb",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "Zij eet",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "De baby",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "Mijn zoon",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "Onze buren",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "De bomen in mijn tuin",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "De kinderen van de buren",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "De auto voor de deur",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "De wikkels in het winkelcentrum",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "Mijn bril",
+                    "antwoorden" : []
+                },
+                {
+                    "vraag" : "Mijn werk in de stad",
+                    "antwoorden" : []
+                }
+            ]
+    },
+    {
+        "id": 2, 
+        "titel" : "Zinnen maken met twee werkwoorden",
+        "gramatica": ["Wie?", "modale verba auxiliari+ gaan", "Waneer?", "Wat?", "Waar?", "infinitief"],
+        "voorbeeld": "Ik wil volgende week mijn boek op school lezen",
+        "opdracht": ["Make de zinnen af"],
+        "tijd": "10 minuten",
+        "oefeningen": [
+            {
+                "vraag" : "Mijn moeder wil",
+                "antwoorden" : ["volgende week een jas van winkel kopen"]
+            },
+            {
+                "vraag" : "De jongen mag",
+                "antwoorden" : ["elke dag met bal op school spelen"]
+            },
+            {
+                "vraag" : "Vader kan",
+                "antwoorden" : ["morgen mijn fiets op school bringen"]
+            },
+            {
+                "vraag" : "Jan en Kees moeten",
+                "antwoorden" : ["elke zondag thuis blijven"]
+            },
+            {
+                "vraag" : "De docenten willen",
+                "antwoorden" : ["volgende maand naar bioscope gaan"]
+            },
+            {
+                "vraag" : "Jammer, ik kan niet mee. Ik moet",
+                "antwoorden" : ["morgen mijn huiswerk op school afmaken"]
+            },
+            {
+                "vraag" : "Het jongetje",
+                "antwoorden" : ["kan op dinsdag avond naar bioscoop gaan"]
+            },
+            {
+                "vraag" : "Ik wil vandag niet",
+                "antwoorden" : []
+            },
+            {
+                "vraag" : "Ik mag van my moeder",
+                "antwoorden" : ["vanavond pizza in het resturant eten"]
+            },
+            {
+                "vraag" : "De kinderen mogen",
+                "antwoorden" : []
+            },
+            {
+                "vraag" : "Wij gaan",
+                "antwoorden" : []
+            },
+            {
+                "vraag" : "Koning Willem Alexander moet",
+                "antwoorden" : []
+            },
+            {
+                "vraag" : "De kinderen van de koning mogen",
+                "antwoorden" : []
+            },
+            {
+                "vraag" : "Het is mooi weer, wij willen vandaag",
+                "antwoorden" : []
+            },
+            {
+                "vraag" : "Het is buiten koud, ik zal",
+                "antwoorden" : []
+            },
+            {
+                "vraag" : "Sinterklaas is in Nedeland, ik zal",
+                "antwoorden" : []
+            }
+        ]
+    },
+    {
+        "id": 3, 
+        "titel" : "Zinnen maken met voegwoorden",
+        "gramatica": ["Wie?", "Werkwoord", "Rest", "Conjunctie (Voegwoord)", "Wie?", "Werkwoord", "Rest"],
+        "voorbeeld": "Ik loop naar school en zij fiets naar huis",
+        "opdracht": ["Make de zinnen af"],
+        "tijd": "10 minuten",
+        "oefeningen": [
+            {
+                "vraag" : "Ik koop een cadeau voor mijn vrouw en",
+                "antwoorden" : ["zij wordt blij."]
+            },
+            {
+                "vraag" : "Zij neemt een paracetamol in want",
+                "antwoorden" : ["zij heeft hoofdpijn."]
+            },
+            {
+                "vraag" : "De vrouw gaat naar bed, maar",
+                "antwoorden" : ["haar maan is wakker."]
+            },
+            {
+                "vraag" : "De gaasten eten beschuit met muisjes want",
+                "antwoorden" : [" de baby is geboren."]
+            },
+            {
+                "vraag" : "Zij kopen sinasappels op de markt of",
+                "antwoorden" : ["zij gaan naar bioscoop."]
+            },
+            {
+                "vraag" : "Ik ga dit jaar niet op vakantie dus",
+                "antwoorden" : ["ik ben het druk met de examens."]
+            },
+
+            {
+                "vraag" : "De koningin komt dit jaar niet naar onze stad want",
+                "antwoorden" : ["zij gaat naar Den Haag."]
+            },
+            {
+                "vraag" : "Buiten is het erg nat en",
+                "antwoorden" : ["ik liever thuis blijven."]
+            },
+            {
+                "vraag" : "De kinderen krjgen een nieuwe jas, maar",
+                "antwoorden" : ["ik krijg een nieuwe handschoenen."]
+            },
+            {
+                "vraag" : "Ik kan de jas met korting kopen en",
+                "antwoorden" : ["ik kan ook een broek kopen."]
+            },
+            {
+                "vraag" : "Ik kan niet slapen dus",
+                "antwoorden" : ["ik lees een boek."]
+            },
+            {
+                "vraag" : "De tomaten zijn heel erg lekker, maar",
+                "antwoorden" : ["ik vind de bessen lekkerder."]
+            },
+            {
+                "vraag" : "Ik ga na het inburgeringexamen op vakantie of",
+                "antwoorden" : ["ik blijf thuis."]
+            },
+            {
+                "vraag" : "Zij studeert hard, maar",
+                "antwoorden" : ["zij zijn niet geslaagd."]
+            },
+            {
+                "vraag" : "De collega's geven een feest, maar",
+                "antwoorden" : ["ik kan niet naar het feestje gaan."]
+            },
+            {
+                "vraag" : "Het feest is heel laat dus",
+                "antwoorden" : ["ik wordt moe."]
+            },
+            {
+                "vraag" : "Wij willen niet naar bed want",
+                "antwoorden" : ["wij zijn niet moe en we willen TV kijken."]
+            },
+            {
+                "vraag" : "Het resturant is goed en",
+                "antwoorden" : ["het heeft lekker eten."]
+            },
+            {
+                "vraag" : "Mijn boertje slaapt boven en",
+                "antwoorden" : ["ik slaap beneden."]
+            },
+            {
+                "vraag" : "De rozen zijn rood en",
+                "antwoorden" : ["ze zijn heel mooi."]
+            },
+            {
+                "vraag" : "Ik kom morgen later naar mijn werk dus",
+                "antwoorden" : ["ik moet vandaag meer werken."]
+            },
+            {
+                "vraag" : "Zij neemt haar dochter mee en",
+                "antwoorden" : [" ze gaan naar etencafe."]
+            },
+            {
+                "vraag" : "Ik doe het niet, maar",
+                "antwoorden" : ["ik vraag mijn broer om dat te doen."]
+            },
+            {
+                "vraag" : "Zij heben veel geld, maar",
+                "antwoorden" : ["zij zijn niet blij."]
+            },
+            {
+                "vraag" : "Wij gaan niet naar vakantie want",
+                "antwoorden" : ["wij moeten werken."]
+            },
+            {
+                "vraag" : "Haar collega's gaan niet weken want",
+                "antwoorden" : ["zij is ziek."]
+            },
+            {
+                "vraag" : "Hij doet morgen inburgeringsexamen, maar",
+                "antwoorden" : ["hij is niet klaar."]
+            },
+            {
+                "vraag" : "Zij maakt de kamer schoon en",
+                "antwoorden" : ["zij gaat boodeschapendoen."]
+            },
+            {
+                "vraag" : "De bururman wast zijn auto, maar",
+                "antwoorden" : ["de auto is niet schoon."]
+            },
+            {
+                "vraag" : "de hond blaft dus",
+                "antwoorden" : ["ik kan niet slapen."]
+            },
+            {
+                "vraag" : "Een banan is geel, maar",
+                "antwoorden" : ["enn komkomer is groen."]
+            },
+            {
+                "vraag" : "'s Nachts is het donker en",
+                "antwoorden" : ["'s Ochtend is het licht."]
+            },
+            {
+                "vraag" : "Hij slapt de hele dag want",
+                "antwoorden" : ["hij is erg ziek."]
+            },
+            {
+                "vraag" : "De jongen is lief dus",
+                "antwoorden" : ["hij heeft vrienden."]
+            },
+            {
+                "vraag" : "Zij leest en",
+                "antwoorden" : ["zij schrijft."]
+            },
+            {
+                "vraag" : "Wij drinken Cola en",
+                "antwoorden" : ["wij eten lekker broodjes."]
+            },
+            {
+                "vraag" : "Koffie is zwart, maar",
+                "antwoorden" : ["melk is wit."]
+            },
+            {
+                "vraag" : "Mij oma is oud, maar",
+                "antwoorden" : ["mijn moeder is jong."]
+            },
+            {
+                "vraag" : "Het regent want",
+                "antwoorden" : ["het is winter."]
+            },
+            {
+                "vraag" : "Het is koud, maar",
+                "antwoorden" : ["ik moet, maar markt gaan."]
+            },
+            {
+                "vraag" : "Ik wordt 18 dus",
+                "antwoorden" : ["ik kan alleen wonen."]
+            },
+            {
+                "vraag" : "Ik verf mijn haar want",
+                "antwoorden" : ["het is grijs."]
+            },
+            {
+                "vraag" : "Zij gaat douchen want",
+                "antwoorden" : ["zij moet naar werk gaan."]
+            },
+            {
+                "vraag" : "De mensen huilen want",
+                "antwoorden" : ["zij zijn verdrietig."]
+            },
+            {
+                "vraag" : "De groente is duur, maar",
+                "antwoorden" : ["het fruit is goedkoop."]
+            },
+            {
+                "vraag" : "Zullen wij iets gaan drinken of",
+                "antwoorden" : ["wil je liever televisiekijken?."]
+            },
+            {
+                "vraag" : "Ik wil wel koffie met je drinken, maar",
+                "antwoorden" : ["ik kan niet."]
+            },
+            {
+                "vraag" : "Ik wil wel meer sporten, maar",
+                "antwoorden" : ["zo weinig tijd."]
+            }
+        ]
+    },
+    {
+        "id": 4, 
+        "titel" : "Zinnen maken met OMDAT",
+        "gramatica": ["Hoofdzin", "Voegwoord", "Wie?", "...", "Persoonsvorm"],
+        "voorbeeld": "Ik ga naar bed omdat ik moe ben.",
+        "opdracht": ["Make de zinnen af"],
+        "tijd": "10 minuten",
+        "oefeningen": [
+            {
+                "vraag" : "Ik koop een cadeau voor mijn vrouw omdat",
+                "antwoorden" : ["zij vandag jarig is."]
+            },
+            {
+                "vraag" : "Zij neemt een paracetamol in omdat",
+                "antwoorden" : ["zij hoefd paijn heeft."]
+            },
+            {
+                "vraag" : "De vrouw gaat naar bed omdat",
+                "antwoorden" : ["zij ziek is."]
+            },
+            {
+                "vraag" : "De gasten eten beschuit met muisjes omdat",
+                "antwoorden" : ["een baby geboren is."]
+            },
+            {
+                "vraag" : "Zij kopen sinasappel op de markt omdat",
+                "antwoorden" : ["sinasappels van markt lekker zijn."]
+            },
+            {
+                "vraag" : "Ik ga dit jaar niet op vakantie omdat",
+                "antwoorden" : ["ik geen geld heb."]
+            },
+            {
+                "vraag" : "De koning komt dit jaar niet naar onze stad omdat",
+                "antwoorden" : ["zij naar andere stad gaat."]
+            },
+            {
+                "vraag" : "Buiten is het erg nat omdat",
+                "antwoorden" : ["veel geregent heeft."]
+            },
+            {
+                "vraag" : "De kinderen krijgen een nieuwe jas omdat",
+                "antwoorden" : ["het weer koud is."]
+            },
+            {
+                "vraag" : "Ik kan de jas met korting kopen omdat",
+                "antwoorden" : ["er deze week actie is."]
+            },
+            {
+                "vraag" : "Ik kan niet slapen omdat",
+                "antwoorden" : ["de TV te hard staat."]
+            },
+            {
+                "vraag" : "De tomaten zijn heel erg lekker omdat",
+                "antwoorden" : ["zij rijp zijn."]
+            },
+            {
+                "vraag" : "Ik ga na het inburgeringexamen op vakantie omdat",
+                "antwoorden" : ["ik dan tijd heb."]
+            },
+            {
+                "vraag" : "Ik koop een cadeau voor mijn moeder omdat",
+                "antwoorden" : ["ze jarig is."]
+            },
+            {
+                "vraag" : "Wij gaan naar Spanje omdat",
+                "antwoorden" : ["wij vakantie hebben."]
+            },
+            {
+                "vraag" : "Zij maken het huis schoon omdat",
+                "antwoorden" : ["het huis vies is."]
+            },
+            {
+                "vraag" : "De kinderen huilen omdat",
+                "antwoorden" : ["ze honger hebben."]
+            },
+            {
+                "vraag" : "Mijn kamer is vies omdat",
+                "antwoorden" : ["ik niet schoon gemaakt heb."]
+            },
+            {
+                "vraag" : "Opa werkt in de tuin omdat",
+                "antwoorden" : ["opa vrijtijd heeft."]
+            },
+            {
+                "vraag" : "De baby drinkt veel omdat",
+                "antwoorden" : ["hij dorstig is."]
+            },
+            {
+                "vraag" : "De winkels zijn vandaag gesloten omdat",
+                "antwoorden" : ["vandaag feest dag is", "viering dag is."]
+            }                       
+        ]
+    },
+    {
+        "id": 5, 
+        "titel" : "Zinnen maken met ALS",
+        "gramatica": ["Hoofdzin", "Voegwoord", "Wie?", "...", "Persoonsvorm"],
+        "voorbeeld": "Ik ga naar bed als ik ziek ben",
+        "opdracht": ["Make de zinnen af"],
+        "tijd": "10 minuten",
+        "oefeningen": [
+            {
+                "vraag" : "Ik koop een cadeau voor mijn vrouw als",
+                "antwoorden" : ["zij jarig is."]
+            },
+            {
+                "vraag" : "Zij neemt een paracetamol in als",
+                "antwoorden" : ["zij hoofdpijn heeft."]
+            },
+            {
+                "vraag" : "De vrouw gaat naar bed als",
+                "antwoorden" : ["ze moe bent."]
+            },
+            {
+                "vraag" : "Zij kopen sinaasappel op de markt als",
+                "antwoorden" : ["zij goedkoper worden."]
+            },
+            {
+                "vraag" : "Ik ga dit jaar niet op vakantie als",
+                "antwoorden" : ["ik moet werken."]
+            },
+            {
+                "vraag" : "De koningin komt dit jaar niet naar onze stad als",
+                "antwoorden" : ["zij maar de andre stad gaat."]
+            },
+            {
+                "vraag" : "Buiten is het erg nat als",
+                "antwoorden" : ["het hard regent."]
+            },
+            {
+                "vraag" : "De kinderen krijgen een nieuwe jas als",
+                "antwoorden" : ["zij naar vakantite gaan."]
+            },
+            {
+                "vraag" : "Ik kan de jas met korting kopen als",
+                "antwoorden" : ["ik tot volgende week wacht."]
+            },
+            {
+                "vraag" : "Ik kan niet slapen als",
+                "antwoorden" : ["ik erg moe ben."]
+            },
+            {
+                "vraag" : "De tomaten zijn erg lekker als",
+                "antwoorden" : ["zij vers zijn."]
+            },
+            {
+                "vraag" : "Ik ga op vakantie als",
+                "antwoorden" : ["ik geld heb."]
+            },
+            {
+                "vraag" : "Ik koop een cadeaue voor mijn moeder als",
+                "antwoorden" : ["zij is jarig."]
+            },
+            {
+                "vraag" : "Wij gaan naar het strand als",
+                "antwoorden" : ["moie weer is."]
+            },
+            {
+                "vraag" : "Zij eten als",
+                "antwoorden" : ["zij honger hebben."]
+            },
+            {
+                "vraag" : "Devogels vliegen naar het zuiden als",
+                "antwoorden" : ["het koud is."]
+            },
+            {
+                "vraag" : "De studenten leren de woorden als",
+                "antwoorden" : ["zij oefenen."]
+            },
+            {
+                "vraag" : "De school sluit als",
+                "antwoorden" : ["weekend is."]
+            },
+            {
+                "vraag" : "Je moet naar de dokte als",
+                "antwoorden" : ["je ziek bent."]
+            },
+            {
+                "vraag" : "Wij slapen lang uit als",
+                "antwoorden" : ["wij vroeg slapen."]
+            },
+            {
+                "vraag" : "Ik ga naar buiten als",
+                "antwoorden" : ["ik bodeschapen doen."]
+            },
+            {
+                "vraag" : "Hij doet bodeshchapen als",
+                "antwoorden" : ["zijn vrouw erg moe is."]
+            },
+            {
+                "vraag" : "Wij eten warm als",
+                "antwoorden" : ["het weer koud is."]
+            },
+            {
+                "vraag" : "Het fruit is rijp als",
+                "antwoorden" : ["het fruit lekker is."]
+            },
+            {
+                "vraag" : "Zij kijken televisie als",
+                "antwoorden" : ["zij thuis hebben."]
+            },
+            {
+                "vraag" : "De buren zitten in de tuin als",
+                "antwoorden" : ["eten klaar is."]
+            },
+            {
+                "vraag" : "De dokter komt als",
+                "antwoorden" : ["jij ziek bent."]
+            },
+            {
+                "vraag" : "De dokter komt niet als",
+                "antwoorden" : ["jij niet ziek bent."]
+            },
+            {
+                "vraag" : "Ik ga met de auto naar de stad als",
+                "antwoorden" : ["mijn auto over is."]
+            },
+            {
+                "vraag" : "Wij fietsen vaak als",
+                "antwoorden" : ["het niet regent."]
+            },
+            {
+                "vraag" : "Sinterklaas komt als",
+                "antwoorden" : ["het nieuw jaar is."]
+            },
+            {
+                "vraag" : "Ik betaal de huur als",
+                "antwoorden" : ["ik auto huren is."]
+            },
+            {
+                "vraag" : "Studeren is moilijk als",
+                "antwoorden" : ["jij geen boek hebt", "je werkt."]
+            },
+            {
+                "vraag" : "Limonade is lekker als",
+                "antwoorden" : ["met ijs is."]
+            },
+            {
+                "vraag" : "Er is veel fruit als",
+                "antwoorden" : ["hier markt is."]
+            },
+            {
+                "vraag" : "Ik heb weinig tijd als",
+                "antwoorden" : ["ik laat wakker word."]
+            },
+            {
+                "vraag" : "Ik werk niet als",
+                "antwoorden" : ["ik ziek ben."]
+            },
+            {
+                "vraag" : "Zij doen de was als",
+                "antwoorden" : ["zij vies heeft."]
+            },
+            {
+                "vraag" : "Zij stofzuigt de kammer als",
+                "antwoorden" : ["de kammer vies is."]
+            },
+            {
+                "vraag" : "De jongen eet zijn brood als",
+                "antwoorden" : ["hij hongerig heeft."]
+            },
+            {
+                "vraag" : "Zij gaan naar de bioscoop als",
+                "antwoorden" : ["zij tijd hebben."]
+            },
+            {
+                "vraag" : "Ik ben verkouden als",
+                "antwoorden" : ["ik mijn jas niet aan."]
+            },
+            {
+                "vraag" : "Wij hebben vrij als",
+                "antwoorden" : ["nieuuw jaar vakantie is."]
+            },
+            {
+                "vraag" : "Ik lees een goede boek als",
+                "antwoorden" : ["ik tijd heb."]
+            },
+            {
+                "vraag" : "Ik oefen mijn zinnen als",
+                "antwoorden" : ["ik nieuw boek heb."]
+            }
+        ]
+    },
+    {
+        "id": 6, 
+        "titel" : "Zinnen maken met DAT",
+        "gramatica": ["Hoofdzin", "Persoonvorm van het wekrwoord", "Dat", "Wie?", "Persoonvorm van het werkwoord"],
+        "voorbeeld": "Ik zie dat ik vies ben",
+        "opdracht": ["Make de zinnen af"],
+        "tijd": "15 minuten",
+        "oefeningen": [
+            {
+                "vraag" : "Hij weet dat",
+                "antwoorden" : ["hij lief is."]
+            },
+            {
+                "vraag" : "Zij zeggen dat",
+                "antwoorden" : ["hij binnen is."]
+            },
+            {
+                "vraag" : "Ik vind dat",
+                "antwoorden" : ["wij hard werken."]
+            },
+            {
+                "vraag" : "Jij wil dat",
+                "antwoorden" : ["zij morgen komen."]
+            },
+            {
+                "vraag" : "Wij hopen dat",
+                "antwoorden" : ["het in juli warm weer wordt."]
+            },
+            {
+                "vraag" : "Zij denkt dat",
+                "antwoorden" : ["hij deze week komt."]
+            },
+            {
+                "vraag" : "Ik denk dat",
+                "antwoorden" : ["hij Nederlands spreekt."]
+            },
+            {
+                "vraag" : "Zij weet dat",
+                "antwoorden" : ["het regent."]
+            },
+            {
+                "vraag" : "Ik denk dat",
+                "antwoorden" : ["ze komen."]
+            },
+            {
+                "vraag" : "Hij ziet dat",
+                "antwoorden" : ["zijn jas vies is."]
+            },
+            {
+                "vraag" : "De kinderen willen dat",
+                "antwoorden" : ["hun moeder thuis komt."]
+            },
+            {
+                "vraag" : "Mijn moeder zegt dat",
+                "antwoorden" : ["de soup klaar is."]
+            },
+            {
+                "vraag" : "Vier dieven zeggen dat",
+                "antwoorden" : ["zij onschuldig zijn."]
+            },
+            {
+                "vraag" : "Ik wil dat",
+                "antwoorden" : ["jij naar mijn huid komt."]
+            },
+            {
+                "vraag" : "Wij zeggen dat",
+                "antwoorden" : ["wij hard werken."]
+            },
+            {
+                "vraag" : "Vader wil dat",
+                "antwoorden" : ["hij deze week komt."]
+            },
+            {
+                "vraag" : "Zij denkt dat",
+                "antwoorden" : ["ik op vakantie ga."]
+            },
+            {
+                "vraag" : "De studenten vinden dat",
+                "antwoorden" : ["het examen makkelijk is", "de examens moeilijk zijn."]
+            },
+            {
+                "vraag" : "De docent wil dat",
+                "antwoorden" : ["ik goed studeer."]
+            },
+            {
+                "vraag" : "De minister zegt dat",
+                "antwoorden" : ["hij naar onze stad komt."]
+            },
+            {
+                "vraag" : "Wij hopen dat",
+                "antwoorden" : ["wij in de voetbal wedstrijd winnen."]
+            },
+            {
+                "vraag" : "De buurvrouw vindt dat",
+                "antwoorden" : ["ik een mooi huid heb."]
+            },
+            {
+                "vraag" : "Mevrouw Jansen denk dat",
+                "antwoorden" : ["ik lieg."]
+            },
+            {
+                "vraag" : "Zij gelooft dat",
+                "antwoorden" : ["ze windt."]
+            }
+        ]
+    },
+        {
+            "id": 7, 
+        "titel": "Zinnen afmaken met DARROM en DARMEE",
+        "gramatica": [""],
+        "voorbeeld": "Het regent hard. Daarom word ik nat",
+        "opdracht": "Make de zinnen af",
+        "tijd": "15 minuten",
+        "oefeningen": [
+            {
+                "vraag": "Mijn pen is rood.",
+                "antwoorden": ["Darmee schrijf ik veel."]            
+            },
+            {
+                "vraag": "Hij heeft een kapotte fiets.",
+                "antwoorden": ["Daarom gaat hij met bus."]
+            },
+            {
+                "vraag": "Ik ben ziek.",
+                "antwoorden": ["Daarom ga ik naar de dokter."]
+            },
+            {
+                "vraag": "Mijn kind speelt buiten.",
+                "antwoorden": ["Daarom is hij verkouden."]
+            },
+            {
+                "vraag": "Hij telefoontje is stevig.",
+                "antwoorden": ["Daarom gaat hij niet snel kappot."]
+            },
+            {
+                "vraag": "Ik leen zijn pen.",
+                "antwoorden": ["Daarmee kan ik schrijven."]
+            },
+            {
+                "vraag": "Wij eten onze boterham op.",
+                "antwoorden": ["Daarom gaan wij naar buiten."]
+            },
+            {
+                "vraag": "Boven staat mijn tas.",
+                "antwoorden": ["Daarom ga ik zonder tas weg."]
+            },
+            {
+                "vraag": "Oppa komt op visite.",
+                "antwoorden": ["Daarom bak ik een cake."]
+            },
+            {
+                "vraag": "Zijn horloge is weg.",
+                "antwoorden": ["Daarom weet hij niet hoelaat het is."]
+            },
+            {
+                "vraag": "Buiten staat mijn auto.",
+                "antwoorden": ["Daarmee ga ik naar buiten."]
+            },
+            {
+                "vraag": "Het regent hard.",
+                "antwoorden": ["Daarom worden we nat."]
+            },
+            {
+                "vraag": "Het televisieprogramma is heel laat.",
+                "antwoorden": ["Daarom ga ik naar bed", "Daarom kan ik niet kijken."]
+            },
+            {
+                "vraag": "De computer is fijn.",
+                "antwoorden": ["Daarmee wil ik dat koppen."]
+            },
+            {
+                "vraag": "Ik heb het druk.",
+                "antwoorden": ["Daarom kan ik niet komen."]
+            },
+            {
+                "vraag": "Het inburgeringexamen is moeilijke.",
+                "antwoorden": ["Daarom moet ik hard studeren."]
+            }
+        ]
+        },
+        {
+            "id": 8, 
+            "titel": "Vraagzinnen maken met vraagwoorden",
+            "gramatica": ["Vragwoord", "Persoonsvorm van het werkwoord", "Wie?"],
+            "voorbeeld": "Hoe laat ga jij?",
+            "opdracht": "Make de vraagzinnen af",
+            "tijd": "15 minuten",
+            "oefeningen": [
+                {
+                    "vraag": "Ik ga naar de bibliotheek.",
+                    "antwoorden": ["Waneer ga jij?"]
+                },
+                {
+                    "vraag": "Hij zijn zoekt het boek.",
+                    "antwoorden": ["Waar is zijn boek?"]
+                },
+                {
+                    "vraag": "Ik ben janny.",
+                    "antwoorden": ["Wie ben jij?", "Wie bent u?"]
+                },
+                {
+                    "vraag": "Hij loopt elke avond buiten.",
+                    "antwoorden": ["Waarom loop jij niet?"]
+                },
+                {
+                    "vraag": "Ik kom om tien uur naar school.",
+                    "antwoorden": ["Hoe laat kom jij?"]
+                },
+                {
+                    "vraag": "Wij zijn te laat op het werk.",
+                    "antwoorden": ["Waarom komen jullie laat?"]
+                },
+                {
+                    "vraag": "De trein is net weg.",
+                    "antwoorden": ["Wanneer kom de volgende trein?"]
+                },
+                {
+                    "vraag": "De kinderen zoeken hun tas.",
+                    "antwoorden": ["Waar ligt hub tas?"]
+                },
+                {
+                    "vraag": "Ik woon in Amsterdam.",
+                    "antwoorden": ["Waar woon jij?"]
+                },
+                {
+                    "vraag": "De vrouw ligt op de straat.",
+                    "antwoorden": ["Wat wil zij?"]
+                },
+                {
+                    "vraag": "Zij willen niet naar het feest.",
+                    "antwoorden": ["Waarom willen ze niet?"]
+                },
+                {
+                    "vraag": "Het kind huilt hard.",
+                    "antwoorden": ["Waarom huilt het kind?"]
+                },
+                {
+                    "vraag": "Ik ga 6 oktober op vakantie.",
+                    "antwoorden": ["Wanneer ga jij?"]
+                },
+                {
+                    "vraag": "Het gaat goed met mij.",
+                    "antwoorden": ["Hoe gaat het met je?"]
+                },
+                {
+                    "vraag": "Ik hen een nieuwe TV.",
+                    "antwoorden": ["Hoeveel kost het?"]
+                },
+                {
+                    "vraag": "Ik ga naar bed.",
+                    "antwoorden": ["Wanneer ga jij naar bed?"]
+                },
+                {
+                    "vraag": "Hij gaat morgen naar Amsterdam.",
+                    "antwoorden": ["Hoe laat gaat hij?"]
+                },
+                {
+                    "vraag": "Zij gaan in juli op vakantie.",
+                    "antwoorden": ["Wanneer gaan zij?"]
+                },
+                {
+                    "vraag": "Wij willen graag ijs eten.",
+                    "antwoorden": ["Wat willen jullie eten?"]
+                },
+                {
+                    "vraag": "Het glas is kapot.",
+                    "antwoorden": ["Waarom is het glas kapot?"]
+                },
+                {
+                    "vraag": "De kamer is vies.",
+                    "antwoorden": ["Wie woont hier?"]
+                },
+                {
+                    "vraag": "De keuken is links.",
+                    "antwoorden": ["Waar is de badkamer?"]
+                },
+                {
+                    "vraag": "Zij komt om 18:00 uur.",
+                    "antwoorden": ["Hoe laat kom jij?"]
+                },
+                {
+                    "vraag": "De ijskast is kapot.",
+                    "antwoorden": ["Waneer komt de monteur?"]
+                },
+                {
+                    "vraag": "Mijn mobiel is gestolen.",
+                    "antwoorden": ["Wat moet ik doen?"]
+                },
+                {
+                    "vraag": "De tuin is kaal.",
+                    "antwoorden": ["Wat moet ik doen?"]
+                },
+                {
+                    "vraag": "Onze katten hebben honger.",
+                    "antwoorden": ["Wanneer eten zij?"]
+                },
+                {
+                    "vraag": "Ik gaat met de auto naar de garage.",
+                    "antwoorden": ["Hoe laat is de garage open?"]
+                },
+                {
+                    "vraag": "Je bent heel druk.",
+                    "antwoorden": ["Waarom ben je heel druk?", "Waarom heb je het druk?"]
+                },
+                {
+                    "vraag": "Ik ga naar de stad.",
+                    "antwoorden": ["Met wie ga je naar de stad?"]
+                },
+                {
+                    "vraag": "Ik ga naar de stad.",
+                    "antwoorden": ["Waarmee ga je naar de stad?"]
+                },
+                {
+                    "vraag": "De meisjes zitten buiten.",
+                    "antwoorden": ["Wat doen de meisjes?"]
+                },
+                {
+                    "vraag": "Ik ben mijn tas vergeten.",
+                    "antwoorden": ["Waar is je tas?"]
+                },
+                {
+                    "vraag": "De buurman schreeuwt.",
+                    "antwoorden": ["Waarom schreewt hij?"]
+                },
+                {
+                    "vraag": "De buurman schreeuwt weer.",
+                    "antwoorden": ["Wanneer schreeuwt de buurman?"]
+                },
+                {
+                    "vraag": "Ik moet de examen opnieuw doen.",
+                    "antwoorden": ["Wanneer moet jij dat doen?"]
+                },
+                {
+                    "vraag": "Zij is haar sleutels kwijt.",
+                    "antwoorden": ["Waar is haar sleutels?"]
+                },
+                {
+                    "vraag": "Mijn collega's zijn niet aardig.",
+                    "antwoorden": ["Waarom zijn ze niet aardig?"]
+                },
+                {
+                    "vraag": "Ons kantoor is ver.",
+                    "antwoorden": ["Wat moet ik doen?"]
+                },
+                {
+                    "vraag": "De buurvrouw wil verhuizen.",
+                    "antwoorden": ["Wanneer wil zij verhuizen?"]
+                }
+            ]
+        },
+        {
+            "id": 9, 
+            "titel": "Vraagzinnen maken zonder vraagwoord",
+            "gramatica": ["Persoonvorm van het werkwoord", "Wie?", "De rest van de zin"],
+            "voorbeeld": "Ga jij naar Rotterdam?",
+            "opdracht": "Maak de vraagzinnen af",
+            "tijd": "10 minuten",
+            "oefeningen": [
+                {
+                    "vraag": "Kom jij koffie drinken?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Huilt hij de hele dag?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Wil zij naar de bioscoop?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Is de man moe?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Woont de vrouw in de kerkstraat?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Wil je het raam open doen?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Kun je mij helpen?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Woon je in Amsterdam?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Wil je de deur sluiten?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Wil je het huiswerk maken?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Mah hij naar buiten gaan?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Gaan wij naar de bioscoop?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Slaapt de jonegen om 9 uur?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Keuken de vrouwen voor de lunch?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Zit ze op de stoel?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Wil je met mij spelen?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Kun je de auto repareren?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Wil je vandaag boodschappen doen?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Zal ik het vuilnis buiten zetten?",
+                    "antwoorden": [""]
+                },
+                {
+                    "vraag": "Willen ze better studeren?",
+                    "antwoorden": [""]
+                }
+            ]
+        },
+        {
+            "id": 10, 
+            "titel": "Inversie maar geen vraagzin",
+            "gramatica": ["Andere woordern", "Persoonsvorm van het werkwoord", "Wie?", "De rest van de zin"],
+            "voorbeeld": "Giesteren ging jij naar Rotterdam",
+            "opdracht": "Maak de zinnen af",
+            "tijd": "15 minuten",
+            "oefeningen": [
+                {
+                    "vraag": "Morgen",
+                    "antwoorden": ["ga ik koffie drinken"]
+                },
+                {
+                    "vraag": "Eerst",
+                    "antwoorden": ["werkte de man bij de bioscoop"]
+                },
+                {
+                    "vraag": "Vroeger",
+                    "antwoorden": ["woonde de vrouw in de KerkstraatEn daar staad een kat."]
+                },
+                {
+                    "vraag": "In het weekend",
+                    "antwoorden": ["doe ik niks."]
+                },
+                {
+                    "vraag": "Giesteren",
+                    "antwoorden": ["liepen wij naar het park."]
+                },
+                {
+                    "vraag": "Vandaag",
+                    "antwoorden": ["ga ik naar de markt."]
+                },
+                {
+                    "vraag": "Vroeger",
+                    "antwoorden": ["moest ik hard werken."]
+                },
+                {
+                    "vraag": "Eerst",
+                    "antwoorden": ["doen zij boodschappen."]
+                },
+                {
+                    "vraag": "Donderdag",
+                    "antwoorden": ["is het koud."]
+                },
+                {
+                    "vraag": "Overmorgen",
+                    "antwoorden": ["ga ik naar de cursus."]
+                },
+                {
+                    "vraag": "In het weekend",
+                    "antwoorden": ["krijg ik bezoek."]
+                },
+                {
+                    "vraag": "Op de markt",
+                    "antwoorden": ["zijn er groente en fruiten."]
+                },
+                {
+                    "vraag": "In de klas",
+                    "antwoorden": ["zitten tien meisjes."]
+                },
+                {
+                    "vraag": "Op mijn school",
+                    "antwoorden": ["zijn er veek studenten."]
+                },
+                {
+                    "vraag": "In de tuin",
+                    "antwoorden": ["zin er mooie bloomen."]
+                },
+                {
+                    "vraag": "Op tafel",
+                    "antwoorden": ["ligt een boek."]
+                },
+                {
+                    "vraag": "In mijn auto",
+                    "antwoorden": ["is warm."]
+                },
+                {
+                    "vraag": "Op zolder",
+                    "antwoorden": ["ligen oude spullen."]
+                },
+                {
+                    "vraag": "In mijn portemonnee",
+                    "antwoorden": ["is geen geld."]
+                },
+                {
+                    "vraag": "Morgen ga ik naar school. Overmorgen",
+                    "antwoorden": ["ben ik vrij."]
+                },
+                {
+                    "vraag": "Giesteren had ik slaap. Vandaag",
+                    "antwoorden": ["ben ik beter."]
+                },
+                {
+                    "vraag": "In Amsterdam is het mooie weer. In Den Bosch",
+                    "antwoorden": ["is geen mooie weer."]
+                },
+                {
+                    "vraag": "In mijn tas zitten sleutels. In mijn jas",
+                    "antwoorden": ["zit mijn portemonnee."]
+                },
+                {
+                    "vraag": "Zij vindt het leuk op school. Daarom",
+                    "antwoorden": ["gaat zij elke dag naar school."]
+                },
+                {
+                    "vraag": "Mijn collega's zijn heel aardig. Daarom ",
+                    "antwoorden": ["ben ik blij."]
+                },
+                {
+                    "vraag": "Ik heb nu geen tijd. Maar",
+                    "antwoorden": ["ik ben vrij in het weekend."]
+                },
+                {
+                    "vraag": "Wij gingen vorige week op reis. Volgende week",
+                    "antwoorden": ["gaan wij naar het strand."]
+                },
+                {
+                    "vraag": "Ik ga nu naar de bibliotheek. Waarom",
+                    "antwoorden": ["ga je naar de biblotheek?."]
+                },
+                {
+                    "vraag": "Zij gaat op zaterdag boodschappen doen. Op zaterdag",
+                    "antwoorden": ["gaat hij boodchappen doen."]
+                },
+                {
+                    "vraag": "Het eten in de ijskast is oud. Nu",
+                    "antwoorden": ["ga ik naar resturant."]
+                },
+                {
+                    "vraag": "De melk is bedorven. Misschien",
+                    "antwoorden": ["is dat over datum."]
+                },
+                {
+                    "vraag": "Daar staad een hond en daar",
+                    "antwoorden": ["staad een kat."]
+                },
+                {
+                    "vraag": "Hier lopen beel katten en daar",
+                    "antwoorden": ["lopen veel honden."]
+                },
+                {
+                    "vraag": "In Frankrijk is het warm. In Nederland",
+                    "antwoorden": ["is het koud."]
+                },
+                {
+                    "vraag": "Mijn hoefd doet pijn. Maar ",
+                    "antwoorden": ["ik moet werken."]
+                },
+                {
+                    "vraag": "De school is ver. Maar",
+                    "antwoorden": ["ik heb een auto."]
+                },
+                {
+                    "vraag": "Het eten is niet lekker. Toch",
+                    "antwoorden": ["moet ik eten."]
+                },
+                {
+                    "vraag": "De compter is kapot. Daarom",
+                    "antwoorden": ["moet ik een nieuwe computer kopen."]
+                },
+                {
+                    "vraag": "In juli is het feest. Dan",
+                    "antwoorden": ["ga ik naar de feest."]
+                },
+                {
+                    "vraag": "Ijs is lekker in de zomer. In de winter",
+                    "antwoorden": ["vindt ik het niet leuk."]
+                },
+                {
+                    "vraag": "De kinderen spoeten veel. Thuis",
+                    "antwoorden": ["lezen zij boeken."]
+                },
+                {
+                    "vraag": "Thuis slaap ik op de bank. Daarom",
+                    "antwoorden": ["heb ik een beetje rug pijn."]
+                },
+                {
+                    "vraag": "De bank is groot en duur. Op de bank",
+                    "antwoorden": ["zit ik."]
+                }
+            ]
+        }                
+    ],
+    "brieven": [
+        {
+            "id": 1,
+            "titel" : "Briefje: Boodschappen doen",
+            "omschrijving": "Je bent allen thuis. Je moet nog boodschappen halen, vlees en groente. Dan gaat de telefoon. Je broer Harry belt. Hij vraagt of je snel even kunt komen. Obver een half uur is je man Kees thuis. Je schrijft een briefje voor hem.",
+            "opdracht": ["Schrijf waarom je weg bent", 
+                "Schrijf hoe laar ke weer thius bent", 
+                "Vraag aan je man om boodschappen te doen", 
+                "Vertel wat hij moet kopen"],
+            "tijd": "10 minuten",
+            "stad" : "Rotterdam",
+            "datum": "1 maart 2019",
+            "controleer":[
+                "Heb je hoofdletters gebruikt?",
+                "Heb je een punt gebruikt?",
+                "Heb je een vraagteken gebruikt?",
+                "Heb je de datumn opgeschreven?",
+                "Ben he de brief goed afgesloten?"
+            ],
+            "antwoorden" : ["Lieve Kees,<br><br>Ik moet boodschappen doen, vlees en groente kopen, maar Harry, mijn broer, belde me en zei: \"Kun jij zo snel mogelijke naar mijn huis komen?\" Kun jij alsjeblieft boodschapen doen?<br>Ik ben terug om 17:00 uur.<br><br>Groetjes,<br>Nancy"]
+        },
+        {
+            "id": 2,
+            "titel" : "Briefje: Een uitnodiging afzeggen",
+            "omschrijving": "Je collega Hans is jarig. Hij jeeft je uitnodigd voor het verjaardasfeest. Je kan niet komen want je kinderen zijn ziek. Schrijg je collega een briegje en leg de situatie uit.",
+            "opdracht": [
+                "Bedank je collega voor de uitnodiging", 
+                "Feleciteer hem met zijn verjaardag", 
+                "Vertel dat je niet kan komen",
+                "Vertel waarom je niet kan komen"],
+            "tijd": "10 minuten",
+            "stad" : "Rotterdam",
+            "datum": "5 september 2019",
+            "controleer":[
+                "Heb je hoofdletters gebruikt?",
+                "Heb je een punt gebruikt?",
+                "Heb je een vraagteken gebruikt?",
+                "Heb je de datumn opgeschreven?",
+                "Ben he de brief goed afgesloten?"
+            ],
+            "antwoorden" : ["Lieve Hans,<br><br>Gefeliceteerd met je verjaardag en bedankt voor de uitnodiging. Helaas kan ik niet komen omdat mijn kinderen ziek zijn. Veel plezier.<br><br>Groetjes,<br>Nancy"]
+        },
+        {
+            "id": 3,
+            "titel" : "Briefje: Vrij vragen",
+            "omschrijving": "Het is bijna Pinksteren. Op maandag is het een officiele vrije dag. Je wilt de rest van de week ook vrij zijn. Schrijf een briefje aan je baas, Peter Vaasen. Je wilt met Kerst wel werken",
+            "opdracht": [
+                "Schrijf aan je baas",
+                "Vraag de hele week na Pinkensteren vrij", 
+                "Zeg dat je met Kerst wel wilt werken",
+                "Schrijf je duidelijk wie je bent"],
+            "tijd": "10 minuten",
+            "stad" : "Rotterdam",
+            "datum": "6 september 2019",
+            "controleer":[
+                "Heb je hoofdletters gebruikt?",
+                "Heb je een punt gebruikt?",
+                "Heb je een vraagteken gebruikt?",
+                "Heb je de datumn opgeschreven?",
+                "Ben he de brief goed afgesloten?"
+            ],
+            "antwoorden" : ["Beste heer Vaasen,<br><br>Ik ben M.Namvar en ik heb een vraag over vrijedagen. Het is bijna Pinksteren en op maandaag is het een officiele vrijedag. Kan ik de rest van de week ook vrij nemen? Ik wil met Kerst wel werken.<br><br>Met vriendelijke groet,<br>M"]
+        },
+        {
+            "id": 4,
+            "titel" : "Briefje: Hulpen op schoolreis",
+            "omschrijving": "Over twee weeken is er een schoolreisje op de school van je dochter Saskia. Zij zit in groep 8. De school vraagt moeders en vaders om mee te helpen tijdens het schoolreisje. Jij wilt graag meehelpen. De meester van je dochter heet Jan van Oostrum.",
+            "opdracht": [
+                "Schrijf een briefje aan de meester van de klas van je dochter",
+                "Vertel wie je bent", 
+                "Vertel hoe je kind heet en in welke klad zij zit",
+                "Schrijf op dat je wilt helpen",
+                "Geef je telefoonnummer en e-mailadres op"
+            ],
+            "tijd": "10 minuten",
+            "stad" : "Den Haag",
+            "datum": "13 oktober 2019",
+            "controleer":[
+                "Heb je hoofdletters gebruikt?",
+                "Heb je een punt gebruikt?",
+                "Heb je een vraagteken gebruikt?",
+                "Heb je de datumn opgeschreven?",
+                "Ben he de brief goed afgesloten?"
+            ],
+            "antwoorden" : ["Geachte heer Van Oostrum,<br><br>Ik ben M.Namvar vader van Saskia. Zij zit in groep 8. U vraagd de ouders om mee te helpen tijdens het schoolreisje. Ik wil graag mehelpen. Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen, mijn e-mailadres is abc@test.com.<br><br>Met vriendelijke groet,<br>M"]
+        },
+        {
+            "id": 5,
+            "titel" : "Briefje: Overlast - lawaai",
+            "omschrijving": "Je geeft morgenavond een feest. Er komen veel mensen. Er zal dus wat lawai zijn en veel muziek. Het feest duurt tot 24:00 uur. Je belt aan bij de buren Henry en Wilem. Je wilt de buren vertelen over het feest. Je wil ze ook uitnodigen. De buren zijn niet thuis.",
+            "opdracht": [
+                "Schrijf een kort briefje aan je buren",
+                "Vertel dat je aan de deur bent geweest", 
+                "Schrijf dat je morgenavond een feest geeft",
+                "Schrijf dar het feest tot 24:00 uur duurt",
+                "Schrijf dat er overlast zal zijn door muziek en lawaai",
+                "Nodig de buren uit"
+            ],
+            "tijd": "10 minuten",
+            "stad" : "Rotterdam",
+            "datum": "13 oktober 2019",
+            "controleer":[
+                "Heb je hoofdletters gebruikt?",
+                "Heb je een punt gebruikt?",
+                "Heb je een vraagteken gebruikt?",
+                "Heb je de datumn opgeschreven?",
+                "Ben he de brief goed afgesloten?"
+            ],
+            "antwoorden" : ["Beste Henry en Willem,<br><br>Ik geef morgenavond een feest. Er komen veel mensen en er zal overlast zijn door lawaai en veel muziek. Het feest duurt tot 24:00 uur. Ik belde aan maar jullie waren niet thuis. Ik wil jullie ook graag uitnodigen.<br><br>Groeten,<br>M"]
+        },
+        {
+            "id": 6,
+            "titel" : "Briefje: Overlast - vuil",
+            "omschrijving": "Je gaat naar he werk. Voor de deur staan elke week op donderdag vuilniszakken. De vuilnisman komt vrijdagochtend. De vogels maken de zakken kapot en de straat wordt vis. Je schrijf een briefje aan alle buren in je straat. Je vraagt om de zakken vrijdagochtend buiten te zetten als de vuilnisman komt en niet eerder. Je bedankt je buren.",
+            "opdracht": [
+                "Schrijf een kort briefje voor alle buren",
+                "Vertel dat de vuilniszakken te vroeg buiten staan",
+                "Zeg dat de vogels de zakken kapot maken",
+                "Vraag om de zakken pas vrijdagochtend buiten te zetten",
+                "Bedankt je buren"
+            ],
+            "tijd": "10 minuten",
+            "stad" : "Amsterdam",
+            "datum": "13 oktober 2019",
+            "controleer":[
+                "Heb je hoofdletters gebruikt?",
+                "Heb je een punt gebruikt?",
+                "Heb je een vraagteken gebruikt?",
+                "Heb je de datumn opgeschreven?",
+                "Ben he de brief goed afgesloten?"
+            ],
+            "antwoorden" : ["Beste buren,<br><br>De vuilnisman komt vrijdagochtend. Als de vuilniszakken te vroeg buiten staan, maken de vogels ze kapot en de straat wordt vis. Willen jullie de vuilniszakken pas vrijdagochtend buiten zetten? Bedankt voor jullie medewerking.<br><br>Groeten,<br>M"]
+        },
+        {
+            "id": 7,
+            "titel" : "Briefje: Bedanken",
+            "omschrijving": "Je hebt een nieuwe flat. Je vriendin Marja heeft geholpen me verhuizen. Zij heeft ook geschilderd en gekookt. Jij schrijf haar een kaartje om te bedanken voor haar hulp.",
+            "opdracht": [
+                "Schrijf een briefje aan je vriendin",
+                "Bedank haar voor haar hulp",
+                "Zeg dat ze heerlijk gekookt heeft",
+                "Schrijf dat je haar ook wilt helpen als het nodig is",
+                "Nodig haar uit voor een etentje"
+            ],
+            "tijd": "10 minuten",
+            "stad" : "Eindhoven",
+            "datum": "13 oktober 2019",
+            "controleer":[
+                "Heb je hoofdletters gebruikt?",
+                "Heb je een punt gebruikt?",
+                "Heb je een vraagteken gebruikt?",
+                "Heb je de datumn opgeschreven?",
+                "Ben he de brief goed afgesloten?"
+            ],
+            "antwoorden" : ["Lieve Marja,<br><br>Met deze kaartje wil ik je graag bedanken. Je hebt geholpen met verhuizen. Je hebt ook geschilderd en gekookt. Ik wil jou graag helpen als het nodig is.<br>Ik nodig je uit voor een etentje op zaterdag avond om 19:00 uur.<br><br>Groetjes,<br>M"]
+        },
+        {
+            "id": 8,
+            "titel" : "Officiële brief schrijven: Sollicitatie",
+            "omschrijving": "U zoekt een leuke baan. In de krant vindt u een vacature. De bloemenzaak in het centrum van uw stad zoekt een verkoper/verkoopster. U schrijft een sollicitatiebrief.",
+            "opdracht": [
+                "Schrijf een sollicitatiebrief",
+                "Vertel wie u bent",
+                "Schrijf waarom u solliciteert",
+                "Vertel over uw erva`ring"
+            ],
+            "tijd": "15 minuten",
+            "onderwerp": "Vacature verkoper/ster bloemwinkel",
+            "stad" : "Eindhoven",
+            "datum": "13 oktober 2019",
+            "controleer":[
+                "Heb je hoofdletters gebruikt?",
+                "Heb je een punt gebruikt?",
+                "Heb je een vraagteken gebruikt?",
+                "Heb je de datumn opgeschreven?",
+                "Ben he de brief goed afgesloten?"
+            ],
+            "antwoorden" : ["Beste heer, mevrouw,<br><br>Ik ben Mohammad Namvar. Ik was op zoek naar een nieuwe baan en toen zag ik uw advertentie in de krant. Omdat ik ongeveer 5 jaar ervaring heb in het werken in een bloemenwinkel, dacht ik dat ik misschien wel geschikt ben voor die baan. Daarom solliciteer ik als bloemenverkoper.<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Met vriendelijke groet,<br>Mohammad Namvar"]
+        },
+        {
+            "id": 9,
+            "titel" : "Officiële brief schrijven: Aanmelding",
+            "omschrijving": "U wilt graag een cursus doen. Bij de Volksuniversiteit heeft u een leuke cursus gezin. U schrijft een brief aan de Volksuniversiteit. U meldt zich aan voor de cursus Nederlands in oktober. Het nummer van de cursus is: N5050.",
+            "opdracht": [
+               	"Schrijf een brief aan studentenadministratie",
+               	"Vertel wie U bent",
+               	"Zeg wat u wilt doen bij de Volksuniversiteit en wanneer",
+               	"Vertel over uw diploma’s",
+               	"Vergeet niet uw adres, telefoonnummer en e-mailadres op te schrijven"                
+            ],
+            "tijd": "15 minuten",
+            "onderwerp": "Aanmelding cursus Nederlands voor gevorderden",
+            "stad" : "Oirschot",
+            "datum": "16 oktober 2019",
+            "controleer":[
+                "Heb je hoofdletters gebruikt?",
+                "Heb je een punt gebruikt?",
+                "Heb je een vraagteken gebruikt?",
+                "Heb je de datumn opgeschreven?",
+                "Ben he de brief goed afgesloten?"
+            ],
+            "antwoorden" : ["Beste studentenadministrateur,<br><br>Ik ben Mohammad Namvar en ik heb mijn A2 diploma. Ik wil me graag meer ontwikkelen in het Nederlands en bij de Volksuniversiteit heb ik een leuk cursus gezien. De cursus is Nederlands en het nummer van de cursus is N5050. Ik wil me graag aanmelden voor die cursus in oktober.<br>De cursus is Nederlands en het nummer van de cursus is N5050. Ik wil me graag melden aan die cursus in oktober.<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Met vriendelijke groet,<br>Mohammad Namvar"]
+        },
+        {
+            "id": 10,
+            "titel" : "Officiële brief schrijven: Informatie vragen",
+            "omschrijving": "U wilt een cursus Nederlands beginnen. U vraagt een folder van de Volksuniversiteit aan. In de folder van de Volksuniversiteit ziet u een leuke cursus Nederlands. De folder is niet zo duidelijke en u wilt nog een paar dingen weten.",
+            "opdracht": [
+                "Schrijf een brief aan de cursistenadministratie van de Volksuniversiteit",
+                "Vertel wie u bent",
+                "Zeg welke cursus u wilt doen",
+                "Stel drie vragen over de cursus die u wilt volgen",
+                "Vergeten niet uw adres, telefoonnummer en e-mailadres op te schrijven"
+                
+            ],
+            "tijd": "15 minuten",
+            "onderwerp": "Aanmelding cursus Nederlands voor gevorderden",
+            "stad" : "Oirschot",
+            "datum": "16 oktober 2019",
+            "controleer":[
+                "Heb je hoofdletters gebruikt?",
+                "Heb je een punt gebruikt?",
+                "Heb je een vraagteken gebruikt?",
+                "Heb je de datumn opgeschreven?",
+                "Ben he de brief goed afgesloten?"
+            ],
+            "antwoorden" : ["Beste cursistenadministrateur,<br><br>Ik ben Mohammad Namvar en ik wil graag beginnen met een cursus Nederlands. In de folder van de Volksuniversiteit zag Ik een leuke cursus Nederlands, maar de folder is niet helemaal duidelijke. Wanneer begint de cursus en hoe lang is dat? Hoe veel kost het? Moet ik een diploma hebben?<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Met vriendelijke groet,<br>Mohammad Namvar"]
+        }, 
+        {
+            "id": 11,
+            "titel" : "Email: Garage huren",
+            "omschrijving": "U wilt een nieuwe auto. U wilt een garage huren. U bent huurder van woningbouwvereniging Zayaz. U hebt in de krant een interessante advertentie gezien. U schrijft een email naar de woningbouwvereniging.",
+            "opdracht": [
+                "Schrijf een email naar woningbouwvereniging Zayaz",
+                "Vul ook het vakje ‘onderwerp’ eb uw e-mailadres in ",
+                "Geef in de e-mail uw naam, adres en telefoonnummer",
+                "Vertel waarom u schrijft",
+                "Stek 3 korte vragen over de garage"
+            ],
+            "van": "mijn@emailadres.nl",
+            "tijd": "10 minuten",
+            "onderwerp": "De huur garage",
+            "stad" : "Rotterdam",
+            "datum": "2 novermber 2019",
+            "controleer":[
+                "Heb je hoofdletters gebruikt?",
+                "Heb je een punt gebruikt?",
+                "Heb je een vraagteken gebruikt?",
+                "Heb je de datumn opgeschreven?",
+                "Ben he de brief goed afgesloten?"
+            ],
+            "antwoorden" : ["Beste heer, mevrouw,<br><br>Ik ben Mohamad Namvar en ik heb in de krant uw advertentie gezien. Daarom schrijf ik een e-mail om vragen over de garage. Hoe veel kost het? Wat is het adres en wanneer is dat beschikbaar?<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Groeten,<br>Mohammad Namvar"]
+        }, 
+        {
+            "id": 12,
+            "titel" : "Email: Kinderen van school halen",
+            "omschrijving": "Je bent op je werk. Je moet overwerken tot 17:00 uur. Je bent pas thuis om 17:30 uur. Je moet je kinderen Tanja en Patrivk van school halen on 15:15 uur. Schrijf een email aan je man Robert en vraag hem om de kinderen op te halen.",
+            "opdracht": [
+                "Schrijf een email naar woningbouwvereniging Zayaz",
+                "Vul ook het vakje ‘onderwerp’ eb uw e-mailadres in ",
+                "Geef in de e-mail uw naam, adres en telefoonnummer",
+                "Vertel waarom u schrijft",
+                "Stek 3 korte vragen over de garage"
+            ],
+            "van": "mijn@emailadres.nl",
+            "tijd": "10 minuten",
+            "onderwerp": "Kinderen van school halen",
+            "stad" : "Amsterdam",
+            "datum": "2 novermber 2019",
+            "controleer":[
+                "Schrijf een email aan je man",
+                "Schrijf dat je moet overwerken",
+                "Vraag aan je man on de kinderen op te halen",
+                "Schrijf hoe laat de kinderen uit school komen",
+                "Schrijf koe laat je thuis bent"
+            ],
+            "antwoorden" : ["Lieve Robert,<br><br>Ik moet overwerken tot 17:00 uur en ik ben pas thuis 17:30 uur. Wij moeten Tanja en Patrick van school halen om 15:15 uur. Kan je de kinderen van school ophalen?<br><br>Groejes,<br>Nancy"]
+        }, 
+        {
+            "id": 13,
+            "titel" : "Email: Boek terugvragen",
+            "omschrijving": "Je hebt je KNS-boek uitgeleend aan je medecursiste Jenny. Zij heeft het boek al 2 weken. Je moet leren voor het inburgeringsexamen en je wilt het boek terug.",
+            "opdracht": [
+                "Schrijf een email aan je medercursiste",
+                "Vertel waarom je schrijft",
+                "Vertel dat je het moet morgen terug wilt",
+                "Geef je telefoonnummer om een afspraak re maken"
+            ],
+            "van": "mijn@emailadres.nl",
+            "tijd": "10 minuten",
+            "onderwerp": "Ik wil mijn KNS-boek terug",
+            "stad" : "Amsterdam",
+            "datum": "2 novermber 2019",
+            "controleer":[
+                "Schrijf een email aan je man",
+                "Schrijf dat je moet overwerken",
+                "Vraag aan je man on de kinderen op te halen",
+                "Schrijf hoe laat de kinderen uit school komen",
+                "Schrijf koe laat je thuis bent"
+            ],
+            "antwoorden" : ["Lieve Jenny,<br><br>Ik wil graag mijn KNS-boek terugkrijgen, want ik heb het inburgeringexamen en ik moet studeren. Ik wil het boek morgen terug.<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Groejes,<br>Nancy"]
+        }, 
+        {
+            "id": 14,
+            "titel" : "Email: Vrienden uitnodigen",
+            "omschrijving": "U hebt net verhuisd. U wilt graag uw vrienden uitnodigen voor een etentje bij u thuis. U schrijft een email aan uw vrienden Caroline, Peter, Francine en Maartje.",
+            "opdracht": [
+                "Schrijf een email aan je medercursiste",
+                "Vertel waarom je schrijft",
+                "Vertel dat je het moet morgen terug wilt",
+                "Geef je telefoonnummer om een afspraak re maken"
+            ],
+            "van": "mijn@emailadres.nl",
+            "tijd": "10 minuten",
+            "onderwerp": "Etenje",
+            "stad" : "Rotterdam",
+            "datum": "2 novermber 2019",
+            "controleer":[
+                "Schrijf een email aan je man",
+                "Schrijf dat je moet overwerken",
+                "Vraag aan je man on de kinderen op te halen",
+                "Schrijf hoe laat de kinderen uit school komen",
+                "Schrijf koe laat je thuis bent"
+            ],
+            "antwoorden" : ["Lieve Vrienden,<br><br>Omdat ik net verhuisd ben, wil ik jullie graag uitnodigen voor een etentje bij mijn thuis, op 2 november, om 19:00 uur tot 12:00 uur. Mijn nieuwe adres is Stationsplein 45, 3013 AK Rotterdam en de telefoonnummer is 061234567890.<br><br>Groejes,<br>Nancy"]
+        }, 
+        {
+            "id": 14,
+            "titel" : "Email: Klacht cursus",
+            "omschrijving": "U volgt een cursus Nederlands voor gevorderden aan de Volksuniversiteit. U bent helemaal tevreden over der cursus. De groep is heel groot en u leert heel weinig. De docent is ongeduldig tegen de cursisten.",
+            "opdracht": [
+                "Schrijf een email aan de mevrouw Overbeek, directeur van de Volksuniversiteit",
+                "Schrijf welke cursus u doet",
+                "Vertel waarom u schrijft",
+                "Schrijf 3 klachten op",
+                "Geef uw naam, achternaam en telefoonnummer"
+            ],
+            "van": "mijn@emailadres.nl",
+            "tijd": "10 minuten",
+            "onderwerp": "Klacht over cursus N5050",
+            "stad" : "Rotterdam",
+            "datum": "2 novermber 2019",
+            "controleer":[
+                "Schrijf een email aan je man",
+                "Schrijf dat je moet overwerken",
+                "Vraag aan je man on de kinderen op te halen",
+                "Schrijf hoe laat de kinderen uit school komen",
+                "Schrijf koe laat je thuis bent"
+            ],
+            "antwoorden" : ["Beste mevrouw Overbeek,<br><br>Ik ben Mohamad Namvar en ik volg een cursus Nederlands voor gevorderden aan de Volksuniversiteit. Ik ben niet helemaal tevreden over de cursus daarom de groep heel groot is en ik heel weinig leer. De docent is ook ongeduldig tegen de cursisten. Ik schrijf u om een afspraak te maken. Mijn telefoonnummer is 061234567890.<br><br>Met vriendelijke groet,<br>Mohamad Namvar"]
+        }
+    ]
+}
