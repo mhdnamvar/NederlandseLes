@@ -12,14 +12,20 @@ import java.util.List;
 public class HoofdstukViewModel extends ViewModel {
 
     private MutableLiveData<List<String>> mList;
+    private MutableLiveData<String> mHtml;
 
     public HoofdstukViewModel() {
         this.mList = new MutableLiveData<>();
+        this.mHtml = new MutableLiveData<>();
     }
 
     MutableLiveData<List<String>> getList(int section) {
         try{
-            mList.setValue(JsonDao.getSection(section));
+            if(section >= 10){
+                mHtml.setValue(JsonDao.getLetter(section - 10));
+            }else {
+                mList.setValue(JsonDao.getSection(section));
+            }
         } catch (Exception e) {
             e.printStackTrace();
             Log.d("HoofdstukViewModel", e.getLocalizedMessage());
@@ -27,4 +33,7 @@ public class HoofdstukViewModel extends ViewModel {
         return mList;
     }
 
+    public MutableLiveData<String> getHtml() {
+        return mHtml;
+    }
 }

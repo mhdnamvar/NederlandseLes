@@ -5,10 +5,25 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HoofdstukFragment">
 
+    <TextView
+        android:id="@+id/htmlView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_marginBottom="64dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="18sp"
+        android:lineSpacingExtra="8dp"
+        android:textColor="@android:color/black"/>
+
     <ListView
         android:id="@+id/hoofdstukList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        >
+
+    </ListView>
 
 </FrameLayout>

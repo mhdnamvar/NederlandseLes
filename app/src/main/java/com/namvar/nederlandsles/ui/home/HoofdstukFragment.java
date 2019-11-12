@@ -1,7 +1,9 @@
 package com.namvar.nederlandsles.ui.home;
 
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,12 +39,19 @@ public class HoofdstukFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_hoofdstuk, container, false);
         final ListView list = root.findViewById(R.id.hoofdstukList);
+        final TextView htmlView = root.findViewById(R.id.htmlView);
         viewModel = ViewModelProviders.of(this).get(HoofdstukViewModel.class);
-
 
         Bundle args = getArguments();
         if (args != null) {
             section = args.getInt("section");
+            if (section >= 10) {
+                list.setVisibility(View.INVISIBLE);
+                htmlView.setVisibility(View.VISIBLE);
+            } else {
+                list.setVisibility(View.VISIBLE);
+                htmlView.setVisibility(View.INVISIBLE);
+            }
         }
 
         viewModel.getList(section).observe(this, new Observer<List<String>>() {
@@ -62,6 +71,14 @@ public class HoofdstukFragment extends Fragment {
                     }
                 };
                 list.setAdapter(adapter);
+            }
+        });
+
+        viewModel.getHtml().observe(this, s -> {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                htmlView.setText(Html.fromHtml(s, Html.FROM_HTML_MODE_COMPACT));
+            } else {
+                htmlView.setText(Html.fromHtml(s));
             }
         });
 

@@ -90,4 +90,18 @@ public final class JsonDao {
         return Collections.emptyList();
     }
 
+    public static String getLetter(int no) {
+        try {
+            JSONArray brieven = jsonObject.getJSONArray("brieven");
+            JSONObject letter = brieven.getJSONObject(no);
+            JSONArray answers = letter.getJSONArray("antwoorden");
+            if (answers.length() > 0) {
+                return answers.getString(0);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+
 }

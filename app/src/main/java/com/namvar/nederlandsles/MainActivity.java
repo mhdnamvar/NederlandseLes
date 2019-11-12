@@ -25,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        return getSupportFragmentManager().popBackStackImmediate();
+    }
+
     private void setupViews() {
         BottomNavigationView navView = findViewById(R.id.nav_view);
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
