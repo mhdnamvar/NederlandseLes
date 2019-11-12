@@ -56,6 +56,9 @@ public final class JsonDao {
     public static List<String> getSection(int section) {
         try {
             JSONArray hoofdstukken = jsonObject.getJSONArray("hoofdstukken");
+            if(section > hoofdstukken.length()) {
+                return Collections.emptyList();
+            }
             List<String> examples = new ArrayList<>();
             JSONArray exercises = hoofdstukken.getJSONObject(section).getJSONArray("oefeningen");
             for (int i = 0; i < exercises.length(); i++) {
@@ -73,7 +76,7 @@ public final class JsonDao {
         return Collections.emptyList();
     }
 
-    public static List<String> getLetters() throws Exception {
+    public static List<String> getLetters() {
         try {
             JSONArray brieven = jsonObject.getJSONArray("brieven");
             List<String> titles = new ArrayList<>();
