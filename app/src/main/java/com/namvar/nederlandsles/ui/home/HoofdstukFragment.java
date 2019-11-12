@@ -2,6 +2,7 @@ package com.namvar.nederlandsles.ui.home;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +24,7 @@ import java.util.Objects;
 public class HoofdstukFragment extends Fragment {
 
     private HoofdstukViewModel viewModel;
+    private int section = 1;
 
     public static HoofdstukFragment newInstance() {
         return new HoofdstukFragment();
@@ -34,9 +36,16 @@ public class HoofdstukFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_hoofdstuk, container, false);
-        final ListView list = root.findViewById(R.id.hoofdstukList);;
+        final ListView list = root.findViewById(R.id.hoofdstukList);
         viewModel = ViewModelProviders.of(this).get(HoofdstukViewModel.class);
-        viewModel.getList().observe(this, new Observer<List<String>>() {
+
+
+        Bundle args = getArguments();
+        if (args != null) {
+            section = args.getInt("section");
+        }
+
+        viewModel.getList(section).observe(this, new Observer<List<String>>() {
             @Override
             public void onChanged(List<String> strings) {
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(

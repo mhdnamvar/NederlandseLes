@@ -1,6 +1,7 @@
 package com.namvar.nederlandsles.ui.home;
 
-import androidx.lifecycle.LiveData;
+import android.util.Log;
+
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
@@ -13,12 +14,17 @@ public class HoofdstukViewModel extends ViewModel {
     private MutableLiveData<List<String>> mList;
 
     public HoofdstukViewModel() {
-        List<String> section = JsonDao.getSection(1);
-        mList = new MutableLiveData<>();
-        mList.setValue(section);
+        this.mList = new MutableLiveData<>();
     }
 
-    public LiveData<List<String>> getList() {
+    MutableLiveData<List<String>> getList(int section) {
+        try{
+            mList.setValue(JsonDao.getSection(section));
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.d("HoofdstukViewModel", e.getLocalizedMessage());
+        }
         return mList;
     }
+
 }

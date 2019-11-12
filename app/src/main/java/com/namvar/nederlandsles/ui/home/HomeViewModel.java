@@ -17,7 +17,6 @@ public class HomeViewModel extends AndroidViewModel {
 
     public HomeViewModel(@NonNull Application application) {
         super(application);
-
         mChapters = new MutableLiveData<>();
         try{
             List<String> sections = JsonDao.getSections();

@@ -16,6 +16,7 @@ import java.io.StringWriter;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public final class JsonDao {
@@ -49,7 +50,7 @@ public final class JsonDao {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return null;
+        return Collections.emptyList();
     }
 
     public static List<String> getSection(int section) {
@@ -69,7 +70,7 @@ public final class JsonDao {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return null;
+        return Collections.emptyList();
     }
 
     public static List<String> getLetters() throws Exception {
@@ -83,7 +84,7 @@ public final class JsonDao {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return null;
+        return Collections.emptyList();
     }
 
 }

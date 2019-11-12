@@ -27,6 +27,12 @@
         android:id="@+id/navigation_hoofdstuk"
         android:name="com.namvar.nederlandsles.ui.home.HoofdstukFragment"
         android:label="hoofdstuk"
-        tools:layout="@layout/fragment_hoofdstuk" />
+        tools:layout="@layout/fragment_hoofdstuk">
+        <argument
+            android:name="section"
+            app:argType="integer"
+            android:defaultValue="@null" />
+    </fragment>
+
 
 </navigation>
