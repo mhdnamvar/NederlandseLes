@@ -98,19 +98,27 @@ public class HoofdstukFragment extends Fragment {
             else
                 Log.e("error", "Initilization Failed!");
         });
+
         tts.setSpeechRate(0.7f);
 
         list.setOnItemClickListener((parent, view, position, id) -> {
-            String text = ((TextView)(view)).getText().toString();
-            if(text.length() == 0){
-                Toast.makeText(getContext(), "There is no text to convert to speech!",
-                        Toast.LENGTH_SHORT).show();
-            } else {
-                tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
-            }
+            speak(((TextView)(view)).getText().toString());
+        });
+
+        htmlView.setOnClickListener(view -> {
+            speak(((TextView)(view)).getText().toString());
         });
 
         return root;
+    }
+
+    private void speak(String text) {
+        if(text.length() == 0) {
+            Toast.makeText(getContext(), "There is no text to convert to speech!",
+                    Toast.LENGTH_SHORT).show();
+        } else {
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+        }
     }
 
 }
