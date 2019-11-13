@@ -471,7 +471,7 @@
             },
             {
                 "vraag" : "Zij kopen sinaasappel op de markt als",
-                "antwoorden" : ["zij goedkoper worden."]
+                "antwoorden" : ["ze goedkoper worden."]
             },
             {
                 "vraag" : "Ik ga dit jaar niet op vakantie als",
@@ -747,7 +747,7 @@
     },
         {
             "id": 7, 
-        "titel": "Zinnen afmaken met DARROM en DARMEE",
+        "titel": "Zinnen afmaken met Daarom en Daarmee",
         "gramatica": [""],
         "voorbeeld": "Het regent hard. Daarom word ik nat",
         "opdracht": "Make de zinnen af",
@@ -1463,7 +1463,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Beste studentenadministrateur,<br><br>Ik ben Mohammad Namvar en ik heb mijn A2 diploma. Ik wil me graag meer ontwikkelen in het Nederlands en bij de Volksuniversiteit heb ik een leuk cursus gezien. De cursus is Nederlands en het nummer van de cursus is N5050. Ik wil me graag aanmelden voor die cursus in oktober.<br>De cursus is Nederlands en het nummer van de cursus is N5050. Ik wil me graag melden aan die cursus in oktober.<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Met vriendelijke groet,<br>Mohammad Namvar"]
+            "antwoorden" : ["Beste studentenadministrateur,<br><br>Ik ben Mohammad Namvar en ik heb mijn A2 diploma. Ik wil me graag meer ontwikkelen in het Nederlands en bij de Volksuniversiteit heb ik een leuk cursus gezien.<br>De cursus is Nederlands en het nummer van de cursus is N5050. Ik wil me graag melden aan die cursus in oktober.<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Met vriendelijke groet,<br>Mohammad Namvar"]
         },
         {
             "id": 10,
