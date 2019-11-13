@@ -3,14 +3,18 @@ package com.namvar.nederlandsles.ui.home;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,12 +25,14 @@ import androidx.lifecycle.ViewModelProviders;
 import com.namvar.nederlandsles.R;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.Objects;
 
 public class HoofdstukFragment extends Fragment {
 
     private HoofdstukViewModel viewModel;
     private int section = 1;
+    TextToSpeech tts;
 
     public static HoofdstukFragment newInstance() {
         return new HoofdstukFragment();
@@ -79,6 +85,30 @@ public class HoofdstukFragment extends Fragment {
                 htmlView.setText(Html.fromHtml(s, Html.FROM_HTML_MODE_COMPACT));
             } else {
                 htmlView.setText(Html.fromHtml(s));
+            }
+        });
+
+        tts = new TextToSpeech(getContext(), status -> {
+            // TODO Auto-generated method stub
+            if(status == TextToSpeech.SUCCESS){
+                int result = tts.setLanguage(new Locale("nl_NL"));
+                if(result == TextToSpeech.LANG_MISSING_DATA ||
+                        result == TextToSpeech.LANG_NOT_SUPPORTED){
+                    Log.e("error", "This Language is not supported");
+                }
+            }
+            else
+                Log.e("error", "Initilization Failed!");
+        });
+        tts.setSpeechRate(0.7f);
+
+        list.setOnItemClickListener((parent, view, position, id) -> {
+            String text = ((TextView)(view)).getText().toString();
+            if(text.length() == 0){
+                Toast.makeText(getContext(), "There is no text to convert to speech!",
+                        Toast.LENGTH_SHORT).show();
+            } else {
+                tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 

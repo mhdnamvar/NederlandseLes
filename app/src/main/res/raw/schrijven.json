@@ -10,71 +10,71 @@
             "oefeningen": [
                 {
                     "vraag" : "Mijn huis",
-                    "antwoorden" : []
+                    "antwoorden" : ["is klein."]
                 },
                 {
                     "vraag" : "De tuin",
-                    "antwoorden" : []
+                    "antwoorden" : ["is heel mooi."]
                 },
                 {
                     "vraag" : "De kinderen",
-                    "antwoorden" : []
+                    "antwoorden" : ["spelen in de speltuin."]
                 },
                 {
                     "vraag" : "Twee honden",
-                    "antwoorden" : []
+                    "antwoorden" : ["zitten op de vloer en blafen hard."]
                 },
                 {
                     "vraag" : "Onze katten",
-                    "antwoorden" : []
+                    "antwoorden" : ["slapen op de bank."]
                 },
                 {
                     "vraag" : "De school",
-                    "antwoorden" : []
+                    "antwoorden" : ["is op vrijdagen gesloten."]
                 },
                 {
                     "vraag" : "Ik heb",
-                    "antwoorden" : []
+                    "antwoorden" : ["twee kinderen."]
                 },
                 {
                     "vraag" : "Zij eet",
-                    "antwoorden" : []
+                    "antwoorden" : ["een broodje."]
                 },
                 {
                     "vraag" : "De baby",
-                    "antwoorden" : []
+                    "antwoorden" : ["is huilen."]
                 },
                 {
                     "vraag" : "Mijn zoon",
-                    "antwoorden" : []
+                    "antwoorden" : ["werkt in gemeente."]
                 },
                 {
                     "vraag" : "Onze buren",
-                    "antwoorden" : []
+                    "antwoorden" : ["zijn aardige mensen."]
                 },
                 {
                     "vraag" : "De bomen in mijn tuin",
-                    "antwoorden" : []
+                    "antwoorden" : ["zijn groot en groen"]
                 },
                 {
                     "vraag" : "De kinderen van de buren",
-                    "antwoorden" : []
+                    "antwoorden" : ["gaan naar de school."]
                 },
                 {
                     "vraag" : "De auto voor de deur",
-                    "antwoorden" : []
+                    "antwoorden" : ["is van mijn buurman."]
                 },
                 {
-                    "vraag" : "De wikkels in het winkelcentrum",
-                    "antwoorden" : []
+                    "vraag" : "De winkels in het winkelcentrum",
+                    "antwoorden" : ["zijn groot."]
                 },
                 {
                     "vraag" : "Mijn bril",
-                    "antwoorden" : []
+                    "antwoorden" : ["ligt op de tafel."]
                 },
                 {
                     "vraag" : "Mijn werk in de stad",
-                    "antwoorden" : []
+                    "antwoorden" : ["is ver."]
                 }
             ]
     },
