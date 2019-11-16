@@ -57,6 +57,7 @@ public class HomeFragment extends Fragment {
             Log.d("HomeFragment", "pos: " + position);
             Bundle args = new Bundle();
             args.putInt("section", position);
+            args.putString("selected", (String)chapters.getItemAtPosition(position));
             setArguments(args);
             Navigation.findNavController(view).navigate(R.id.navigation_hoofdstuk, args);
         });

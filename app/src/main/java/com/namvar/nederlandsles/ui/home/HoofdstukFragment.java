@@ -16,6 +16,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -28,9 +30,11 @@ import java.util.Objects;
 
 public class HoofdstukFragment extends Fragment {
 
-    private HoofdstukViewModel viewModel;
     private int section = 1;
-    TextToSpeech tts;
+    private TextToSpeech tts;
+    private final static String KEY_SELECTED = "selected";
+    private final static String KEY_SECTION = "section";
+    private final static String KEY_DUTCH = "nl_NL";
 
     public static HoofdstukFragment newInstance() {
         return new HoofdstukFragment();
@@ -44,11 +48,11 @@ public class HoofdstukFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_hoofdstuk, container, false);
         final ListView list = root.findViewById(R.id.hoofdstukList);
         final TextView htmlView = root.findViewById(R.id.htmlView);
-        viewModel = ViewModelProviders.of(this).get(HoofdstukViewModel.class);
+        HoofdstukViewModel viewModel = ViewModelProviders.of(this).get(HoofdstukViewModel.class);
 
         Bundle args = getArguments();
         if (args != null) {
-            section = args.getInt("section");
+            section = args.getInt(KEY_SECTION);
             if (section >= 10) {
                 list.setVisibility(View.INVISIBLE);
                 htmlView.setVisibility(View.VISIBLE);
@@ -56,6 +60,7 @@ public class HoofdstukFragment extends Fragment {
                 list.setVisibility(View.VISIBLE);
                 htmlView.setVisibility(View.INVISIBLE);
             }
+            setTitle(args.getString(KEY_SELECTED));
         }
 
         viewModel.getList(section).observe(this, new Observer<List<String>>() {
@@ -89,7 +94,8 @@ public class HoofdstukFragment extends Fragment {
         tts = new TextToSpeech(getContext(), status -> {
             // TODO Auto-generated method stub
             if(status == TextToSpeech.SUCCESS){
-                int result = tts.setLanguage(new Locale("nl_NL"));
+
+                int result = tts.setLanguage(new Locale(KEY_DUTCH));
                 if(result == TextToSpeech.LANG_MISSING_DATA ||
                         result == TextToSpeech.LANG_NOT_SUPPORTED){
                     Log.e("error", "This Language is not supported");
@@ -110,6 +116,15 @@ public class HoofdstukFragment extends Fragment {
         });
 
         return root;
+    }
+
+    private void setTitle(String text) {
+        if (getActivity() != null) {
+            ActionBar supportActionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+            if (supportActionBar != null) {
+                supportActionBar.setTitle(text);
+            }
+        }
     }
 
     private void speak(String text) {
