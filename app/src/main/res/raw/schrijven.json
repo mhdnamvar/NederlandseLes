@@ -1468,7 +1468,7 @@
         {
             "id": 10,
             "titel" : "Officiële brief schrijven: Informatie vragen",
-            "omschrijving": "U wilt een cursus Nederlands beginnen. U vraagt een folder van de Volksuniversiteit aan. In de folder van de Volksuniversiteit ziet u een leuke cursus Nederlands. De folder is niet zo duidelijke en u wilt nog een paar dingen weten.",
+            "omschrijving": "U wilt een cursus Nederlands beginnen. U vraagt een folder van de Volksuniversiteit aan. In de folder van de Volksuniversiteit ziet u een leuke cursus Nederlands. De folder is niet zo duidelijk en u wilt nog een paar dingen weten.",
             "opdracht": [
                 "Schrijf een brief aan de cursistenadministratie van de Volksuniversiteit",
                 "Vertel wie u bent",
@@ -1488,7 +1488,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Beste cursistenadministrateur,<br><br>Ik ben Mohammad Namvar en ik wil graag beginnen met een cursus Nederlands. In de folder van de Volksuniversiteit zag Ik een leuke cursus Nederlands, maar de folder is niet helemaal duidelijke. Wanneer begint de cursus en hoe lang is dat? Hoe veel kost het? Moet ik een diploma hebben?<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Met vriendelijke groet,<br>Mohammad Namvar"]
+            "antwoorden" : ["Beste cursistenadministrateur,<br><br>Ik ben Mohammad Namvar en ik wil graag beginnen met een cursus Nederlands. In de folder van de Volksuniversiteit zag Ik een leuke cursus Nederlands, maar de folder is niet helemaal duidelijk. Wanneer begint de cursus en hoe lang is dat? Hoe veel kost het? Moet ik een diploma hebben?<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Met vriendelijke groet,<br>Mohammad Namvar"]
         }, 
         {
             "id": 11,

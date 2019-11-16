@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,6 +18,28 @@
         android:textSize="18sp"
         android:lineSpacingExtra="8dp"
         android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/playImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play_circle_outline_24px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo" />
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressBar"-->
+<!--        android:layout_width="32dp"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:indeterminate="false"-->
+<!--        android:progressDrawable="@drawable/circular_progress_bar"-->
+<!--        android:background="@drawable/circle_shape"-->
+<!--        style="?android:attr/progressBarStyleHorizontal"-->
+<!--        android:max="100"-->
+<!--        android:progress="65"-->
+<!--        android:layout_marginStart="64dp"-->
+<!--        android:layout_marginTop="16dp"/>-->
 
     <ListView
         android:id="@+id/hoofdstukList"

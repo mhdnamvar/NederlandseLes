@@ -1,15 +1,18 @@
 package com.namvar.nederlandsles.ui.home;
 
 import android.graphics.Color;
+import android.media.AudioManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.UtteranceProgressListener;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,6 +27,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.namvar.nederlandsles.R;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
@@ -35,6 +39,8 @@ public class HoofdstukFragment extends Fragment {
     private final static String KEY_SELECTED = "selected";
     private final static String KEY_SECTION = "section";
     private final static String KEY_DUTCH = "nl_NL";
+    private TextView htmlView;
+    private ImageView playImageView;
 
     public static HoofdstukFragment newInstance() {
         return new HoofdstukFragment();
@@ -47,7 +53,8 @@ public class HoofdstukFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_hoofdstuk, container, false);
         final ListView list = root.findViewById(R.id.hoofdstukList);
-        final TextView htmlView = root.findViewById(R.id.htmlView);
+        htmlView = root.findViewById(R.id.htmlView);
+        playImageView = root.findViewById(R.id.playImageView);
         HoofdstukViewModel viewModel = ViewModelProviders.of(this).get(HoofdstukViewModel.class);
 
         Bundle args = getArguments();
@@ -56,9 +63,11 @@ public class HoofdstukFragment extends Fragment {
             if (section >= 10) {
                 list.setVisibility(View.INVISIBLE);
                 htmlView.setVisibility(View.VISIBLE);
+                playImageView.setVisibility(View.VISIBLE);
             } else {
                 list.setVisibility(View.VISIBLE);
                 htmlView.setVisibility(View.INVISIBLE);
+                playImageView.setVisibility(View.INVISIBLE);
             }
             setTitle(args.getString(KEY_SELECTED));
         }
@@ -91,31 +100,67 @@ public class HoofdstukFragment extends Fragment {
             }
         });
 
-        tts = new TextToSpeech(getContext(), status -> {
-            // TODO Auto-generated method stub
-            if(status == TextToSpeech.SUCCESS){
-
-                int result = tts.setLanguage(new Locale(KEY_DUTCH));
-                if(result == TextToSpeech.LANG_MISSING_DATA ||
-                        result == TextToSpeech.LANG_NOT_SUPPORTED){
-                    Log.e("error", "This Language is not supported");
-                }
-            }
-            else
-                Log.e("error", "Initilization Failed!");
-        });
-
-        tts.setSpeechRate(0.7f);
+        setupTTS();
 
         list.setOnItemClickListener((parent, view, position, id) -> {
             speak(((TextView)(view)).getText().toString());
         });
 
-        htmlView.setOnClickListener(view -> {
-            speak(((TextView)(view)).getText().toString());
+//        htmlView.setOnClickListener(view -> {
+//            speak(((TextView)(view)).getText().toString());
+//        });
+
+        playImageView.setOnClickListener(view -> {
+            if (tts.isSpeaking()){
+                tts.stop();
+            } else {
+                speak(htmlView.getText().toString());
+            }
         });
 
         return root;
+    }
+
+    private void setupTTS() {
+        tts = new TextToSpeech(getContext(), status -> {
+            if(status == TextToSpeech.SUCCESS){
+                int result = tts.setLanguage(new Locale(KEY_DUTCH));
+                if(result == TextToSpeech.LANG_MISSING_DATA ||
+                        result == TextToSpeech.LANG_NOT_SUPPORTED){
+                    Log.e("Voice", "This Language is not supported");
+                }
+            }
+            else
+                Log.e("Voice", "Initilization Failed!");
+        });
+
+        tts.setSpeechRate(0.7f);
+
+        tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+            @Override
+            public void onStart(String utteranceId) {
+                Log.d("Voice", utteranceId + ", started" );
+                playImageView.setImageResource(R.drawable.ic_stop_24px);
+            }
+
+            @Override
+            public void onDone(String utteranceId) {
+                Log.d("Voice", utteranceId + ", done" );
+                playImageView.setImageResource(R.drawable.ic_play_circle_outline_24px);
+            }
+
+            @Override
+            public void onError(String utteranceId) {
+                Log.d("Voice", utteranceId);
+            }
+
+            @Override
+            public void onStop(String utteranceId, boolean interrupted) {
+                Log.d("Voice", utteranceId + ", stopped" );
+                playImageView.setImageResource(R.drawable.ic_play_circle_outline_24px);
+            }
+
+        });
     }
 
     private void setTitle(String text) {
@@ -129,11 +174,17 @@ public class HoofdstukFragment extends Fragment {
 
     private void speak(String text) {
         if(text.length() == 0) {
-            Toast.makeText(getContext(), "There is no text to convert to speech!",
+            Toast.makeText(getContext(),
+                    "There is no text to convert to speech!",
                     Toast.LENGTH_SHORT).show();
         } else {
-            tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+            HashMap<String, String> myHashAlarm = new HashMap<String, String>();
+            myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_ALARM));
+            myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "SOME MESSAGE");
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, myHashAlarm);
         }
     }
+
+
 
 }
