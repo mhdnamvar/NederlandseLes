@@ -106,10 +106,6 @@ public class HoofdstukFragment extends Fragment {
             speak(((TextView)(view)).getText().toString());
         });
 
-//        htmlView.setOnClickListener(view -> {
-//            speak(((TextView)(view)).getText().toString());
-//        });
-
         playImageView.setOnClickListener(view -> {
             if (tts.isSpeaking()){
                 tts.stop();
@@ -185,6 +181,10 @@ public class HoofdstukFragment extends Fragment {
         }
     }
 
-
-
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.d("Voice", "onStop called" );
+        tts.stop();
+    }
 }
