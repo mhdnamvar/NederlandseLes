@@ -78,7 +78,7 @@
                 }
             ]
     },
-    {
+        {
         "id": 2, 
         "titel" : "Zinnen maken met twee werkwoorden",
         "gramatica": ["Wie?", "modale verba auxiliari+ gaan", "Waneer?", "Wat?", "Waar?", "infinitief"],
@@ -152,7 +152,7 @@
             }
         ]
     },
-    {
+        {
         "id": 3, 
         "titel" : "Zinnen maken met voegwoorden",
         "gramatica": ["Wie?", "Werkwoord", "Rest", "Conjunctie (Voegwoord)", "Wie?", "Werkwoord", "Rest"],
@@ -355,396 +355,396 @@
             }
         ]
     },
-    {
-        "id": 4, 
-        "titel" : "Zinnen maken met OMDAT",
-        "gramatica": ["Hoofdzin", "Voegwoord", "Wie?", "...", "Persoonsvorm"],
-        "voorbeeld": "Ik ga naar bed omdat ik moe ben.",
-        "opdracht": ["Make de zinnen af"],
-        "tijd": "10 minuten",
-        "oefeningen": [
-            {
-                "vraag" : "Ik koop een cadeau voor mijn vrouw omdat",
-                "antwoorden" : ["zij vandag jarig is."]
-            },
-            {
-                "vraag" : "Zij neemt een paracetamol in omdat",
-                "antwoorden" : ["zij hoefd paijn heeft."]
-            },
-            {
-                "vraag" : "De vrouw gaat naar bed omdat",
-                "antwoorden" : ["zij ziek is."]
-            },
-            {
-                "vraag" : "De gasten eten beschuit met muisjes omdat",
-                "antwoorden" : ["een baby geboren is."]
-            },
-            {
-                "vraag" : "Zij kopen sinasappel op de markt omdat",
-                "antwoorden" : ["sinasappels van markt lekker zijn."]
-            },
-            {
-                "vraag" : "Ik ga dit jaar niet op vakantie omdat",
-                "antwoorden" : ["ik geen geld heb."]
-            },
-            {
-                "vraag" : "De koning komt dit jaar niet naar onze stad omdat",
-                "antwoorden" : ["zij naar andere stad gaat."]
-            },
-            {
-                "vraag" : "Buiten is het erg nat omdat",
-                "antwoorden" : ["veel geregent heeft."]
-            },
-            {
-                "vraag" : "De kinderen krijgen een nieuwe jas omdat",
-                "antwoorden" : ["het weer koud is."]
-            },
-            {
-                "vraag" : "Ik kan de jas met korting kopen omdat",
-                "antwoorden" : ["er deze week actie is."]
-            },
-            {
-                "vraag" : "Ik kan niet slapen omdat",
-                "antwoorden" : ["de TV te hard staat."]
-            },
-            {
-                "vraag" : "De tomaten zijn heel erg lekker omdat",
-                "antwoorden" : ["zij rijp zijn."]
-            },
-            {
-                "vraag" : "Ik ga na het inburgeringexamen op vakantie omdat",
-                "antwoorden" : ["ik dan tijd heb."]
-            },
-            {
-                "vraag" : "Ik koop een cadeau voor mijn moeder omdat",
-                "antwoorden" : ["ze jarig is."]
-            },
-            {
-                "vraag" : "Wij gaan naar Spanje omdat",
-                "antwoorden" : ["wij vakantie hebben."]
-            },
-            {
-                "vraag" : "Zij maken het huis schoon omdat",
-                "antwoorden" : ["het huis vies is."]
-            },
-            {
-                "vraag" : "De kinderen huilen omdat",
-                "antwoorden" : ["ze honger hebben."]
-            },
-            {
-                "vraag" : "Mijn kamer is vies omdat",
-                "antwoorden" : ["ik niet schoon gemaakt heb."]
-            },
-            {
-                "vraag" : "Opa werkt in de tuin omdat",
-                "antwoorden" : ["opa vrijtijd heeft."]
-            },
-            {
-                "vraag" : "De baby drinkt veel omdat",
-                "antwoorden" : ["hij dorstig is."]
-            },
-            {
-                "vraag" : "De winkels zijn vandaag gesloten omdat",
-                "antwoorden" : ["vandaag feest dag is", "viering dag is."]
-            }                       
-        ]
-    },
-    {
-        "id": 5, 
-        "titel" : "Zinnen maken met ALS",
-        "gramatica": ["Hoofdzin", "Voegwoord", "Wie?", "...", "Persoonsvorm"],
-        "voorbeeld": "Ik ga naar bed als ik ziek ben",
-        "opdracht": ["Make de zinnen af"],
-        "tijd": "10 minuten",
-        "oefeningen": [
-            {
-                "vraag" : "Ik koop een cadeau voor mijn vrouw als",
-                "antwoorden" : ["zij jarig is."]
-            },
-            {
-                "vraag" : "Zij neemt een paracetamol in als",
-                "antwoorden" : ["zij hoofdpijn heeft."]
-            },
-            {
-                "vraag" : "De vrouw gaat naar bed als",
-                "antwoorden" : ["ze moe bent."]
-            },
-            {
-                "vraag" : "Zij kopen sinaasappel op de markt als",
-                "antwoorden" : ["ze goedkoper worden."]
-            },
-            {
-                "vraag" : "Ik ga dit jaar niet op vakantie als",
-                "antwoorden" : ["ik moet werken."]
-            },
-            {
-                "vraag" : "De koningin komt dit jaar niet naar onze stad als",
-                "antwoorden" : ["zij maar de andre stad gaat."]
-            },
-            {
-                "vraag" : "Buiten is het erg nat als",
-                "antwoorden" : ["het hard regent."]
-            },
-            {
-                "vraag" : "De kinderen krijgen een nieuwe jas als",
-                "antwoorden" : ["zij naar vakantite gaan."]
-            },
-            {
-                "vraag" : "Ik kan de jas met korting kopen als",
-                "antwoorden" : ["ik tot volgende week wacht."]
-            },
-            {
-                "vraag" : "Ik kan niet slapen als",
-                "antwoorden" : ["ik erg moe ben."]
-            },
-            {
-                "vraag" : "De tomaten zijn erg lekker als",
-                "antwoorden" : ["zij vers zijn."]
-            },
-            {
-                "vraag" : "Ik ga op vakantie als",
-                "antwoorden" : ["ik geld heb."]
-            },
-            {
-                "vraag" : "Ik koop een cadeaue voor mijn moeder als",
-                "antwoorden" : ["zij is jarig."]
-            },
-            {
-                "vraag" : "Wij gaan naar het strand als",
-                "antwoorden" : ["moie weer is."]
-            },
-            {
-                "vraag" : "Zij eten als",
-                "antwoorden" : ["zij honger hebben."]
-            },
-            {
-                "vraag" : "Devogels vliegen naar het zuiden als",
-                "antwoorden" : ["het koud is."]
-            },
-            {
-                "vraag" : "De studenten leren de woorden als",
-                "antwoorden" : ["zij oefenen."]
-            },
-            {
-                "vraag" : "De school sluit als",
-                "antwoorden" : ["weekend is."]
-            },
-            {
-                "vraag" : "Je moet naar de dokte als",
-                "antwoorden" : ["je ziek bent."]
-            },
-            {
-                "vraag" : "Wij slapen lang uit als",
-                "antwoorden" : ["wij vroeg slapen."]
-            },
-            {
-                "vraag" : "Ik ga naar buiten als",
-                "antwoorden" : ["ik bodeschapen doen."]
-            },
-            {
-                "vraag" : "Hij doet bodeshchapen als",
-                "antwoorden" : ["zijn vrouw erg moe is."]
-            },
-            {
-                "vraag" : "Wij eten warm als",
-                "antwoorden" : ["het weer koud is."]
-            },
-            {
-                "vraag" : "Het fruit is rijp als",
-                "antwoorden" : ["het fruit lekker is."]
-            },
-            {
-                "vraag" : "Zij kijken televisie als",
-                "antwoorden" : ["zij thuis hebben."]
-            },
-            {
-                "vraag" : "De buren zitten in de tuin als",
-                "antwoorden" : ["eten klaar is."]
-            },
-            {
-                "vraag" : "De dokter komt als",
-                "antwoorden" : ["jij ziek bent."]
-            },
-            {
-                "vraag" : "De dokter komt niet als",
-                "antwoorden" : ["jij niet ziek bent."]
-            },
-            {
-                "vraag" : "Ik ga met de auto naar de stad als",
-                "antwoorden" : ["mijn auto over is."]
-            },
-            {
-                "vraag" : "Wij fietsen vaak als",
-                "antwoorden" : ["het niet regent."]
-            },
-            {
-                "vraag" : "Sinterklaas komt als",
-                "antwoorden" : ["het nieuw jaar is."]
-            },
-            {
-                "vraag" : "Ik betaal de huur als",
-                "antwoorden" : ["ik auto huren is."]
-            },
-            {
-                "vraag" : "Studeren is moilijk als",
-                "antwoorden" : ["jij geen boek hebt", "je werkt."]
-            },
-            {
-                "vraag" : "Limonade is lekker als",
-                "antwoorden" : ["met ijs is."]
-            },
-            {
-                "vraag" : "Er is veel fruit als",
-                "antwoorden" : ["hier markt is."]
-            },
-            {
-                "vraag" : "Ik heb weinig tijd als",
-                "antwoorden" : ["ik laat wakker word."]
-            },
-            {
-                "vraag" : "Ik werk niet als",
-                "antwoorden" : ["ik ziek ben."]
-            },
-            {
-                "vraag" : "Zij doen de was als",
-                "antwoorden" : ["zij vies heeft."]
-            },
-            {
-                "vraag" : "Zij stofzuigt de kammer als",
-                "antwoorden" : ["de kammer vies is."]
-            },
-            {
-                "vraag" : "De jongen eet zijn brood als",
-                "antwoorden" : ["hij hongerig heeft."]
-            },
-            {
-                "vraag" : "Zij gaan naar de bioscoop als",
-                "antwoorden" : ["zij tijd hebben."]
-            },
-            {
-                "vraag" : "Ik ben verkouden als",
-                "antwoorden" : ["ik mijn jas niet aan."]
-            },
-            {
-                "vraag" : "Wij hebben vrij als",
-                "antwoorden" : ["nieuuw jaar vakantie is."]
-            },
-            {
-                "vraag" : "Ik lees een goede boek als",
-                "antwoorden" : ["ik tijd heb."]
-            },
-            {
-                "vraag" : "Ik oefen mijn zinnen als",
-                "antwoorden" : ["ik nieuw boek heb."]
-            }
-        ]
-    },
-    {
-        "id": 6, 
-        "titel" : "Zinnen maken met DAT",
-        "gramatica": ["Hoofdzin", "Persoonvorm van het wekrwoord", "Dat", "Wie?", "Persoonvorm van het werkwoord"],
-        "voorbeeld": "Ik zie dat ik vies ben",
-        "opdracht": ["Make de zinnen af"],
-        "tijd": "15 minuten",
-        "oefeningen": [
-            {
-                "vraag" : "Hij weet dat",
-                "antwoorden" : ["hij lief is."]
-            },
-            {
-                "vraag" : "Zij zeggen dat",
-                "antwoorden" : ["hij binnen is."]
-            },
-            {
-                "vraag" : "Ik vind dat",
-                "antwoorden" : ["wij hard werken."]
-            },
-            {
-                "vraag" : "Jij wil dat",
-                "antwoorden" : ["zij morgen komen."]
-            },
-            {
-                "vraag" : "Wij hopen dat",
-                "antwoorden" : ["het in juli warm weer wordt."]
-            },
-            {
-                "vraag" : "Zij denkt dat",
-                "antwoorden" : ["hij deze week komt."]
-            },
-            {
-                "vraag" : "Ik denk dat",
-                "antwoorden" : ["hij Nederlands spreekt."]
-            },
-            {
-                "vraag" : "Zij weet dat",
-                "antwoorden" : ["het regent."]
-            },
-            {
-                "vraag" : "Ik denk dat",
-                "antwoorden" : ["ze komen."]
-            },
-            {
-                "vraag" : "Hij ziet dat",
-                "antwoorden" : ["zijn jas vies is."]
-            },
-            {
-                "vraag" : "De kinderen willen dat",
-                "antwoorden" : ["hun moeder thuis komt."]
-            },
-            {
-                "vraag" : "Mijn moeder zegt dat",
-                "antwoorden" : ["de soup klaar is."]
-            },
-            {
-                "vraag" : "Vier dieven zeggen dat",
-                "antwoorden" : ["zij onschuldig zijn."]
-            },
-            {
-                "vraag" : "Ik wil dat",
-                "antwoorden" : ["jij naar mijn huid komt."]
-            },
-            {
-                "vraag" : "Wij zeggen dat",
-                "antwoorden" : ["wij hard werken."]
-            },
-            {
-                "vraag" : "Vader wil dat",
-                "antwoorden" : ["hij deze week komt."]
-            },
-            {
-                "vraag" : "Zij denkt dat",
-                "antwoorden" : ["ik op vakantie ga."]
-            },
-            {
-                "vraag" : "De studenten vinden dat",
-                "antwoorden" : ["het examen makkelijk is", "de examens moeilijk zijn."]
-            },
-            {
-                "vraag" : "De docent wil dat",
-                "antwoorden" : ["ik goed studeer."]
-            },
-            {
-                "vraag" : "De minister zegt dat",
-                "antwoorden" : ["hij naar onze stad komt."]
-            },
-            {
-                "vraag" : "Wij hopen dat",
-                "antwoorden" : ["wij in de voetbal wedstrijd winnen."]
-            },
-            {
-                "vraag" : "De buurvrouw vindt dat",
-                "antwoorden" : ["ik een mooi huid heb."]
-            },
-            {
-                "vraag" : "Mevrouw Jansen denk dat",
-                "antwoorden" : ["ik lieg."]
-            },
-            {
-                "vraag" : "Zij gelooft dat",
-                "antwoorden" : ["ze windt."]
-            }
-        ]
-    },
+        {
+            "id": 4,
+            "titel" : "Zinnen maken met OMDAT",
+            "gramatica": ["Hoofdzin", "Voegwoord", "Wie?", "...", "Persoonsvorm"],
+            "voorbeeld": "Ik ga naar bed omdat ik moe ben.",
+            "opdracht": ["Make de zinnen af"],
+            "tijd": "10 minuten",
+            "oefeningen": [
+                {
+                    "vraag" : "Ik koop een cadeau voor mijn vrouw omdat",
+                    "antwoorden" : ["zij vandag jarig is."]
+                },
+                {
+                    "vraag" : "Zij neemt een paracetamol in omdat",
+                    "antwoorden" : ["zij hoefd paijn heeft."]
+                },
+                {
+                    "vraag" : "De vrouw gaat naar bed omdat",
+                    "antwoorden" : ["zij ziek is."]
+                },
+                {
+                    "vraag" : "De gasten eten beschuit met muisjes omdat",
+                    "antwoorden" : ["een baby geboren is."]
+                },
+                {
+                    "vraag" : "Zij kopen sinasappel op de markt omdat",
+                    "antwoorden" : ["sinasappels van markt lekker zijn."]
+                },
+                {
+                    "vraag" : "Ik ga dit jaar niet op vakantie omdat",
+                    "antwoorden" : ["ik geen geld heb."]
+                },
+                {
+                    "vraag" : "De koning komt dit jaar niet naar onze stad omdat",
+                    "antwoorden" : ["zij naar andere stad gaat."]
+                },
+                {
+                    "vraag" : "Buiten is het erg nat omdat",
+                    "antwoorden" : ["veel geregent heeft."]
+                },
+                {
+                    "vraag" : "De kinderen krijgen een nieuwe jas omdat",
+                    "antwoorden" : ["het weer koud is."]
+                },
+                {
+                    "vraag" : "Ik kan de jas met korting kopen omdat",
+                    "antwoorden" : ["er deze week actie is."]
+                },
+                {
+                    "vraag" : "Ik kan niet slapen omdat",
+                    "antwoorden" : ["de TV te hard staat."]
+                },
+                {
+                    "vraag" : "De tomaten zijn heel erg lekker omdat",
+                    "antwoorden" : ["zij rijp zijn."]
+                },
+                {
+                    "vraag" : "Ik ga na het inburgeringexamen op vakantie omdat",
+                    "antwoorden" : ["ik dan tijd heb."]
+                },
+                {
+                    "vraag" : "Ik koop een cadeau voor mijn moeder omdat",
+                    "antwoorden" : ["ze jarig is."]
+                },
+                {
+                    "vraag" : "Wij gaan naar Spanje omdat",
+                    "antwoorden" : ["wij vakantie hebben."]
+                },
+                {
+                    "vraag" : "Zij maken het huis schoon omdat",
+                    "antwoorden" : ["het huis vies is."]
+                },
+                {
+                    "vraag" : "De kinderen huilen omdat",
+                    "antwoorden" : ["ze honger hebben."]
+                },
+                {
+                    "vraag" : "Mijn kamer is vies omdat",
+                    "antwoorden" : ["ik niet schoon gemaakt heb."]
+                },
+                {
+                    "vraag" : "Opa werkt in de tuin omdat",
+                    "antwoorden" : ["opa vrijtijd heeft."]
+                },
+                {
+                    "vraag" : "De baby drinkt veel omdat",
+                    "antwoorden" : ["hij dorstig is."]
+                },
+                {
+                    "vraag" : "De winkels zijn vandaag gesloten omdat",
+                    "antwoorden" : ["vandaag feest dag is", "viering dag is."]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "titel" : "Zinnen maken met ALS",
+            "gramatica": ["Hoofdzin", "Voegwoord", "Wie?", "...", "Persoonsvorm"],
+            "voorbeeld": "Ik ga naar bed als ik ziek ben",
+            "opdracht": ["Make de zinnen af"],
+            "tijd": "10 minuten",
+            "oefeningen": [
+                {
+                    "vraag" : "Ik koop een cadeau voor mijn vrouw als",
+                    "antwoorden" : ["zij jarig is."]
+                },
+                {
+                    "vraag" : "Zij neemt een paracetamol in als",
+                    "antwoorden" : ["zij hoofdpijn heeft."]
+                },
+                {
+                    "vraag" : "De vrouw gaat naar bed als",
+                    "antwoorden" : ["ze moe bent."]
+                },
+                {
+                    "vraag" : "Zij kopen sinaasappel op de markt als",
+                    "antwoorden" : ["ze goedkoper worden."]
+                },
+                {
+                    "vraag" : "Ik ga dit jaar niet op vakantie als",
+                    "antwoorden" : ["ik moet werken."]
+                },
+                {
+                    "vraag" : "De koningin komt dit jaar niet naar onze stad als",
+                    "antwoorden" : ["zij maar de andre stad gaat."]
+                },
+                {
+                    "vraag" : "Buiten is het erg nat als",
+                    "antwoorden" : ["het hard regent."]
+                },
+                {
+                    "vraag" : "De kinderen krijgen een nieuwe jas als",
+                    "antwoorden" : ["zij naar vakantite gaan."]
+                },
+                {
+                    "vraag" : "Ik kan de jas met korting kopen als",
+                    "antwoorden" : ["ik tot volgende week wacht."]
+                },
+                {
+                    "vraag" : "Ik kan niet slapen als",
+                    "antwoorden" : ["ik erg moe ben."]
+                },
+                {
+                    "vraag" : "De tomaten zijn erg lekker als",
+                    "antwoorden" : ["zij vers zijn."]
+                },
+                {
+                    "vraag" : "Ik ga op vakantie als",
+                    "antwoorden" : ["ik geld heb."]
+                },
+                {
+                    "vraag" : "Ik koop een cadeaue voor mijn moeder als",
+                    "antwoorden" : ["zij is jarig."]
+                },
+                {
+                    "vraag" : "Wij gaan naar het strand als",
+                    "antwoorden" : ["moie weer is."]
+                },
+                {
+                    "vraag" : "Zij eten als",
+                    "antwoorden" : ["zij honger hebben."]
+                },
+                {
+                    "vraag" : "Devogels vliegen naar het zuiden als",
+                    "antwoorden" : ["het koud is."]
+                },
+                {
+                    "vraag" : "De studenten leren de woorden als",
+                    "antwoorden" : ["zij oefenen."]
+                },
+                {
+                    "vraag" : "De school sluit als",
+                    "antwoorden" : ["weekend is."]
+                },
+                {
+                    "vraag" : "Je moet naar de dokte als",
+                    "antwoorden" : ["je ziek bent."]
+                },
+                {
+                    "vraag" : "Wij slapen lang uit als",
+                    "antwoorden" : ["wij vroeg slapen."]
+                },
+                {
+                    "vraag" : "Ik ga naar buiten als",
+                    "antwoorden" : ["ik bodeschapen doen."]
+                },
+                {
+                    "vraag" : "Hij doet bodeshchapen als",
+                    "antwoorden" : ["zijn vrouw erg moe is."]
+                },
+                {
+                    "vraag" : "Wij eten warm als",
+                    "antwoorden" : ["het weer koud is."]
+                },
+                {
+                    "vraag" : "Het fruit is rijp als",
+                    "antwoorden" : ["het fruit lekker is."]
+                },
+                {
+                    "vraag" : "Zij kijken televisie als",
+                    "antwoorden" : ["zij thuis hebben."]
+                },
+                {
+                    "vraag" : "De buren zitten in de tuin als",
+                    "antwoorden" : ["eten klaar is."]
+                },
+                {
+                    "vraag" : "De dokter komt als",
+                    "antwoorden" : ["jij ziek bent."]
+                },
+                {
+                    "vraag" : "De dokter komt niet als",
+                    "antwoorden" : ["jij niet ziek bent."]
+                },
+                {
+                    "vraag" : "Ik ga met de auto naar de stad als",
+                    "antwoorden" : ["mijn auto over is."]
+                },
+                {
+                    "vraag" : "Wij fietsen vaak als",
+                    "antwoorden" : ["het niet regent."]
+                },
+                {
+                    "vraag" : "Sinterklaas komt als",
+                    "antwoorden" : ["het nieuw jaar is."]
+                },
+                {
+                    "vraag" : "Ik betaal de huur als",
+                    "antwoorden" : ["ik auto huren is."]
+                },
+                {
+                    "vraag" : "Studeren is moilijk als",
+                    "antwoorden" : ["jij geen boek hebt", "je werkt."]
+                },
+                {
+                    "vraag" : "Limonade is lekker als",
+                    "antwoorden" : ["met ijs is."]
+                },
+                {
+                    "vraag" : "Er is veel fruit als",
+                    "antwoorden" : ["hier markt is."]
+                },
+                {
+                    "vraag" : "Ik heb weinig tijd als",
+                    "antwoorden" : ["ik laat wakker word."]
+                },
+                {
+                    "vraag" : "Ik werk niet als",
+                    "antwoorden" : ["ik ziek ben."]
+                },
+                {
+                    "vraag" : "Zij doen de was als",
+                    "antwoorden" : ["zij vies heeft."]
+                },
+                {
+                    "vraag" : "Zij stofzuigt de kammer als",
+                    "antwoorden" : ["de kammer vies is."]
+                },
+                {
+                    "vraag" : "De jongen eet zijn brood als",
+                    "antwoorden" : ["hij hongerig heeft."]
+                },
+                {
+                    "vraag" : "Zij gaan naar de bioscoop als",
+                    "antwoorden" : ["zij tijd hebben."]
+                },
+                {
+                    "vraag" : "Ik ben verkouden als",
+                    "antwoorden" : ["ik mijn jas niet aan."]
+                },
+                {
+                    "vraag" : "Wij hebben vrij als",
+                    "antwoorden" : ["nieuuw jaar vakantie is."]
+                },
+                {
+                    "vraag" : "Ik lees een goede boek als",
+                    "antwoorden" : ["ik tijd heb."]
+                },
+                {
+                    "vraag" : "Ik oefen mijn zinnen als",
+                    "antwoorden" : ["ik nieuw boek heb."]
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "titel" : "Zinnen maken met DAT",
+            "gramatica": ["Hoofdzin", "Persoonvorm van het wekrwoord", "Dat", "Wie?", "Persoonvorm van het werkwoord"],
+            "voorbeeld": "Ik zie dat ik vies ben",
+            "opdracht": ["Make de zinnen af"],
+            "tijd": "15 minuten",
+            "oefeningen": [
+                {
+                    "vraag" : "Hij weet dat",
+                    "antwoorden" : ["hij lief is."]
+                },
+                {
+                    "vraag" : "Zij zeggen dat",
+                    "antwoorden" : ["hij binnen is."]
+                },
+                {
+                    "vraag" : "Ik vind dat",
+                    "antwoorden" : ["wij hard werken."]
+                },
+                {
+                    "vraag" : "Jij wil dat",
+                    "antwoorden" : ["zij morgen komen."]
+                },
+                {
+                    "vraag" : "Wij hopen dat",
+                    "antwoorden" : ["het in juli warm weer wordt."]
+                },
+                {
+                    "vraag" : "Zij denkt dat",
+                    "antwoorden" : ["hij deze week komt."]
+                },
+                {
+                    "vraag" : "Ik denk dat",
+                    "antwoorden" : ["hij Nederlands spreekt."]
+                },
+                {
+                    "vraag" : "Zij weet dat",
+                    "antwoorden" : ["het regent."]
+                },
+                {
+                    "vraag" : "Ik denk dat",
+                    "antwoorden" : ["ze komen."]
+                },
+                {
+                    "vraag" : "Hij ziet dat",
+                    "antwoorden" : ["zijn jas vies is."]
+                },
+                {
+                    "vraag" : "De kinderen willen dat",
+                    "antwoorden" : ["hun moeder thuis komt."]
+                },
+                {
+                    "vraag" : "Mijn moeder zegt dat",
+                    "antwoorden" : ["de soup klaar is."]
+                },
+                {
+                    "vraag" : "Vier dieven zeggen dat",
+                    "antwoorden" : ["zij onschuldig zijn."]
+                },
+                {
+                    "vraag" : "Ik wil dat",
+                    "antwoorden" : ["jij naar mijn huid komt."]
+                },
+                {
+                    "vraag" : "Wij zeggen dat",
+                    "antwoorden" : ["wij hard werken."]
+                },
+                {
+                    "vraag" : "Vader wil dat",
+                    "antwoorden" : ["hij deze week komt."]
+                },
+                {
+                    "vraag" : "Zij denkt dat",
+                    "antwoorden" : ["ik op vakantie ga."]
+                },
+                {
+                    "vraag" : "De studenten vinden dat",
+                    "antwoorden" : ["het examen makkelijk is", "de examens moeilijk zijn."]
+                },
+                {
+                    "vraag" : "De docent wil dat",
+                    "antwoorden" : ["ik goed studeer."]
+                },
+                {
+                    "vraag" : "De minister zegt dat",
+                    "antwoorden" : ["hij naar onze stad komt."]
+                },
+                {
+                    "vraag" : "Wij hopen dat",
+                    "antwoorden" : ["wij in de voetbal wedstrijd winnen."]
+                },
+                {
+                    "vraag" : "De buurvrouw vindt dat",
+                    "antwoorden" : ["ik een mooi huid heb."]
+                },
+                {
+                    "vraag" : "Mevrouw Jansen denk dat",
+                    "antwoorden" : ["ik lieg."]
+                },
+                {
+                    "vraag" : "Zij gelooft dat",
+                    "antwoorden" : ["ze windt."]
+                }
+            ]
+        },
         {
             "id": 7, 
         "titel": "Zinnen afmaken met Daarom en Daarmee",
@@ -1562,7 +1562,7 @@
                 "Schrijf hoe laat de kinderen uit school komen",
                 "Schrijf koe laat je thuis bent"
             ],
-            "antwoorden" : ["Lieve Jenny,<br><br>Ik wil graag mijn KNS-boek terugkrijgen, want ik heb het inburgeringexamen en ik moet studeren. Ik wil het boek morgen terug.<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Groejes,<br>Nancy"]
+            "antwoorden" : ["Lieve Jenny,<br><br>Ik wil graag mijn KNS-boek terugkrijgen, want ik heb het inburgeringexamen en ik moet studeren. Kun je het boek morgen teruggeven?<br>Mijn telefoonnummer is +31612345678. Je kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Groetjes,<br>Nancy"]
         }, 
         {
             "id": 14,
@@ -1586,7 +1586,7 @@
                 "Schrijf hoe laat de kinderen uit school komen",
                 "Schrijf koe laat je thuis bent"
             ],
-            "antwoorden" : ["Lieve Vrienden,<br><br>Omdat ik net verhuisd ben, wil ik jullie graag uitnodigen voor een etentje bij mijn thuis, op 2 november, om 19:00 uur tot 12:00 uur. Mijn nieuwe adres is Stationsplein 45, 3013 AK Rotterdam en de telefoonnummer is 061234567890.<br><br>Groejes,<br>Nancy"]
+            "antwoorden" : ["Lieve Vrienden,<br><br>Omdat ik net verhuisd ben, wil ik jullie graag uitnodigen voor een etentje bij mij thuis, op 2 november, om 19:00 uur tot 12:00 uur. Mijn nieuwe adres is Stationsplein 45, 3013 AK Rotterdam en de telefoonnummer is 061234567890.<br><br>Groejes,<br>Nancy"]
         }, 
         {
             "id": 14,
