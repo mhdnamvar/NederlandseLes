@@ -16,9 +16,13 @@ public enum Section {
     NEGATIVES("Negatie"),
     OPEN_HOURS("Vragen naar openingstijden"),
     APPOINTMENT("Een afspraak maken en reageren"),
-    NOT_UNDERSTOOD("Als je het niet begrijpt"),
+    NOT_UNDERSTOOD("Als je het niet verstaat"),
     IN_RESTAURANT("Bestellen in een restaurant"),
-    LIKE_IT_OR_NOT("Wat je wel en niet lekker vindt")
+    LIKE_IT_OR_NOT("Wat je wel en niet lekker vindt"),
+    PRICE("Naar de prijs vragen"),
+    COMPARATIVES("Comparatieven en superlatieven"),
+    CHECK_PAY("Afrekenen"),
+    BUSY_PHRASES("Bezigheiden uitdruken"),
     ;
 
     private String text;

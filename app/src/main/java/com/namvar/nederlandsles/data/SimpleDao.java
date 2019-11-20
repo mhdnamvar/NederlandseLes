@@ -134,9 +134,62 @@ public final class SimpleDao {
                 return getAskingQuestions();
             case LIKE_IT_OR_NOT:
                 return getLikeOrNot();
+            case PRICE:
+                return getPriceQuestions();
+            case CHECK_PAY:
+                return getCheckPay();
+            case COMPARATIVES:
+                return getComparatives();
+            case BUSY_PHRASES:
+                return getBusyPhrases();
             default:
                 return Collections.emptyList();
         }
+    }
+
+    private static List<String> getBusyPhrases() {
+        String[] array = {
+                "Ik ben aan het studeren.",
+                "Hij is nu aan het schoonmaken.",
+                "Wij zijn aan het chatten. Straks gaan we voetballen.",
+                "Ik ben beizig met de TV kijken. Zo meteen ga ik douchen.",
+                "Zij is aan het afwassen.",
+                "Zij is bezig met de afwas.",
+                "Zij is beizig met afwassen.",
+                "Zij gaat morgen afwassen."
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
+    private static List<String> getComparatives() {
+        String[] array = {
+                "Lief, liever, het liefst",
+                "Graag, liever, het liefst",
+                "Vies, viezer, het viest",
+                "Weinig, minder, het minst",
+                "Veel, meer, het meest",
+                "Goed, beter, het best",
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
+
+    private static List<String> getCheckPay() {
+        String[] array = {
+                "Hoeveel moet ik afrekenen?",
+                "Hoeveel krijgt u van me?",
+                "Hoeveek is het bij elkaar?"
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
+    private static List<String> getPriceQuestions() {
+        String[] array = {
+                "Hoeveel kost het?",
+                "Wat kost dat?",
+                "Hoe duur is het?"
+        };
+        return new ArrayList<>(Arrays.asList(array));
     }
 
     private static List<String> getLikeOrNot() {
