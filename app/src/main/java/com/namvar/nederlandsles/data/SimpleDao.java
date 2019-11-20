@@ -130,9 +130,33 @@ public final class SimpleDao {
                 return getSeasons();
             case IN_RESTAURANT:
                 return getInRestaurant();
+            case ASKING_QUESTIONS:
+                return getAskingQuestions();
             default:
                 return Collections.emptyList();
         }
+    }
+
+    private static List<String> getAskingQuestions() {
+        String[] array = {
+                "Hoe heet je?",
+                "Wat is je naam?",
+                "Waar woon je?",
+                "Waar kom je vandaan?",
+                "Uit welk land kom je?",
+                "Welke nationaliteit heb je?",
+                "Wat is uw moedertaal?",
+                "Welke taal spreekt u?",
+                "Welke talen spreek je verder nog?",
+                "Hoe spel je dat?",
+                "Wat voor werk doet hij?",
+                "Hoe oud is uw vader",
+                "Hoe oud ben je?",
+                "Wat is je beroep?",
+                "Wat studeren jullie",
+                "Wat is zij geboortedatum?"
+        };
+        return new ArrayList<>(Arrays.asList(array));
     }
 
     private static List<String> getInRestaurant() {
