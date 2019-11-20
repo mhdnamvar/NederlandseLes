@@ -8,6 +8,7 @@ import java.util.Map;
 public enum Section {
     DAYS_OF_THE_WEEK("Dagen van de week"),
     MONTHS("Maanden"),
+    SEASONS("De seizoenen"),
     SENTENCES("Zinnen maken"),
     LETTERS("Brieven"),
     PREPOSITIONS("Preposities"),

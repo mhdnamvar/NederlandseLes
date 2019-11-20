@@ -126,10 +126,23 @@ public final class SimpleDao {
                 return getAppointments();
             case NOT_UNDERSTOOD:
                 return getNotUnderstood();
+            case SEASONS:
+                return getSeasons();
             default:
                 return Collections.emptyList();
         }
     }
+
+    private static List<String> getSeasons() {
+        String[] array = {
+                "De lente - het voorjaar",
+                "De zomer",
+                "De herfst - het najaar",
+                "De winter"
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
 
     private static List<String> getNotUnderstood() {
         String[] array = {
