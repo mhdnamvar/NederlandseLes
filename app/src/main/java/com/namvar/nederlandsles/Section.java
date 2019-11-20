@@ -17,7 +17,8 @@ public enum Section {
     OPEN_HOURS("Vragen naar openingstijden"),
     APPOINTMENT("Een afspraak maken en reageren"),
     NOT_UNDERSTOOD("Als je het niet begrijpt"),
-    IN_RESTAURANT("Bestellen in een restaurant")
+    IN_RESTAURANT("Bestellen in een restaurant"),
+    LIKE_IT_OR_NOT("Wat je wel en niet lekker vindt")
     ;
 
     private String text;

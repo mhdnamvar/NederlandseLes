@@ -132,9 +132,25 @@ public final class SimpleDao {
                 return getInRestaurant();
             case ASKING_QUESTIONS:
                 return getAskingQuestions();
+            case LIKE_IT_OR_NOT:
+                return getLikeOrNot();
             default:
                 return Collections.emptyList();
         }
+    }
+
+    private static List<String> getLikeOrNot() {
+        String[] array = {
+                "Ik vind spinazie heerlijk.",
+                "Ik ben dol op dropjes.",
+                "Ik eet het leefst brood.",
+                "Ik vind worteltjes niet lekker.",
+                "Ik houd niet van vis.",
+                "Ik lust geen spruitjes",
+                "Ik vind broccoli echt vies!",
+                "Ik vind haring echt smerg!"
+        };
+        return new ArrayList<>(Arrays.asList(array));
     }
 
     private static List<String> getAskingQuestions() {
@@ -272,7 +288,19 @@ public final class SimpleDao {
                 "Ik woon in de Langestraat op nummer 13.",
                 "Wij zijn op vakantie.",
                 "Wij praten met de cursisten in de klas.",
-                "Bij de balie krigen u een formulier."
+                "Bij de balie krigen u een formulier.",
+                "De melk is over de datum.",
+                "Dat is goed voor je spijsverteing.",
+                "Op gewicht blijven.",
+                "Aan de beurt zijn.",
+                "Eem boterham met hagelslag.",
+                "Hij vraagt naar de prijs.",
+                "Zij doet de boodschappen bij de supermarkt.",
+                "Ik koop groente op de markt.",
+                "De man is op zijn werk.",
+                "De krentenbollen liggen achter u.",
+                "De koekjes liggen in het schap.",
+                "Het ontbijt staat op tafel."
         };
         return new ArrayList<>(Arrays.asList(array));
     }
