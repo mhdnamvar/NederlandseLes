@@ -21,9 +21,11 @@ public class HoofdstukViewModel extends ViewModel {
 
     MutableLiveData<List<String>> getList(int section) {
         try{
-            if(section >= 10){
+            if(section > 24){
+                mList.setValue(JsonDao.getPrepositions());
+            } else if(section >= 10){
                 mHtml.setValue(JsonDao.getLetter(section - 10));
-            }else {
+            } else {
                 mList.setValue(JsonDao.getSection(section));
             }
         } catch (Exception e) {

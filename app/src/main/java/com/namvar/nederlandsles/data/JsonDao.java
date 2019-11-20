@@ -104,4 +104,18 @@ public final class JsonDao {
         return "";
     }
 
+    public static List<String> getPrepositions() {
+        try {
+            JSONArray prepositions = jsonObject.getJSONArray("preposities");
+            List<String> list = new ArrayList<>();
+            for (int i = 0; i < prepositions.length(); i++) {
+                list.add(prepositions.getString(i));
+            }
+            return list;
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return Collections.emptyList();
+    }
+
 }
