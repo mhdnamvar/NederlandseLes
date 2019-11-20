@@ -118,13 +118,41 @@ public final class SimpleDao {
                 return getPrepositions();
             case DAYS_OF_THE_WEEK:
                 return getDaysOfTheWeek();
-            case Months:
+            case MONTHS:
                 return getMonth();
-            case ASK_OPENING_HOURS:
+            case OPEN_HOURS:
                 return getAskingOpenHours();
+            case APPOINTMENT:
+                return getAppointments();
+            case NOT_UNDERSTOOD:
+                return getNotUnderstood();
             default:
                 return Collections.emptyList();
         }
+    }
+
+    private static List<String> getNotUnderstood() {
+        String[] array = {
+                "Sorry, wat betekend dat?",
+                "Pardon, ik versta u niet. Kunt u dat herhalen?",
+                "Kun je dat nog eens zeggen?",
+                "Ik begrijp je niet.",
+                "Neemt u me niet kwalijk, wat is dat?"
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
+    private static List<String> getAppointments() {
+        String[] array = {
+                "Zullen we naar het museum gaan?",
+                "Ga je mee naar bioscoop?",
+                "Wat zullen gaan doen?",
+                "Wanneer zullen we afspraken?",
+                "Ja leuk! Kun je morgen ochtend om 10:00 uur?",
+                "Dat is prima. Tot dan!",
+                "Ik kan om tien uur 's morgens."
+        };
+        return new ArrayList<>(Arrays.asList(array));
     }
 
     private static List<String> getAskingOpenHours() {
