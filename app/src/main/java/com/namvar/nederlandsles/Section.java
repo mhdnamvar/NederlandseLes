@@ -7,10 +7,12 @@ import java.util.Map;
 
 public enum Section {
     DAYS_OF_THE_WEEK("Dagen van de week"),
+    Months("Maanden"),
     SENTENCES("Zinnen maken"),
     LETTERS("Brieven"),
     PREPOSITIONS("Preposities"),
     NEGATIVES("Negatie"),
+    ASK_OPENING_HOURS("Vragen naar openingstijden"),
     ;
 
     private String text;

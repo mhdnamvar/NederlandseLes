@@ -108,14 +108,54 @@ public final class SimpleDao {
 
     public static List<String> get(Section s) {
         switch (s) {
-            case SENTENCES: return getSentences();
-            case NEGATIVES: return getNegatives();
-            case LETTERS: return getLetters();
-            case PREPOSITIONS: return getPrepositions();
-            case DAYS_OF_THE_WEEK: return getDaysOfTheWeek();
-            default: return Collections.emptyList();
+            case SENTENCES:
+                return getSentences();
+            case NEGATIVES:
+                return getNegatives();
+            case LETTERS:
+                return getLetters();
+            case PREPOSITIONS:
+                return getPrepositions();
+            case DAYS_OF_THE_WEEK:
+                return getDaysOfTheWeek();
+            case Months:
+                return getMonth();
+            case ASK_OPENING_HOURS:
+                return getAskingOpenHours();
+            default:
+                return Collections.emptyList();
         }
     }
+
+    private static List<String> getAskingOpenHours() {
+        String[] array = {
+                "Wanneer is het museum open?",
+                "Hoe laat gaat het museum dicht?",
+                "Van hoe laat tot hoe laat is het restaurant open?",
+                "Hoe laat sluit de school?",
+                "Op welke dagen is bibliotheek open?"
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
+    private static List<String> getMonth() {
+        String[] array = {
+                "january",
+                "februari",
+                "maart",
+                "april",
+                "mei",
+                "juni",
+                "juli",
+                "augustus",
+                "september",
+                "oktober",
+                "november",
+                "december",
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
     private static List<String> getDaysOfTheWeek() {
         String[] array = {
                 "maandag",

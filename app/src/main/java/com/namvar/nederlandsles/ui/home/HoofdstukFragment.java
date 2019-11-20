@@ -87,7 +87,7 @@ public class HoofdstukFragment extends Fragment {
                         View view = super.getView(position, convertView, parent);
                         TextView textView= view.findViewById(android.R.id.text1);
                         textView.setTextColor(Color.DKGRAY);
-//                        textView.setText((position+1) + ". " + textView.getText());
+                        textView.setText((position+1) + ". " + textView.getText());
                         return view;
                     }
                 };
@@ -106,7 +106,10 @@ public class HoofdstukFragment extends Fragment {
         setupTTS();
 
         list.setOnItemClickListener((parent, view, position, id) -> {
-            speak(((TextView)(view)).getText().toString());
+            String text = ((TextView) (view)).getText().toString();
+            if (text.length() > 2) {
+                speak(text.substring(text.indexOf(".")+1));
+            }
         });
 
         playImageView.setOnClickListener(view -> {
