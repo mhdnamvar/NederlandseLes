@@ -1,5 +1,6 @@
 package com.namvar.nederlandsles.ui.home;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -41,11 +42,13 @@ public class HomeFragment extends Fragment {
                         android.R.layout.simple_list_item_1,
                         strings) {
 
+                    @SuppressLint("SetTextI18n")
                     @Override
                     public View getView(int position, View convertView, ViewGroup parent) {
                         View view = super.getView(position, convertView, parent);
                         TextView textView= view.findViewById(android.R.id.text1);
                         textView.setTextColor(Color.DKGRAY);
+                        textView.setText((position+1) + ". " + textView.getText());
                         return view;
                     }
                 };
