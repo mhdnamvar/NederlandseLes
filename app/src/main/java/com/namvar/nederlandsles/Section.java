@@ -1,30 +1,39 @@
 package com.namvar.nederlandsles;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public enum Section {
-    SENTENCES(1, "Hoofdstuken"),
-    LETTERS(2, "Brieven"),
-    PREPOSITIONS(3, "Preposities"),
+    DAYS_OF_THE_WEEK("Dagen van de week"),
+    SENTENCES("Zinnen maken"),
+    LETTERS("Brieven"),
+    PREPOSITIONS("Preposities"),
+    NEGATIVES("Negatie"),
     ;
 
-    private int code;
-    private String name;
+    private String text;
+    private static final Map<String, Section> lookup = new HashMap<>();
 
-    Section(int code, String name) {
-        this.code = code;
-        this.name = name;
+    static {
+        for (Section s : Section.values()) {
+            lookup.put(s.text, s);
+        }
     }
 
-    public boolean equals(Section s) {
-        return s.code == this.code && s.name.equals(this.name);
+    Section(String name) {
+        this.text = name;
     }
 
-    public List<String> listValues(){
-        List list = new ArrayList();
+    public static Section get(String text) {
+        return lookup.get(text);
+    }
+
+    public static List<String> listValues(){
+        List<String> list = new ArrayList<>();
         for (Section s: values()){
-            list.add(s.name);
+            list.add(s.text);
         }
         return list;
     }

@@ -3,6 +3,7 @@ package com.namvar.nederlandsles.data;
 import android.content.Context;
 
 import com.namvar.nederlandsles.R;
+import com.namvar.nederlandsles.Section;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -16,10 +17,11 @@ import java.io.StringWriter;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public final class JsonDao {
+public final class SimpleDao {
 
     private static JSONObject jsonObject;
 
@@ -39,7 +41,7 @@ public final class JsonDao {
         }
     }
 
-    public static List<String> getSections() {
+    public static List<String> getSentences() {
         try {
             JSONArray hoofdstukken = jsonObject.getJSONArray("hoofdstukken");
             List<String> titles = new ArrayList<>();
@@ -53,7 +55,7 @@ public final class JsonDao {
         return Collections.emptyList();
     }
 
-    public static List<String> getSection(int section) {
+    public static List<String> getSentence(int section) {
         try {
             JSONArray hoofdstukken = jsonObject.getJSONArray("hoofdstukken");
             if(section > hoofdstukken.length()) {
@@ -104,18 +106,64 @@ public final class JsonDao {
         return "";
     }
 
-    public static List<String> getPrepositions() {
-        try {
-            JSONArray prepositions = jsonObject.getJSONArray("preposities");
-            List<String> list = new ArrayList<>();
-            for (int i = 0; i < prepositions.length(); i++) {
-                list.add(prepositions.getString(i));
-            }
-            return list;
-        } catch (JSONException e) {
-            e.printStackTrace();
+    public static List<String> get(Section s) {
+        switch (s) {
+            case SENTENCES: return getSentences();
+            case NEGATIVES: return getNegatives();
+            case LETTERS: return getLetters();
+            case PREPOSITIONS: return getPrepositions();
+            case DAYS_OF_THE_WEEK: return getDaysOfTheWeek();
+            default: return Collections.emptyList();
         }
-        return Collections.emptyList();
+    }
+    private static List<String> getDaysOfTheWeek() {
+        String[] array = {
+                "maandag",
+                "dinsdag",
+                "woensdag",
+                "donderdag",
+                "vrijdag",
+                "zaterdag",
+                "zondag"
+        };
+        return new ArrayList<>(Arrays.asList(array));
     }
 
+    private static List<String> getPrepositions() {
+        String[] array = {
+                "Zullen we naar het museum gaan?",
+                "Het museum is open van 09:00 tot 17:00.",
+                "Het is gesloten op maandag.",
+                "Om drie uur kan ik niet.",
+                "In de nacht van zaterdag op zondag.",
+                "Dit schilderij is van Rembrant.",
+                "Ik kijk naar het schilderij.",
+                "Een museum voor kunst en archeologie.",
+                "In het weekend is het niet zo druk.",
+                "Tussen de middag eet ik.",
+                "Hij wacht op een vriendin.",
+                "Hij werkt in een museum.",
+                "Ik ben druk me de studie.",
+                "Ik heb het druk met de examens.",
+                "Zuurkool met rookworst.",
+                "Na het weekend ga ik op vakantie.",
+                "Ik woon in Nederland.",
+                "Woon jij in Amsterdam?",
+                "Zij komt uit Denemarken.",
+                "Ik woon in de Langestraat op nummer 13.",
+                "Wij zijn op vakantie.",
+                "Wij praten met de cursisten in de klas.",
+                "Bij de balie krigen u een formulier."
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
+    private static List<String> getNegatives() {
+        String[] array = {
+                "Nee, Ik kan niet op woensdag.",
+                "Nee, op woensdag heb ik geen tijd."
+        };
+        return new ArrayList<>(Arrays.asList(array));
+
+    }
 }

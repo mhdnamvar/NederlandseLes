@@ -5,7 +5,8 @@ import android.util.Log;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.namvar.nederlandsles.data.JsonDao;
+import com.namvar.nederlandsles.Section;
+import com.namvar.nederlandsles.data.SimpleDao;
 
 import java.util.List;
 
@@ -19,15 +20,9 @@ public class HoofdstukViewModel extends ViewModel {
         this.mHtml = new MutableLiveData<>();
     }
 
-    MutableLiveData<List<String>> getList(int section) {
-        try{
-            if(section > 24){
-                mList.setValue(JsonDao.getPrepositions());
-            } else if(section >= 10){
-                mHtml.setValue(JsonDao.getLetter(section - 10));
-            } else {
-                mList.setValue(JsonDao.getSection(section));
-            }
+    MutableLiveData<List<String>> getList(String sectionName) {
+        try {
+            mList.setValue(SimpleDao.get(Section.get(sectionName)));
         } catch (Exception e) {
             e.printStackTrace();
             Log.d("HoofdstukViewModel", e.getLocalizedMessage());

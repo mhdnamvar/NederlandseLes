@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.namvar.nederlandsles.data.JsonDao;
+import com.namvar.nederlandsles.data.SimpleDao;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupViews();
-        JsonDao.read(getApplicationContext());
+        SimpleDao.read(getApplicationContext());
 
     }
 

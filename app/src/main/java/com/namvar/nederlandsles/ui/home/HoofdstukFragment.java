@@ -1,5 +1,6 @@
 package com.namvar.nederlandsles.ui.home;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.media.AudioManager;
 import android.os.Build;
@@ -34,10 +35,10 @@ import java.util.Objects;
 
 public class HoofdstukFragment extends Fragment {
 
-    private int section = 1;
+    private String section;
     private TextToSpeech tts;
-    private final static String KEY_SELECTED = "selected";
-    private final static String KEY_SECTION = "section";
+//    private final static String KEY_SELECTED = "selected";
+    private final static String KEY_SECTION = "sectionText";
     private final static String KEY_DUTCH = "nl_NL";
     private TextView htmlView;
     private ImageView playImageView;
@@ -59,17 +60,17 @@ public class HoofdstukFragment extends Fragment {
 
         Bundle args = getArguments();
         if (args != null) {
-            section = args.getInt(KEY_SECTION);
-            if (section >= 10) {
-                list.setVisibility(View.INVISIBLE);
-                htmlView.setVisibility(View.VISIBLE);
-                playImageView.setVisibility(View.VISIBLE);
-            } else {
-                list.setVisibility(View.VISIBLE);
-                htmlView.setVisibility(View.INVISIBLE);
+            section = args.getString(KEY_SECTION);
+//            if (section >= 10) {
+//                list.setVisibility(View.INVISIBLE);
+//                htmlView.setVisibility(View.VISIBLE);
+//                playImageView.setVisibility(View.VISIBLE);
+//            } else {
+//                list.setVisibility(View.VISIBLE);
+//                htmlView.setVisibility(View.INVISIBLE);
                 playImageView.setVisibility(View.INVISIBLE);
-            }
-            setTitle(args.getString(KEY_SELECTED));
+//            }
+            setTitle(args.getString(KEY_SECTION));
         }
 
         viewModel.getList(section).observe(this, new Observer<List<String>>() {
@@ -80,11 +81,13 @@ public class HoofdstukFragment extends Fragment {
                         android.R.layout.simple_list_item_1,
                         strings) {
 
+                    @SuppressLint("SetTextI18n")
                     @Override
                     public View getView(int position, View convertView, ViewGroup parent) {
                         View view = super.getView(position, convertView, parent);
                         TextView textView= view.findViewById(android.R.id.text1);
                         textView.setTextColor(Color.DKGRAY);
+//                        textView.setText((position+1) + ". " + textView.getText());
                         return view;
                     }
                 };
