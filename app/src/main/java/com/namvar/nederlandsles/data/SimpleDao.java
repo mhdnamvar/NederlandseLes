@@ -128,9 +128,24 @@ public final class SimpleDao {
                 return getNotUnderstood();
             case SEASONS:
                 return getSeasons();
+            case IN_RESTAURANT:
+                return getInRestaurant();
             default:
                 return Collections.emptyList();
         }
+    }
+
+    private static List<String> getInRestaurant() {
+        String[] array = {
+                "Ik wil graag het trio van gestoofde vis.",
+                "Mogen we de wijnkaart even zien?",
+                "We willen graag het driegangenmenu",
+                "Als voorgerecht wil ik graag de erwten soep.",
+                "Als hoofdrecht de zalmfilet, alstublileft",
+                "Voor mij de Hollandse garnalencocktail graag.",
+                "Kan ik ook frietjes in plaats van gebakken aardappeltjes krijgen?"
+        };
+        return new ArrayList<>(Arrays.asList(array));
     }
 
     private static List<String> getSeasons() {
@@ -142,7 +157,6 @@ public final class SimpleDao {
         };
         return new ArrayList<>(Arrays.asList(array));
     }
-
 
     private static List<String> getNotUnderstood() {
         String[] array = {
