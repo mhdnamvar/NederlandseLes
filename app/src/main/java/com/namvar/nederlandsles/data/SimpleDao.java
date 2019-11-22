@@ -288,7 +288,7 @@ public final class SimpleDao {
 
     private static List<String> getMonth() {
         String[] array = {
-                "january",
+                "januari",
                 "februari",
                 "maart",
                 "april",
@@ -353,7 +353,21 @@ public final class SimpleDao {
                 "De man is op zijn werk.",
                 "De krentenbollen liggen achter u.",
                 "De koekjes liggen in het schap.",
-                "Het ontbijt staat op tafel."
+                "Het ontbijt staat op tafel.",
+                "Ik help Luca met het huiswerk.",
+                "Ik doe aan hockey en fitness.",
+                "Ik zit op voetbal.",
+                "Ik ben bij een tennisclub.",
+                "Ik ben aan het squashen.",
+                "Ik ben beizig met mijn favoriete hobby.",
+                "Ik kom net uit bed.",
+                "We heben drie aardappel per persoon.",
+                "Vanavond staat erweten soep op het menu.",
+                "De ingeredienten staan in het recept.",
+                "Hij brengt de soep op smaak met zout en peper.",
+                "De hardloper heeft een tijd onder de acht minuten.",
+                "Hij luister naar muziek.",
+                "Ik wandel met de hond."
         };
         return new ArrayList<>(Arrays.asList(array));
     }
