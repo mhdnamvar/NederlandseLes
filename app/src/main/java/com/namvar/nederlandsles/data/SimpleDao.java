@@ -182,9 +182,7 @@ public final class SimpleDao {
                 "Ik wil ze graag even passen?",
                 "Kan ik dit even passen?",
                 "Hebt u dit overhem ook een maatje kleiner?",
-                "Hebt u deze broek misschien in een andere kleur?",
-                "",
-                ""
+                "Hebt u deze broek misschien in een andere kleur?"
         };
         return new ArrayList<>(Arrays.asList(array));
     }
