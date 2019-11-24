@@ -23,6 +23,7 @@ public enum Section {
     COMPARATIVES("Comparatieven en superlatieven"),
     CHECK_PAY("Afrekenen"),
     BUSY_PHRASES("Bezigheiden uitdruken"),
+    IETS_LEUKS("Iets leuks"),
     ;
 
     private String text;

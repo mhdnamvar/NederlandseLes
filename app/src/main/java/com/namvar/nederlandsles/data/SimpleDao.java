@@ -142,9 +142,20 @@ public final class SimpleDao {
                 return getComparatives();
             case BUSY_PHRASES:
                 return getBusyPhrases();
+            case IETS_LEUKS:
+                return getIetsLeuks();
             default:
                 return Collections.emptyList();
         }
+    }
+    private static List<String> getIetsLeuks() {
+        String[] array = {
+                "Iets, wat, niets, niks + adjectief + s",
+                "We willen iets leuks gaan doen.",
+                "Nieks moeilijks aan!",
+                "We gaan wat anders doen."
+        };
+        return new ArrayList<>(Arrays.asList(array));
     }
 
     private static List<String> getBusyPhrases() {
