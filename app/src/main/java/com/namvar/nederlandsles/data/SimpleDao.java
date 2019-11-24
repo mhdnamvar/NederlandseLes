@@ -146,9 +146,39 @@ public final class SimpleDao {
                 return getIetsLeuks();
             case TRANSPORT:
                 return getTransport();
+            case CLOTHES:
+                return getClothes();
             default:
                 return Collections.emptyList();
         }
+    }
+
+    private static List<String> getClothes() {
+        String[] array = {
+                "Ik draag een rok.",
+                "Ik heb een jurk aan.",
+                "Ik trek een broek aan.",
+                "Ik heb maat 42.",
+                "Ik ben gekleed in een lange jurk.",
+                "Ik heb tweehands kleren.",
+                "Ik heb een muts op.",
+                "Ik zet een hoed op.",
+                "Deze schoenen zitten leker",
+                "Kan ik u misschien helpen?",
+                "Welke maat hebt u?",
+                "Wilt u ze passen?",
+                "De paskamers zijn achter in de winkel.",
+                "De overhemden zijn nu de helft goedkoper.",
+                "Ik wil liever rondkijken.",
+                "Ik zoek een spijkerbroek",
+                "Ik wil ze graag even passen?",
+                "Kan ik dit even passen?",
+                "Hebt u dit overhem ook een maatje kleiner?",
+                "Hebt u deze broek misschien in een andere kleur?",
+                "",
+                ""
+        };
+        return new ArrayList<>(Arrays.asList(array));
     }
 
     private static List<String> getTransport() {
@@ -169,9 +199,7 @@ public final class SimpleDao {
                 "Ik neem de auto.",
                 "Ik pak de fiets.",
                 "Ik ga met de metro.",
-                "Ik reis met de trein.",
-                "",
-                ""
+                "Ik reis met de trein."
         };
         return new ArrayList<>(Arrays.asList(array));
     }
