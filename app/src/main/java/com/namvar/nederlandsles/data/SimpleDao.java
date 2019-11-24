@@ -142,12 +142,40 @@ public final class SimpleDao {
                 return getComparatives();
             case BUSY_PHRASES:
                 return getBusyPhrases();
-            case IETS_LEUKS:
+            case SOMTHING_NICE:
                 return getIetsLeuks();
+            case TRANSPORT:
+                return getTransport();
             default:
                 return Collections.emptyList();
         }
     }
+
+    private static List<String> getTransport() {
+        String[] array = {
+                "Weet u de weg naar centraal station?",
+                "Kunnen jullie me de weg wijzen naar de supermarkt?",
+                "Weet u waar de bioscoop is?",
+                "Weet u soms waar ik bibliotheek kan vinden?",
+                "Weten jullie een WC in de buurt?",
+                "U gaat rechtdoor.",
+                "U kunt hier beter omkeren.",
+                "U moet de weg oversteken.",
+                "U neemt de eerste afslag rechts.",
+                "Het is aan de rechterkant.",
+                "Het ligt aan uw rechterhand ",
+                "Ik ben te voet.",
+                "Ik ben te lopend.",
+                "Ik neem de auto.",
+                "Ik pak de fiets.",
+                "Ik ga met de metro.",
+                "Ik reis met de trein.",
+                "",
+                ""
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
     private static List<String> getIetsLeuks() {
         String[] array = {
                 "Iets, wat, niets, niks + adjectief + s",
@@ -281,7 +309,9 @@ public final class SimpleDao {
                 "Wanneer zullen we afspraken?",
                 "Ja leuk! Kun je morgen ochtend om 10:00 uur?",
                 "Dat is prima. Tot dan!",
-                "Ik kan om tien uur 's morgens."
+                "Ik kan om tien uur 's morgens.",
+                "Heb je zin om naar de film te gaan?",
+                "Ga je me naar het cafe?"
         };
         return new ArrayList<>(Arrays.asList(array));
     }
@@ -378,7 +408,15 @@ public final class SimpleDao {
                 "Hij brengt de soep op smaak met zout en peper.",
                 "De hardloper heeft een tijd onder de acht minuten.",
                 "Hij luister naar muziek.",
-                "Ik wandel met de hond."
+                "Ik wandel met de hond.",
+                "De weg vragen naar het theater.",
+                "Bij het station rechtsaf.",
+                "Na de stoplichten linksaf.",
+                "U gaat de brug over.",
+                "Aan de rechterkant.",
+                "Aan uw linkerhand.",
+                "Ik ben dol op opera.",
+                "Ik heb een trui aan."
         };
         return new ArrayList<>(Arrays.asList(array));
     }
