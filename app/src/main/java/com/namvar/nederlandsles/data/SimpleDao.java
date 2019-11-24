@@ -108,48 +108,36 @@ public final class SimpleDao {
 
     public static List<String> get(Section s) {
         switch (s) {
-            case SENTENCES:
-                return getSentences();
-            case NEGATIVES:
-                return getNegatives();
-            case PREPOSITIONS:
-                return getPrepositions();
-            case DAYS_OF_THE_WEEK:
-                return getDaysOfTheWeek();
-            case MONTHS:
-                return getMonth();
-            case OPEN_HOURS:
-                return getAskingOpenHours();
-            case APPOINTMENT:
-                return getAppointments();
-            case NOT_UNDERSTOOD:
-                return getNotUnderstood();
-            case SEASONS:
-                return getSeasons();
-            case IN_RESTAURANT:
-                return getInRestaurant();
-            case ASKING_QUESTIONS:
-                return getAskingQuestions();
-            case LIKE_IT_OR_NOT:
-                return getLikeOrNot();
-            case PRICE:
-                return getPriceQuestions();
-            case CHECK_PAY:
-                return getCheckPay();
-            case COMPARATIVES:
-                return getComparatives();
-            case BUSY_PHRASES:
-                return getBusyPhrases();
-            case SOMTHING_NICE:
-                return getIetsLeuks();
-            case TRANSPORT:
-                return getTransport();
-            case CLOTHES:
-                return getClothes();
-            case HERE_THERE:
-                return getHereAndThere();
-            default:
-                return Collections.emptyList();
+            case SENTENCES: return getSentence(0);
+            case SENTENCES_TWO_VERBS: return getSentence(1);
+            case SENTENCES_CONJUCTION: return getSentence(2);
+            case SENTENCES_OMDAT: return getSentence(3);
+            case SENTENCES_ALS: return getSentence(4);
+            case SENTENCES_DAT: return getSentence(5);
+            case SENTENCES_DAAROM: return getSentence(6);
+            case SENTENCES_QUESTIONS_WORD: return getSentence(7);
+            case SENTENCES_NO_QUESTIONS_WORD: return getSentence(8);
+            case SENTENCES_INVERSION: return getSentence(9);
+            case NEGATIVES: return getNegatives();
+            case PREPOSITIONS: return getPrepositions();
+            case DAYS_OF_THE_WEEK: return getDaysOfTheWeek();
+            case MONTHS: return getMonth();
+            case OPEN_HOURS: return getAskingOpenHours();
+            case APPOINTMENT: return getAppointments();
+            case NOT_UNDERSTOOD: return getNotUnderstood();
+            case SEASONS: return getSeasons();
+            case IN_RESTAURANT: return getInRestaurant();
+            case ASKING_QUESTIONS: return getAskingQuestions();
+            case LIKE_IT_OR_NOT: return getLikeOrNot();
+            case PRICE: return getPriceQuestions();
+            case CHECK_PAY: return getCheckPay();
+            case COMPARATIVES: return getComparatives();
+            case BUSY_PHRASES: return getBusyPhrases();
+            case SOMTHING_NICE: return getIetsLeuks();
+            case TRANSPORT: return getTransport();
+            case CLOTHES: return getClothes();
+            case HERE_THERE: return getHereAndThere();
+            default: return Collections.emptyList();
         }
     }
 
