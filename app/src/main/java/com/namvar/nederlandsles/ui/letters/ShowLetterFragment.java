@@ -1,7 +1,5 @@
-package com.namvar.nederlandsles.ui.home;
+package com.namvar.nederlandsles.ui.letters;
 
-import android.annotation.SuppressLint;
-import android.graphics.Color;
 import android.media.AudioManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -12,9 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,28 +19,25 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.namvar.nederlandsles.R;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Locale;
-import java.util.Objects;
 
-public class HoofdstukFragment extends Fragment {
+public class ShowLetterFragment extends Fragment {
 
-    private String section;
-    private TextToSpeech tts;
-//    private final static String KEY_SELECTED = "selected";
-    private final static String KEY_SECTION = "section";
+    private final static String KEY_LETTER_TITLE = "letterTitle";
+    private final static String KEY_LETTER_NO = "letterNo";
     private final static String KEY_DUTCH = "nl_NL";
+    private static final float speechRate = 0.6f;
+    private TextToSpeech tts;
     private TextView htmlView;
     private ImageView playImageView;
 
-    public static HoofdstukFragment newInstance() {
-        return new HoofdstukFragment();
+    public static ShowLetterFragment newInstance() {
+        return new ShowLetterFragment();
     }
 
     @Override
@@ -52,48 +45,19 @@ public class HoofdstukFragment extends Fragment {
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_hoofdstuk, container, false);
-        final ListView list = root.findViewById(R.id.hoofdstukList);
-        htmlView = root.findViewById(R.id.htmlView);
+        View root = inflater.inflate(R.layout.fragment_show_letter, container, false);
+        ShowLetterViewModel viewModel = ViewModelProviders.of(this).get(ShowLetterViewModel.class);
         playImageView = root.findViewById(R.id.playImageView);
-        HoofdstukViewModel viewModel = ViewModelProviders.of(this).get(HoofdstukViewModel.class);
+        htmlView = root.findViewById(R.id.htmlView);
 
-        Bundle args = getArguments();
-        if (args != null) {
-            section = args.getString(KEY_SECTION);
-//            if (section >= 10) {
-//                list.setVisibility(View.INVISIBLE);
-//                htmlView.setVisibility(View.VISIBLE);
-//                playImageView.setVisibility(View.VISIBLE);
-//            } else {
-//                list.setVisibility(View.VISIBLE);
-//                htmlView.setVisibility(View.INVISIBLE);
-                playImageView.setVisibility(View.INVISIBLE);
-//            }
-            setTitle(args.getString(KEY_SECTION));
+        Bundle arguments = getArguments();
+        if (arguments != null) {
+            int number = arguments.getInt(KEY_LETTER_NO);
+            viewModel.setHtml(number);
+
+            String title = arguments.getString(KEY_LETTER_TITLE);
+            setTitle(title);
         }
-
-        viewModel.getList(section).observe(this, new Observer<List<String>>() {
-            @Override
-            public void onChanged(List<String> strings) {
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                        Objects.requireNonNull(getContext()),
-                        android.R.layout.simple_list_item_1,
-                        strings) {
-
-                    @SuppressLint("SetTextI18n")
-                    @Override
-                    public View getView(int position, View convertView, ViewGroup parent) {
-                        View view = super.getView(position, convertView, parent);
-                        TextView textView= view.findViewById(android.R.id.text1);
-                        textView.setTextColor(Color.DKGRAY);
-                        textView.setText((position+1) + ". " + textView.getText());
-                        return view;
-                    }
-                };
-                list.setAdapter(adapter);
-            }
-        });
 
         viewModel.getHtml().observe(this, s -> {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -104,13 +68,6 @@ public class HoofdstukFragment extends Fragment {
         });
 
         setupTTS();
-
-        list.setOnItemClickListener((parent, view, position, id) -> {
-            String text = ((TextView) (view)).getText().toString();
-            if (text.length() > 2) {
-                speak(text.substring(text.indexOf(".")+1));
-            }
-        });
 
         playImageView.setOnClickListener(view -> {
             if (tts.isSpeaking()){
@@ -136,7 +93,7 @@ public class HoofdstukFragment extends Fragment {
                 Log.e("Voice", "Initilization Failed!");
         });
 
-        tts.setSpeechRate(0.7f);
+        tts.setSpeechRate(speechRate);
 
         tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
             @Override

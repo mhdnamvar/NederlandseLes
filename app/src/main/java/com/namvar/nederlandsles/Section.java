@@ -11,7 +11,6 @@ public enum Section {
     SEASONS("De seizoenen"),
     ASKING_QUESTIONS("Vragen stellen"),
     SENTENCES("Zinnen maken"),
-    LETTERS("Brieven"),
     PREPOSITIONS("Preposities"),
     NEGATIVES("Negatie"),
     OPEN_HOURS("Vragen naar openingstijden"),
@@ -26,6 +25,7 @@ public enum Section {
     SOMTHING_NICE("Iets leuks"),
     TRANSPORT("Vervoermiddelen en de weg vragen"),
     CLOTHES("Kleiding"),
+    HERE_THERE("Er en daar"),
     ;
 
     private String text;

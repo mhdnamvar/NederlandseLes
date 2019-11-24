@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.namvar.nederlandsles.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_letters"
+        android:name="com.namvar.nederlandsles.ui.letters.LettersFragment"
+        android:label="@string/title_letters"
+        tools:layout="@layout/fragment_letters" />
 
     <fragment
         android:id="@+id/navigation_notifications"
@@ -30,8 +30,23 @@
         tools:layout="@layout/fragment_hoofdstuk">
         <argument
             android:name="section"
-            app:argType="integer"
+            app:argType="string"
             android:defaultValue="@null" />
+    </fragment>
+
+    <fragment android:id="@+id/navigation_show_letter"
+        android:name="com.namvar.nederlandsles.ui.letters.ShowLetterFragment"
+        android:label="Briefje"
+        tools:layout="@layout/fragment_show_letter">
+        <argument
+            android:name="letterTitle"
+            app:argType="string"
+            android:defaultValue="@null"
+            />
+        <argument
+            android:name="letterNo"
+            app:argType="integer"
+            />
     </fragment>
 
 

@@ -112,8 +112,6 @@ public final class SimpleDao {
                 return getSentences();
             case NEGATIVES:
                 return getNegatives();
-            case LETTERS:
-                return getLetters();
             case PREPOSITIONS:
                 return getPrepositions();
             case DAYS_OF_THE_WEEK:
@@ -148,12 +146,22 @@ public final class SimpleDao {
                 return getTransport();
             case CLOTHES:
                 return getClothes();
+            case HERE_THERE:
+                return getHereAndThere();
             default:
                 return Collections.emptyList();
         }
     }
 
-    private static List<String> getClothes() {
+    private static List<String> getHereAndThere() {
+        String[] array = {
+                "Ik woon in Amsterdam. Ik woon er al vijf jaar.",
+                "Ik woon in Amsterdam. Daar woon ik al vijf jaar.",
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
+        private static List<String> getClothes() {
         String[] array = {
                 "Ik draag een rok.",
                 "Ik heb een jurk aan.",
