@@ -2,6 +2,6 @@
     <string name="app_name">NederlandsLes</string>
     <string name="title_home">Zinnen Maken</string>
     <string name="title_letters">Brieven</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_cards">Kaarten</string>
     <string name="todo">TODO</string>
 </resources>

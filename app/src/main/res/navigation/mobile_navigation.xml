@@ -18,10 +18,10 @@
         tools:layout="@layout/fragment_letters" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.namvar.nederlandsles.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_cards"
+        android:name="com.namvar.nederlandsles.ui.cards.CardsFragment"
+        android:label="@string/title_cards"
+        tools:layout="@layout/fragment_cards" />
 
     <fragment
         android:id="@+id/navigation_hoofdstuk"
