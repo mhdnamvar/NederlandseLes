@@ -35,6 +35,12 @@ public enum Section {
     TRANSPORT("Vervoermiddelen en de weg vragen"),
     CLOTHES("Kleiding"),
     HERE_THERE("Er en daar"),
+    COMPLEMENT("Een compliment geven"),
+    REACTION_TO_PHRASES("Reacties op uitspraken en mededelingen"),
+    FESTIVALS("Feestdagen in Nederland"),
+    CHARACTERS("Karaktereigenschappen"),
+    RELATIONSHIPS("Relatievormen"),
+    EMOTIONS("Emoties benoemen"),
     ;
 
     private String text;

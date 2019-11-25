@@ -137,8 +137,133 @@ public final class SimpleDao {
             case TRANSPORT: return getTransport();
             case CLOTHES: return getClothes();
             case HERE_THERE: return getHereAndThere();
+            case COMPLEMENT: return getComplements();
+            case REACTION_TO_PHRASES: return getReactionToPhrases();
+            case FESTIVALS: return getFestivals();
+            case CHARACTERS: return getCharacters();
+            case RELATIONSHIPS: return getRelationships();
+            case EMOTIONS: return getEmotions();
             default: return Collections.emptyList();
         }
+    }
+
+    private static List<String> getEmotions() {
+        String[] array = {
+                "ontroerd",
+                "blij",
+                "gelukkig",
+                "bang",
+                "nerveus",
+                "zenuwachtig",
+                "ontspannen",
+                "boos",
+                "kwaad",
+                "verdrietig",
+                "triest",
+                "moe",
+                "verbaasd",
+                "verlegen",
+                "verveeld",
+                "teleurgesteld"
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
+    private static List<String> getRelationships() {
+        String[] array = {
+                "getrouwd",
+                "laterlatie",
+                "co-ouderschap",
+                "verloofd",
+                "gescheiden",
+                "single",
+                "vrijgezel"
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
+    private static List<String> getCharacters() {
+        String[] array = {
+                "optimistisch",
+                "pessimistisch",
+                "introvert",
+                "extrovert",
+                "humoristisch",
+                "arrogant",
+                "vrolijk",
+                "netjes",
+                "slordig",
+                "druk",
+                "rustig",
+                "eerlijk",
+                "onzeker",
+                "sociaal",
+                "koppig",
+                "romantisch",
+                "spontaan",
+                "eigenwijs",
+                "agressief",
+                "gevoelig",
+                "behulpzaam",
+                "nieuwsgierig",
+                "hard",
+                "ongeduldig",
+                "vriendelijk",
+                "lui",
+                "aardig",
+                "sympathiek",
+                "perfectionistich",
+                "egoistisch"
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
+    private static List<String> getFestivals() {
+        String[] array = {
+                "nieuwjaarsdag",
+                "Pasen",
+                "Koningsdag",
+                "Bevrijdingsdag",
+                "Hemelvaartsdag",
+                "Pinksteren",
+                "Sinterklaas",
+                "Kerst"
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
+    private static List<String> getReactionToPhrases() {
+        String[] array = {
+                "Veel plezier!",
+                "Beterschap!",
+                "Goede reis!",
+                "Wat jammer!",
+                "Wat vervelend!",
+                "Wat erg voor jullie!",
+                "Veel succes!",
+                "Sterkte!",
+                "Gefeliciteerd!",
+                "Gecondoleerd!",
+                "Van harte!",
+                "Volgende keer beter!",
+                "Sorry, hoor!"
+        };
+        return new ArrayList<>(Arrays.asList(array));
+    }
+
+    private static List<String> getComplements() {
+        String[] array = {
+                "Wat heb je mooie ogen!",
+                "Wat een prachtige trui hebt u vandaag aan!",
+                "Wat een leuke broek!",
+                "Wat een mooie rokje!",
+                "Wat een leuke tas heb je!",
+                "Die kleur staat je fantastisch!",
+                "Wat zie je er leuk uit!",
+                "Wat zit je haat mooie vandaag!",
+                "Je draagt een prachtige jurk vandaag!"
+        };
+        return new ArrayList<>(Arrays.asList(array));
     }
 
     private static List<String> getHereAndThere() {
