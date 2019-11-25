@@ -1,8 +1,17 @@
-package com.namvar.nederlandsles.ui.letters;
+package com.namvar.nederlandsles.ui.cards;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProviders;
 
 import android.media.AudioManager;
 import android.os.Build;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
 import android.text.Html;
@@ -14,30 +23,24 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
-
 import com.namvar.nederlandsles.R;
+import com.namvar.nederlandsles.ui.letters.ShowLetterViewModel;
 
 import java.util.HashMap;
 import java.util.Locale;
 
-public class ShowLetterFragment extends Fragment {
+public class ShowCardFragment extends Fragment {
 
-    private final static String KEY_LETTER_TITLE = "letterTitle";
-    private final static String KEY_LETTER_NO = "letterNo";
+    private final static String KEY_CARD_TITLE = "cardTitle";
+    private final static String KEY_CARD_NO = "cardNo";
     private final static String KEY_DUTCH = "nl_NL";
     private static final float speechRate = 0.6f;
     private TextToSpeech tts;
     private TextView htmlView;
     private ImageView playImageView;
 
-    public static ShowLetterFragment newInstance() {
-        return new ShowLetterFragment();
+    public static ShowCardFragment newInstance() {
+        return new ShowCardFragment();
     }
 
     @Override
@@ -46,16 +49,16 @@ public class ShowLetterFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_show_letter, container, false);
-        ShowLetterViewModel viewModel = ViewModelProviders.of(this).get(ShowLetterViewModel.class);
+        ShowCardViewModel viewModel = ViewModelProviders.of(this).get(ShowCardViewModel.class);
         playImageView = root.findViewById(R.id.playImageView);
         htmlView = root.findViewById(R.id.htmlView);
 
         Bundle arguments = getArguments();
         if (arguments != null) {
-            int number = arguments.getInt(KEY_LETTER_NO);
+            int number = arguments.getInt(KEY_CARD_NO);
             viewModel.setHtml(number);
 
-            String title = arguments.getString(KEY_LETTER_TITLE);
+            String title = arguments.getString(KEY_CARD_TITLE);
             setTitle(title);
         }
 
@@ -151,4 +154,5 @@ public class ShowLetterFragment extends Fragment {
             tts.stop();
         }
     }
+
 }

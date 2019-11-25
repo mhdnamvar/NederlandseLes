@@ -49,5 +49,20 @@
             />
     </fragment>
 
+    <fragment android:id="@+id/navigation_show_card"
+        android:name="com.namvar.nederlandsles.ui.cards.ShowCardFragment"
+        android:label="Kaarten"
+        tools:layout="@layout/fragment_show_card">
+        <argument
+            android:name="cardTitle"
+            app:argType="string"
+            android:defaultValue="@null"
+            />
+        <argument
+            android:name="cardNo"
+            app:argType="integer"
+            />
+    </fragment>
+
 
 </navigation>
