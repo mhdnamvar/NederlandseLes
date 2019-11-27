@@ -754,68 +754,68 @@
         "tijd": "15 minuten",
         "oefeningen": [
             {
-                "vraag": "Mijn pen is rood.",
-                "antwoorden": ["Darmee schrijf ik veel."]            
+                "vraag": "Mijn pen is rood,",
+                "antwoorden": ["daarmee schrijf ik een briefje."]
             },
             {
-                "vraag": "Hij heeft een kapotte fiets.",
-                "antwoorden": ["Daarom gaat hij met bus."]
+                "vraag": "Hij heeft een kapotte fiets,",
+                "antwoorden": ["daarom gaat hij met de bus."]
             },
             {
-                "vraag": "Ik ben ziek.",
-                "antwoorden": ["Daarom ga ik naar de dokter."]
+                "vraag": "Ik ben ziek,",
+                "antwoorden": ["daarom ga ik naar de dokter."]
             },
             {
-                "vraag": "Mijn kind speelt buiten.",
-                "antwoorden": ["Daarom is hij verkouden."]
+                "vraag": "Mijn kind speelt buiten,",
+                "antwoorden": ["daarom is hij blij."]
             },
             {
-                "vraag": "Hij telefoontje is stevig.",
-                "antwoorden": ["Daarom gaat hij niet snel kappot."]
+                "vraag": "Het telefoontje is stevig,",
+                "antwoorden": ["daarom gaat hij niet snel kappot."]
             },
             {
-                "vraag": "Ik leen zijn pen.",
-                "antwoorden": ["Daarmee kan ik schrijven."]
+                "vraag": "Ik leen zijn pen,",
+                "antwoorden": ["daarmee kan ik schrijven."]
             },
             {
-                "vraag": "Wij eten onze boterham op.",
-                "antwoorden": ["Daarom gaan wij naar buiten."]
+                "vraag": "Wij eten onze boterham op,",
+                "antwoorden": ["daarom gaan wij naar buiten."]
             },
             {
-                "vraag": "Boven staat mijn tas.",
-                "antwoorden": ["Daarom ga ik zonder tas weg."]
+                "vraag": "Boven staat mijn tas,",
+                "antwoorden": ["daarom ga ik zonder tas weg."]
             },
             {
-                "vraag": "Oppa komt op visite.",
-                "antwoorden": ["Daarom bak ik een cake."]
+                "vraag": "Opa komt op visite,",
+                "antwoorden": ["daarom ga ik boodschappen doen."]
             },
             {
-                "vraag": "Zijn horloge is weg.",
-                "antwoorden": ["Daarom weet hij niet hoelaat het is."]
+                "vraag": "Zijn horloge is weg,",
+                "antwoorden": ["daarom is hij verdrietig."]
             },
             {
-                "vraag": "Buiten staat mijn auto.",
-                "antwoorden": ["Daarmee ga ik naar buiten."]
+                "vraag": "Buiten staat mijn auto,",
+                "antwoorden": ["daarmee ga ik naar mijn werk."]
             },
             {
-                "vraag": "Het regent hard.",
-                "antwoorden": ["Daarom worden we nat."]
+                "vraag": "Het regent hard,",
+                "antwoorden": ["daarom worden we nat."]
             },
             {
-                "vraag": "Het televisieprogramma is heel laat.",
-                "antwoorden": ["Daarom ga ik naar bed", "Daarom kan ik niet kijken."]
+                "vraag": "Het televisieprogramma is heel laat,",
+                "antwoorden": ["daarom kan ik niet kijken.", "daarom ga ik naar bed"]
             },
             {
-                "vraag": "De computer is fijn.",
-                "antwoorden": ["Daarmee wil ik dat koppen."]
+                "vraag": "De computer is fijn,",
+                "antwoorden": ["daarmee wil ik werken."]
             },
             {
-                "vraag": "Ik heb het druk.",
-                "antwoorden": ["Daarom kan ik morgen niet komen."]
+                "vraag": "Ik heb het druk,",
+                "antwoorden": ["daarom kan ik morgen niet komen."]
             },
             {
-                "vraag": "Het inburgeringexamen is moeilijke.",
-                "antwoorden": ["Daarom moet ik hard studeren."]
+                "vraag": "Het inburgeringexamen is moeilijk,",
+                "antwoorden": ["daarom moet ik hard studeren."]
             }
         ]
         },
@@ -1281,7 +1281,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Lieve Kees,<br><br>Ik moet boodschappen doen, vlees en groente kopen, maar Harry, mijn broer, belde me en zei: \"Kun jij zo snel mogelijke naar mijn huis komen?\" Kun jij alsjeblieft boodschapen doen?<br>Ik ben terug om 17:00 uur.<br><br>Groetjes,<br>Nancy"]
+            "antwoorden" : ["Lieve Pim,<br><br>Ik moet boodschappen doen, vlees en groente kopen, maar mijn broer belde me en zei: \"Kun jij zo snel mogelijk naar mijn huis komen?\" Kun jij alsjeblieft boodschapen doen?<br>Ik ben terug om 17:00 uur.<br><br>Groetjes,<br>Nancy"]
         },
         {
             "id": 2,
@@ -1302,7 +1302,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Lieve Hans,<br><br>Gefeliceteerd met je verjaardag en bedankt voor de uitnodiging. Helaas kan ik niet komen omdat mijn kinderen ziek zijn. Veel plezier.<br><br>Groetjes,<br>Nancy"]
+            "antwoorden" : ["Lieve Hans,<br><br>Gefeliciteerd met je verjaardag en bedankt voor de uitnodiging. Helaas kan ik morgen niet komen omdat mijn kinderen ziek zijn. Veel plezier.<br><br>Groetjes,<br>Nancy"]
         },
         {
             "id": 3,
@@ -1351,7 +1351,7 @@
         {
             "id": 5,
             "titel" : "Briefje: Overlast - lawaai",
-            "omschrijving": "Je geeft morgenavond een feest. Er komen veel mensen. Er zal dus wat lawai zijn en veel muziek. Het feest duurt tot 24:00 uur. Je belt aan bij de buren Henry en Wilem. Je wilt de buren vertelen over het feest. Je wil ze ook uitnodigen. De buren zijn niet thuis.",
+            "omschrijving": "Je geeft morgenavond een feest. Er komen veel mensen. Er zal dus wat lawai zijn en veel muziek. Het feest duurt tot 24:00 uur. Je belt aan bij de buren Henry en Willem. Je wilt de buren vertelen over het feest. Je wil ze ook uitnodigen. De buren zijn niet thuis.",
             "opdracht": [
                 "Schrijf een kort briefje aan je buren",
                 "Vertel dat je aan de deur bent geweest", 
@@ -1375,7 +1375,7 @@
         {
             "id": 6,
             "titel" : "Briefje: Overlast - vuil",
-            "omschrijving": "Je gaat naar he werk. Voor de deur staan elke week op donderdag vuilniszakken. De vuilnisman komt vrijdagochtend. De vogels maken de zakken kapot en de straat wordt vis. Je schrijf een briefje aan alle buren in je straat. Je vraagt om de zakken vrijdagochtend buiten te zetten als de vuilnisman komt en niet eerder. Je bedankt je buren.",
+            "omschrijving": "Je gaat naar he werk. Voor de deur staan elke week op donderdag vuilniszakken. De vuilnisman komt vrijdagochtend. De vogels maken de zakken kapot en de straat wordt vies. Je schrijf een briefje aan alle buren in je straat. Je vraagt om de zakken vrijdagochtend buiten te zetten als de vuilnisman komt en niet eerder. Je bedankt je buren.",
             "opdracht": [
                 "Schrijf een kort briefje voor alle buren",
                 "Vertel dat de vuilniszakken te vroeg buiten staan",
@@ -1393,7 +1393,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Beste buren,<br><br>De vuilnisman komt vrijdagochtend. Als de vuilniszakken te vroeg buiten staan, maken de vogels ze kapot en de straat wordt vis. Willen jullie de vuilniszakken pas vrijdagochtend buiten zetten? Bedankt voor jullie medewerking.<br><br>Groeten,<br>Nancy"]
+            "antwoorden" : ["Beste buren,<br><br>De vuilnisman komt vrijdagochtend. Als de vuilniszakken te vroeg buiten staan, maken de vogels ze kapot en qordt de straat vies. Willen jullie de vuilniszakken pas vrijdagochtend buiten zetten? Bedankt voor jullie medewerking.<br><br>Groeten,<br>Nancy"]
         },
         {
             "id": 7,

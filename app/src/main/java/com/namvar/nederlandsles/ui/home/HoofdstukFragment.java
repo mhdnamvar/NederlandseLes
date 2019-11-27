@@ -136,7 +136,7 @@ public class HoofdstukFragment extends Fragment {
                 Log.e("Voice", "Initilization Failed!");
         });
 
-        tts.setSpeechRate(0.7f);
+        tts.setSpeechRate(0.6f);
 
         tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
             @Override
