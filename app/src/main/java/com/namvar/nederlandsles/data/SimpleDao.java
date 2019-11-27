@@ -122,7 +122,7 @@ public final class SimpleDao {
         String[] array = {
                 "Beste Hans,<br><br>Van harte gefeliciteerd met je verjaardag!<br><br>Groetjes,<br>Nancy",
                 "Lieve Aisha,<br><br>Van harte gefeliciteerd met de geboorte van jullie tweeling. Ik wil graag de baby's bekijken, daarom bel ik je om een afspraak te maken.<br><br>Groetjes,<br>Nancy",
-                "Beste Peter en Wanda,<br><br>Van harte gefeliciteerd met jullie huwelijk! Helaas, kan ik niet s'morgens naar de trouwerij komen, maar ik kom wel met Pim en de kinderen naar het feest.<br><br>Groetjes,<br>Nancy",
+                "Beste Peter en Wanda,<br><br>Van harte gefeliciteerd met jullie huwelijk! Helaas kan ik morgen niet naar de trouwerij komen, maar ik kom wel met Pim en de kinderen naar het feest.<br><br>Groetjes,<br>Nancy",
                 "Lieve opa,<br><br>Van harte beterschap!<br>Omdat mijn kinderen ziek zijn, kan ik niet naar het ziekenhuis komen. Ik kom wel als je weer thuis bent.<br><br>Groetjes,<br>Nancy",
                 "Lieve Marja,<br><br>Van harte gefeliciteerd met het halen van je examen. Goed gedaan!<br><br>Groetjes,<br>Nancy",
                 "Beste familie Gerristen,<br><br>Gecondoleerd met het verlies van uw vader, ik wens jullie veel sterkte. Ik kom met mijn man naar de begrafenis.<br><br>Met vriendelijke groet,<br>Nancy Van Dijk"

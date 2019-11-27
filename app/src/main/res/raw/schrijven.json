@@ -811,7 +811,7 @@
             },
             {
                 "vraag": "Ik heb het druk.",
-                "antwoorden": ["Daarom kan ik niet komen."]
+                "antwoorden": ["Daarom kan ik morgen niet komen."]
             },
             {
                 "vraag": "Het inburgeringexamen is moeilijke.",
@@ -1538,7 +1538,7 @@
                 "Schrijf hoe laat de kinderen uit school komen",
                 "Schrijf koe laat je thuis bent"
             ],
-            "antwoorden" : ["Lieve Robert,<br><br>Ik moet overwerken tot 17:00 uur en ik ben pas thuis 17:30 uur. Wij moeten Tanja en Patrick van school halen om 15:15 uur. Kun jij de kinderen van school ophalen?<br><br>Groejes,<br>Nancy"]
+            "antwoorden" : ["Lieve Robert,<br><br>Ik moet overwerken tot 17:00 uur en ik ben pas om 17:30 thuis. Wij moeten Tanja en Patrick van school halen om 15:15 uur. Kun jij de kinderen van school ophalen?<br><br>Groejes,<br>Nancy"]
         }, 
         {
             "id": 13,
