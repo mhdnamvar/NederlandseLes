@@ -31,7 +31,7 @@ public enum Section {
     COMPARATIVES("Comparatieven en superlatieven"),
     CHECK_PAY("Afrekenen"),
     BUSY_PHRASES("Bezigheiden uitdruken"),
-    SOMTHING_NICE("Iets leuks"),
+    SOMETHING_NICE("Iets leuks"),
     TRANSPORT("Vervoermiddelen en de weg vragen"),
     CLOTHES("Kleiding"),
     HERE_THERE("Er en daar"),

@@ -125,7 +125,8 @@ public final class SimpleDao {
                 "Beste Peter en Wanda,<br><br>Van harte gefeliciteerd met jullie huwelijk! Helaas kan ik morgen niet naar de trouwerij komen, maar ik kom wel met Pim en de kinderen naar het feest.<br><br>Groetjes,<br>Nancy",
                 "Lieve opa,<br><br>Van harte beterschap!<br>Omdat mijn kinderen ziek zijn, kan ik niet naar het ziekenhuis komen. Ik kom wel als je weer thuis bent.<br><br>Groetjes,<br>Nancy",
                 "Lieve Marja,<br><br>Van harte gefeliciteerd met het halen van je examen. Goed gedaan!<br><br>Groetjes,<br>Nancy",
-                "Beste familie Gerristen,<br><br>Gecondoleerd met het verlies van uw vader, ik wens jullie veel sterkte. Ik kom met mijn man naar de begrafenis.<br><br>Met vriendelijke groet,<br>Nancy Van Dijk"
+                "Beste familie Gerristen,<br><br>Gecondoleerd met het verlies van uw vader, ik wens jullie veel sterkte. Ik kom met mijn man naar de begrafenis.<br><br>Met vriendelijke groet,<br>Nancy Van Dijk",
+                "Lieve Peter en Wanda,<br><br>Gefeliciteerd met juillie niuewe huis<br><br>Groetjes,<br>Nancy"
         };
         if (no >= 0 && no < array.length){
             return array[no];
@@ -162,7 +163,7 @@ public final class SimpleDao {
             case CHECK_PAY: return getCheckPay();
             case COMPARATIVES: return getComparatives();
             case BUSY_PHRASES: return getBusyPhrases();
-            case SOMTHING_NICE: return getIetsLeuks();
+            case SOMETHING_NICE: return getIetsLeuks();
             case TRANSPORT: return getTransport();
             case CLOTHES: return getClothes();
             case HERE_THERE: return getHereAndThere();
