@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public enum Section {
+    SPEAKING("Spreken"),
     DAYS_OF_THE_WEEK("Dagen van de week"),
     MONTHS("Maanden"),
     SEASONS("De seizoenen"),
