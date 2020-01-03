@@ -2,6 +2,7 @@ package com.namvar.nederlandsles.ui.cards;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.media.AudioManager;
@@ -24,7 +25,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.namvar.nederlandsles.R;
-import com.namvar.nederlandsles.ui.letters.ShowLetterViewModel;
 
 import java.util.HashMap;
 import java.util.Locale;
@@ -141,7 +141,7 @@ public class ShowCardFragment extends Fragment {
                     Toast.LENGTH_SHORT).show();
         } else {
             HashMap<String, String> myHashAlarm = new HashMap<String, String>();
-            myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_ALARM));
+            myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
             myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "SOME MESSAGE");
             tts.speak(text, TextToSpeech.QUEUE_FLUSH, myHashAlarm);
         }

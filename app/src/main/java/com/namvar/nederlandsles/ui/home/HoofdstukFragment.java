@@ -181,7 +181,7 @@ public class HoofdstukFragment extends Fragment {
                     Toast.LENGTH_SHORT).show();
         } else {
             HashMap<String, String> myHashAlarm = new HashMap<String, String>();
-            myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_ALARM));
+            myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
             myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "SOME MESSAGE");
             tts.speak(text, TextToSpeech.QUEUE_FLUSH, myHashAlarm);
         }
