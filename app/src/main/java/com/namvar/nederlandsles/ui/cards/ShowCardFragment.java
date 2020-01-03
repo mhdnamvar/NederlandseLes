@@ -93,7 +93,7 @@ public class ShowCardFragment extends Fragment {
                 }
             }
             else
-                Log.e("Voice", "Initilization Failed!");
+                Log.e("Voice", "Initialization Failed!");
         });
 
         tts.setSpeechRate(speechRate);
