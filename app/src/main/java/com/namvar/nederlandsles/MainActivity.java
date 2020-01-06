@@ -23,7 +23,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setupViews();
         SimpleDao.read(getApplicationContext());
+        dumpData();
+    }
 
+    private void dumpData() {
+//        for (Section section : Section.values()) {
+//            System.out.println("------------------------");
+//            System.out.println(section.getText());
+//            System.out.println("------------------------");
+//            for (String line : SimpleDao.get(section)) {
+//                System.out.println(line);
+//            }
+//        }
+
+            for (String line : SimpleDao.get(Section.SPEAKING)) {
+                System.out.println(line);
+            }
     }
 
 

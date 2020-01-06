@@ -53,6 +53,14 @@ public enum Section {
         }
     }
 
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
     Section(String name) {
         this.text = name;
     }
@@ -64,7 +72,7 @@ public enum Section {
     public static List<String> listValues(){
         List<String> list = new ArrayList<>();
         for (Section s: values()){
-            list.add(s.text);
+            list.add(s.getText());
         }
         return list;
     }
