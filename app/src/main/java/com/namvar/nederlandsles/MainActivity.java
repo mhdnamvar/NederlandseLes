@@ -1,17 +1,17 @@
 package com.namvar.nederlandsles;
 
-import android.media.AudioManager;
 import android.os.Bundle;
 import android.widget.ListView;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.namvar.nederlandsles.data.SimpleDao;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import static com.namvar.nederlandsles.data.SimpleDao.setupData;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupViews();
-        SimpleDao.read(getApplicationContext());
+        setupData(getApplicationContext());
     }
 
     @Override

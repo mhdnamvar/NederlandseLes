@@ -1,6 +1,7 @@
 package com.namvar.nederlandsles.data;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.namvar.nederlandsles.R;
 import com.namvar.nederlandsles.Section;
@@ -25,7 +26,7 @@ public final class SimpleDao {
 
     private static JSONObject jsonObject;
 
-    public static void read(Context context) {
+    public static void setupData(Context context) {
         try {
             InputStream is = context.getResources().openRawResource(R.raw.schrijven);
             Writer writer = new StringWriter();
@@ -125,7 +126,7 @@ public final class SimpleDao {
                 "Beste Peter en Wanda,<br><br>Van harte gefeliciteerd met jullie huwelijk! Helaas kan ik morgen niet naar de trouwerij komen, maar ik kom wel met Pim en de kinderen naar het feest.<br><br>Groetjes,<br>Nancy",
                 "Lieve opa,<br><br>Van harte beterschap!<br>Omdat mijn kinderen ziek zijn, kan ik niet naar het ziekenhuis komen. Ik kom wel als je weer thuis bent.<br><br>Groetjes,<br>Nancy",
                 "Lieve Marja,<br><br>Van harte gefeliciteerd met het halen van je examen. Goed gedaan!<br><br>Groetjes,<br>Nancy",
-                "Beste familie Gerristen,<br><br>Gecondoleerd met het verlies van uw vader, ik wens jullie veel sterkte. Ik kom met mijn man naar de begrafenis.<br><br>Met vriendelijke groet,<br>Nancy Van Dijk",
+                "Beste familie Gerritsen,<br><br>Gecondoleerd met het verlies van uw vader, ik wens jullie veel sterkte. Ik kom met mijn man naar de begrafenis.<br><br>Met vriendelijke groet,<br>Nancy Van Dijk",
                 "Lieve Peter en Wanda,<br><br>Gefeliciteerd met juillie niuewe huis<br><br>Groetjes,<br>Nancy"
         };
         if (no >= 0 && no < array.length){
@@ -649,5 +650,40 @@ public final class SimpleDao {
         };
         return new ArrayList<>(Arrays.asList(array));
 
+    }
+
+    public static void dumpLetters() {
+        String tag = "Brieven";
+        for (int i = 0; i < SimpleDao.getLetters().size(); i++) {
+            Log.d(tag, "(" + i + ") "  + SimpleDao.getLetters().get(i));
+            String letter = SimpleDao.getLetter(i);
+            Log.d(tag, letter);
+        }
+    }
+
+    public static void dumpCards() {
+        String tag = "Kaarten";
+        for (int i = 0; i < SimpleDao.getCards().size(); i++) {
+            Log.d(tag, "(" + i + ") "  + SimpleDao.getCards().get(i));
+            String card = SimpleDao.getCard(i);
+            Log.d(tag, card);
+        }
+    }
+
+    public static void dumpSections() {
+        String tag = "Sections";
+        int i = 0;
+        for (Section section : Section.values()) {
+            Log.d(tag, "(" + (++i) + ") " + section.getText());
+            for (String line : SimpleDao.get(section)) {
+                Log.d(tag, line);
+            }
+        }
+    }
+
+    public static void dumpData() {
+        dumpSections();
+        dumpCards();
+        dumpLetters();
     }
 }

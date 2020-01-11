@@ -1281,7 +1281,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Lieve Pim,<br><br>Ik moet boodschappen doen, vlees en groente kopen, maar mijn broer belde me en zei: \"Kun jij zo snel mogelijk naar mijn huis komen?\" Kun jij alsjeblieft boodschapen doen?<br>Ik ben terug om 17:00 uur.<br><br>Groetjes,<br>Nancy"]
+            "antwoorden" : ["Lieve Pim,<br><br>Ik moet boodschappen doen, vlees en groente kopen, maar mijn broer belde me en zei: \"Kun jij zo snel mogelijk naar mijn huis komen?\" Kun jij alsjeblieft boodschappen doen?<br>Ik ben terug om 17:00 uur.<br><br>Groetjes,<br>Nancy"]
         },
         {
             "id": 2,
@@ -1307,7 +1307,7 @@
         {
             "id": 3,
             "titel" : "Briefje: Vrij vragen",
-            "omschrijving": "Het is bijna Pinksteren. Op maandag is het een officiele vrije dag. Je wilt de rest van de week ook vrij zijn. Schrijf een briefje aan je baas, Peter Vaasen. Je wilt met Kerst wel werken",
+            "omschrijving": "Het is bijna Pinksteren. Op maandag is het een officiële vrije dag. Je wilt de rest van de week ook vrij zijn. Schrijf een briefje aan je baas, Peter Vaasen. Je wilt met Kerst wel werken",
             "opdracht": [
                 "Schrijf aan je baas",
                 "Vraag de hele week na Pinkensteren vrij", 
@@ -1323,7 +1323,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Beste heer Vaasen,<br><br>Ik ben Nancy Van Dijk en ik heb een vraag over vrijedagen. Het is bijna Pinksteren en op maandaag is het een officiele vrijedag. Kan ik de rest van de week ook vrij nemen? Ik wil met Kerst wel werken.<br><br>Met vriendelijke groet,<br>Nancy"]
+            "antwoorden" : ["Beste heer Vaasen,<br><br>Ik ben Nancy Van Dijk en ik heb een vraag over vrijedagen. Het is bijna Pinksteren en op maandag is het een officiële vrijedag. Kan ik de rest van de week ook vrij nemen? Ik wil met Kerst wel werken.<br><br>Met vriendelijke groet,<br>Nancy"]
         },
         {
             "id": 4,
@@ -1346,7 +1346,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Geachte heer Van Oostrum,<br><br>Ik ben Nancy Van Dijk moeder van Saskia. Zij zit in groep 8. U vraagd de ouders om mee te helpen tijdens het schoolreisje. Ik wil graag mehelpen.<br>Mijn telefoonnummer is +31612345678 en u kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is abc@test.com.<br><br>Met vriendelijke groet,<br>Nancy"]
+            "antwoorden" : ["Geachte heer Van Oostrum,<br><br>Ik ben Nancy Van Dijk moeder van Saskia. Zij zit in groep 8. U vraagt de ouders om mee te helpen tijdens het schoolreisje. Ik wil graag meehelpen.<br>Mijn telefoonnummer is +31612345678 en u kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is abc@test.com.<br><br>Met vriendelijke groet,<br>Nancy"]
         },
         {
             "id": 5,
@@ -1538,7 +1538,7 @@
                 "Schrijf hoe laat de kinderen uit school komen",
                 "Schrijf koe laat je thuis bent"
             ],
-            "antwoorden" : ["Lieve Robert,<br><br>Ik moet overwerken tot 17:00 uur en ik ben pas om 17:30 thuis. Wij moeten Tanja en Patrick van school halen om 15:15 uur. Kun jij de kinderen van school ophalen?<br><br>Groejes,<br>Nancy"]
+            "antwoorden" : ["Lieve Robert,<br><br>Ik moet overwerken tot 17:00 uur en ik ben pas om 17:30 thuis. Wij moeten Tanja en Patrick van school halen om 15:15 uur. Kun jij de kinderen van school ophalen?<br><br>Groetjes,<br>Nancy"]
         }, 
         {
             "id": 13,
@@ -1586,7 +1586,7 @@
                 "Schrijf hoe laat de kinderen uit school komen",
                 "Schrijf koe laat je thuis bent"
             ],
-            "antwoorden" : ["Lieve Vrienden,<br><br>Omdat ik net verhuisd ben, wil ik jullie graag uitnodigen voor een etentje bij mij thuis, op 2 november, om 19:00 uur tot 12:00 uur. Mijn nieuwe adres is Stationsplein 45, 3013 AK Rotterdam en de telefoonnummer is 061234567890.<br><br>Groejes,<br>Nancy"]
+            "antwoorden" : ["Lieve Vrienden,<br><br>Omdat ik net verhuisd ben, wil ik jullie graag uitnodigen voor een etentje bij mij thuis, op 2 november, om 19:00 uur tot 12:00 uur. Mijn nieuwe adres is Stationsplein 45, 3013 AK Rotterdam en de telefoonnummer is 061234567890.<br><br>Groetjes,<br>Nancy"]
         }, 
         {
             "id": 14,
