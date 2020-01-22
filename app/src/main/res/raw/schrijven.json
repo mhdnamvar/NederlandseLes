@@ -18,11 +18,11 @@
                 },
                 {
                     "vraag" : "De kinderen",
-                    "antwoorden" : ["spelen in de speltuin."]
+                    "antwoorden" : ["spelen in de speeltuin."]
                 },
                 {
                     "vraag" : "Twee honden",
-                    "antwoorden" : ["zitten op de vloer en blafen hard."]
+                    "antwoorden" : ["zitten op de vloer en blaffen hard."]
                 },
                 {
                     "vraag" : "Onze katten",
@@ -42,7 +42,7 @@
                 },
                 {
                     "vraag" : "De baby",
-                    "antwoorden" : ["is huilen."]
+                    "antwoorden" : ["is aan het huilen."]
                 },
                 {
                     "vraag" : "Mijn zoon",
@@ -88,15 +88,15 @@
         "oefeningen": [
             {
                 "vraag" : "Mijn moeder wil",
-                "antwoorden" : ["volgende week een jas van winkel kopen"]
+                "antwoorden" : ["volgende week een jas van in de winkel kopen."]
             },
             {
                 "vraag" : "De jongen mag",
-                "antwoorden" : ["elke dag met bal op school spelen"]
+                "antwoorden" : ["elke dag met bal op school spelen."]
             },
             {
                 "vraag" : "Vader kan",
-                "antwoorden" : ["morgen mijn fiets op school beringen"]
+                "antwoorden" : ["morgen mijn fiets op school brengen."]
             },
             {
                 "vraag" : "Jan en Kees moeten",
@@ -174,28 +174,23 @@
             },
             {
                 "vraag" : "De gasten eten beschuit met muisjes want",
-                "antwoorden" : [" de baby is geboren."]
+                "antwoorden" : ["de baby is geboren.."]
             },
             {
                 "vraag" : "Zij kopen sinaasappels op de markt of",
                 "antwoorden" : ["zij gaan naar bioscoop."]
             },
             {
-                "vraag" : "Ik ga dit jaar niet op vakantie dus",
-                "antwoorden" : ["ik ben het druk met de examens."]
-            },
-
-            {
                 "vraag" : "De koningin komt dit jaar niet naar onze stad want",
                 "antwoorden" : ["zij gaat naar Den Haag."]
             },
             {
                 "vraag" : "Buiten is het erg nat en",
-                "antwoorden" : ["ik liever thuis blijven."]
+                "antwoorden" : ["en ik blijf liever thuis."]
             },
             {
                 "vraag" : "De kinderen krijgen een nieuwe jas, maar",
-                "antwoorden" : ["ik krijg een nieuwe handschoenen."]
+                "antwoorden" : ["ik krijg nieuwe handschoenen."]
             },
             {
                 "vraag" : "Ik kan de jas met korting kopen en",
@@ -203,7 +198,7 @@
             },
             {
                 "vraag" : "Ik kan niet slapen dus",
-                "antwoorden" : ["ik lees een boek."]
+                "antwoorden" : ["lees ik een boek."]
             },
             {
                 "vraag" : "De tomaten zijn heel erg lekker, maar",
@@ -214,8 +209,8 @@
                 "antwoorden" : ["ik blijf thuis."]
             },
             {
-                "vraag" : "Zij studeert hard, maar",
-                "antwoorden" : ["zij zijn niet geslaagd."]
+                "vraag" : "Zij studeerde hard, maar",
+                "antwoorden" : ["zij is niet geslaagd."]
             },
             {
                 "vraag" : "De collega's geven een feest, maar",
@@ -223,7 +218,7 @@
             },
             {
                 "vraag" : "Het feest is heel laat dus",
-                "antwoorden" : ["ik wordt moe."]
+                "antwoorden" : ["ik word moe."]
             },
             {
                 "vraag" : "Wij willen niet naar bed want",
@@ -247,7 +242,7 @@
             },
             {
                 "vraag" : "Zij neemt haar dochter mee en",
-                "antwoorden" : [" ze gaan naar eetcafé."]
+                "antwoorden" : [" ze gaan naar een eetcafé."]
             },
             {
                 "vraag" : "Ik doe het niet, maar",
@@ -258,12 +253,12 @@
                 "antwoorden" : ["zij zijn niet blij."]
             },
             {
-                "vraag" : "Wij gaan niet naar vakantie want",
+                "vraag" : "Wij gaan niet op vakantie want",
                 "antwoorden" : ["wij moeten werken."]
             },
             {
                 "vraag" : "Haar collega's gaan niet weken want",
-                "antwoorden" : ["zij is ziek."]
+                "antwoorden" : ["zij zijn ziek."]
             },
             {
                 "vraag" : "Hij doet morgen inburgeringsexamen, maar",
@@ -274,11 +269,11 @@
                 "antwoorden" : ["zij gaat boodschappen doen."]
             },
             {
-                "vraag" : "De buurman wast zijn auto, maar",
+                "vraag" : "De buurman wast zijn auto maar",
                 "antwoorden" : ["de auto is niet schoon."]
             },
             {
-                "vraag" : "de hond blaft dus",
+                "vraag" : "De hond blaft dus",
                 "antwoorden" : ["ik kan niet slapen."]
             },
             {
@@ -290,7 +285,7 @@
                 "antwoorden" : ["'s Ochtend is het licht."]
             },
             {
-                "vraag" : "Hij slapt de hele dag want",
+                "vraag" : "Hij slaapt de hele dag want",
                 "antwoorden" : ["hij is erg ziek."]
             },
             {
@@ -318,11 +313,11 @@
                 "antwoorden" : ["het is winter."]
             },
             {
-                "vraag" : "Het is koud, maar",
-                "antwoorden" : ["ik moet, maar markt gaan."]
+                "vraag" : "Het is koud maar",
+                "antwoorden" : ["ik moet naar markt gaan."]
             },
             {
-                "vraag" : "Ik wordt 18 dus",
+                "vraag" : "Ik word 18 dus",
                 "antwoorden" : ["ik kan alleen wonen."]
             },
             {
@@ -331,7 +326,7 @@
             },
             {
                 "vraag" : "Zij gaat douchen want",
-                "antwoorden" : ["zij moet naar werk gaan."]
+                "antwoorden" : ["zij moet naar haar werk gaan."]
             },
             {
                 "vraag" : "De mensen huilen want",
@@ -350,8 +345,8 @@
                 "antwoorden" : ["ik kan niet."]
             },
             {
-                "vraag" : "Ik wil wel meer sporten, maar",
-                "antwoorden" : ["zo weinig tijd."]
+                "vraag" : "Ik wil wel meer sporten maar",
+                "antwoorden" : ["ik heb zo weinig tijd."]
             }
         ]
     },
@@ -389,11 +384,11 @@
                 },
                 {
                     "vraag" : "De koning komt dit jaar niet naar onze stad omdat",
-                    "antwoorden" : ["zij naar andere stad gaat."]
+                    "antwoorden" : ["zij naar een andere stad gaat."]
                 },
                 {
                     "vraag" : "Buiten is het erg nat omdat",
-                    "antwoorden" : ["veel geregend heeft."]
+                    "antwoorden" : ["omdat het veel geregend heeft."]
                 },
                 {
                     "vraag" : "De kinderen krijgen een nieuwe jas omdat",
@@ -401,7 +396,7 @@
                 },
                 {
                     "vraag" : "Ik kan de jas met korting kopen omdat",
-                    "antwoorden" : ["er deze week actie is."]
+                    "antwoorden" : ["er deze week een actie is."]
                 },
                 {
                     "vraag" : "Ik kan niet slapen omdat",
@@ -433,11 +428,11 @@
                 },
                 {
                     "vraag" : "Mijn kamer is vies omdat",
-                    "antwoorden" : ["ik niet schoon gemaakt heb."]
+                    "antwoorden" : ["ik het niet schoon gemaakt heb."]
                 },
                 {
                     "vraag" : "Opa werkt in de tuin omdat",
-                    "antwoorden" : ["opa vrijetijd heeft."]
+                    "antwoorden" : ["opa vrije tijd heeft."]
                 },
                 {
                     "vraag" : "De baby drinkt veel omdat",
@@ -445,7 +440,7 @@
                 },
                 {
                     "vraag" : "De winkels zijn vandaag gesloten omdat",
-                    "antwoorden" : ["vandaag feest dag is", "viering dag is."]
+                    "antwoorden" : ["het vandaag een feestdag is."]
                 }
             ]
         },
@@ -467,10 +462,10 @@
                 },
                 {
                     "vraag" : "De vrouw gaat naar bed als",
-                    "antwoorden" : ["ze moe bent."]
+                    "antwoorden" : ["ze moe is."]
                 },
                 {
-                    "vraag" : "Zij kopen sinaasappel op de markt als",
+                    "vraag" : "Zij kopen sinaasappels op de markt als",
                     "antwoorden" : ["ze goedkoper worden."]
                 },
                 {
@@ -487,7 +482,7 @@
                 },
                 {
                     "vraag" : "De kinderen krijgen een nieuwe jas als",
-                    "antwoorden" : ["zij naar vakantie gaan."]
+                    "antwoorden" : ["zij op vakantie gaan."]
                 },
                 {
                     "vraag" : "Ik kan de jas met korting kopen als",
@@ -511,7 +506,7 @@
                 },
                 {
                     "vraag" : "Wij gaan naar het strand als",
-                    "antwoorden" : ["moie weer is."]
+                    "antwoorden" : ["het mooie weer is."]
                 },
                 {
                     "vraag" : "Zij eten als",
@@ -527,10 +522,10 @@
                 },
                 {
                     "vraag" : "De school sluit als",
-                    "antwoorden" : ["weekend is."]
+                    "antwoorden" : ["het weekend is."]
                 },
                 {
-                    "vraag" : "Je moet naar de dokte als",
+                    "vraag" : "Je moet naar de dokter als",
                     "antwoorden" : ["je ziek bent."]
                 },
                 {
@@ -539,7 +534,7 @@
                 },
                 {
                     "vraag" : "Ik ga naar buiten als",
-                    "antwoorden" : ["ik bodeschapen doen."]
+                    "antwoorden" : ["ik boodschappen moet doen."]
                 },
                 {
                     "vraag" : "Hij doet bodeshchapen als",
@@ -550,16 +545,16 @@
                     "antwoorden" : ["het weer koud is."]
                 },
                 {
-                    "vraag" : "Het fruit is rijp als",
-                    "antwoorden" : ["het fruit lekker is."]
+                    "vraag" : "Het fruit is lekker als",
+                    "antwoorden" : ["het fruit rijp is."]
                 },
                 {
                     "vraag" : "Zij kijken televisie als",
-                    "antwoorden" : ["zij thuis hebben."]
+                    "antwoorden" : ["zij thuis zijn."]
                 },
                 {
                     "vraag" : "De buren zitten in de tuin als",
-                    "antwoorden" : ["eten klaar is."]
+                    "antwoorden" : ["het eten klaar is."]
                 },
                 {
                     "vraag" : "De dokter komt als",
@@ -571,19 +566,15 @@
                 },
                 {
                     "vraag" : "Ik ga met de auto naar de stad als",
-                    "antwoorden" : ["mijn auto over is."]
+                    "antwoorden" : ["mijn auto kapot is."]
                 },
                 {
                     "vraag" : "Wij fietsen vaak als",
                     "antwoorden" : ["het niet regent."]
                 },
                 {
-                    "vraag" : "Sinterklaas komt als",
-                    "antwoorden" : ["het nieuw jaar is."]
-                },
-                {
                     "vraag" : "Ik betaal de huur als",
-                    "antwoorden" : ["ik auto huren is."]
+                    "antwoorden" : ["ik een auto ga huren."]
                 },
                 {
                     "vraag" : "Studeren is moilijk als",
@@ -591,7 +582,7 @@
                 },
                 {
                     "vraag" : "Limonade is lekker als",
-                    "antwoorden" : ["met ijs is."]
+                    "antwoorden" : ["het met ijs is."]
                 },
                 {
                     "vraag" : "Er is veel fruit als",
@@ -607,7 +598,7 @@
                 },
                 {
                     "vraag" : "Zij doen de was als",
-                    "antwoorden" : ["zij vies heeft."]
+                    "antwoorden" : ["vieze kleren hebben."]
                 },
                 {
                     "vraag" : "Zij stofzuigt de kamer als",
@@ -622,12 +613,8 @@
                     "antwoorden" : ["zij tijd hebben."]
                 },
                 {
-                    "vraag" : "Ik ben verkouden als",
+                    "vraag" : "Ik word verkouden als",
                     "antwoorden" : ["ik mijn jas niet aan."]
-                },
-                {
-                    "vraag" : "Wij hebben vrij als",
-                    "antwoorden" : ["nieuw jaar vakantie is."]
                 },
                 {
                     "vraag" : "Ik lees een goede boek als",
@@ -635,7 +622,7 @@
                 },
                 {
                     "vraag" : "Ik oefen mijn zinnen als",
-                    "antwoorden" : ["ik nieuw boek heb."]
+                    "antwoorden" : ["ik het nieuwe boek heb."]
                 }
             ]
         },
@@ -693,7 +680,7 @@
                 },
                 {
                     "vraag" : "Mijn moeder zegt dat",
-                    "antwoorden" : ["de soup klaar is."]
+                    "antwoorden" : ["de soep klaar is."]
                 },
                 {
                     "vraag" : "Vier dieven zeggen dat",
@@ -701,7 +688,7 @@
                 },
                 {
                     "vraag" : "Ik wil dat",
-                    "antwoorden" : ["jij naar mijn huid komt."]
+                    "antwoorden" : ["jij naar mijn huis komt."]
                 },
                 {
                     "vraag" : "Wij zeggen dat",
@@ -729,7 +716,7 @@
                 },
                 {
                     "vraag" : "Wij hopen dat",
-                    "antwoorden" : ["wij in de voetbal wedstrijd winnen."]
+                    "antwoorden" : ["wij de voetbalwedstrijd winnen."]
                 },
                 {
                     "vraag" : "De buurvrouw vindt dat",
@@ -771,15 +758,11 @@
             },
             {
                 "vraag": "Het telefoontje is stevig,",
-                "antwoorden": ["daarom gaat hij niet snel kappot."]
+                "antwoorden": ["daarom gaat hij niet snel kapot."]
             },
             {
                 "vraag": "Ik leen zijn pen,",
                 "antwoorden": ["daarmee kan ik schrijven."]
-            },
-            {
-                "vraag": "Wij eten onze boterham op,",
-                "antwoorden": ["daarom gaan wij naar buiten."]
             },
             {
                 "vraag": "Boven staat mijn tas,",
@@ -836,7 +819,7 @@
                     "antwoorden": ["Waar is zijn boek?"]
                 },
                 {
-                    "vraag": "Ik ben janny.",
+                    "vraag": "Ik ben Janny.",
                     "antwoorden": ["Wie ben jij?", "Wie bent u?"]
                 },
                 {
@@ -849,15 +832,15 @@
                 },
                 {
                     "vraag": "Wij zijn te laat op het werk.",
-                    "antwoorden": ["Waarom komen jullie laat?"]
+                    "antwoorden": ["Waarom komen jullie te laat?"]
                 },
                 {
                     "vraag": "De trein is net weg.",
-                    "antwoorden": ["Wanneer kom de volgende trein?"]
+                    "antwoorden": ["Wanneer komt de volgende trein?"]
                 },
                 {
                     "vraag": "De kinderen zoeken hun tas.",
-                    "antwoorden": ["Waar ligt hub tas?"]
+                    "antwoorden": ["Waar ligt hunb tas?"]
                 },
                 {
                     "vraag": "Ik woon in Amsterdam.",
@@ -881,11 +864,11 @@
                 },
                 {
                     "vraag": "Het gaat goed met mij.",
-                    "antwoorden": ["Hoe gaat het met je?"]
+                    "antwoorden": ["Hoe gaat het met jou?"]
                 },
                 {
-                    "vraag": "Ik hen een nieuwe TV.",
-                    "antwoorden": ["Hoeveel kost het?"]
+                    "vraag": "Ik heb een nieuwe TV.",
+                    "antwoorden": ["Hoeveel kost hij?"]
                 },
                 {
                     "vraag": "Ik ga naar bed.",
@@ -936,12 +919,12 @@
                     "antwoorden": ["Wanneer eten zij?"]
                 },
                 {
-                    "vraag": "Ik gaat met de auto naar de garage.",
+                    "vraag": "Ik ga met de auto naar de garage.",
                     "antwoorden": ["Hoe laat is de garage open?"]
                 },
                 {
-                    "vraag": "Je bent heel druk.",
-                    "antwoorden": ["Waarom ben je heel druk?", "Waarom heb je het druk?"]
+                    "vraag": "Je hebt het heel druk.",
+                    "antwoorden": ["Waarom ben je heel druk?", "Waarom heb je het heel druk ?"]
                 },
                 {
                     "vraag": "Ik ga naar de stad.",
@@ -968,12 +951,12 @@
                     "antwoorden": ["Wanneer schreeuwt de buurman?"]
                 },
                 {
-                    "vraag": "Ik moet de examen opnieuw doen.",
+                    "vraag": "Ik moet het examen opnieuw doen.",
                     "antwoorden": ["Wanneer moet jij dat doen?"]
                 },
                 {
                     "vraag": "Zij is haar sleutels kwijt.",
-                    "antwoorden": ["Waar is haar sleutels?"]
+                    "antwoorden": ["Waar zijn haar sleutels?"]
                 },
                 {
                     "vraag": "Mijn collega's zijn niet aardig.",
@@ -1050,7 +1033,7 @@
                     "antwoorden": [""]
                 },
                 {
-                    "vraag": "Keuken de vrouwen voor de lunch?",
+                    "vraag": "Koken de vrouwen voor de lunch?",
                     "antwoorden": [""]
                 },
                 {
@@ -1096,10 +1079,6 @@
                     "antwoorden": ["werkte de man bij de bioscoop"]
                 },
                 {
-                    "vraag": "Vroeger",
-                    "antwoorden": ["woonde de vrouw in de Kerkstraat en daar stad een kat."]
-                },
-                {
                     "vraag": "In het weekend",
                     "antwoorden": ["doe ik niks."]
                 },
@@ -1133,7 +1112,7 @@
                 },
                 {
                     "vraag": "Op de markt",
-                    "antwoorden": ["zijn er groente en fruiten."]
+                    "antwoorden": ["is er groente en fruiten."]
                 },
                 {
                     "vraag": "In de klas",
@@ -1145,7 +1124,7 @@
                 },
                 {
                     "vraag": "In de tuin",
-                    "antwoorden": ["zin er mooie blommen."]
+                    "antwoorden": ["zijn er mooie bloemen ."]
                 },
                 {
                     "vraag": "Op tafel",
@@ -1173,7 +1152,7 @@
                 },
                 {
                     "vraag": "In Amsterdam is het mooie weer. In Den Bosch",
-                    "antwoorden": ["is geen mooie weer."]
+                    "antwoorden": ["is het geen mooie weer."]
                 },
                 {
                     "vraag": "In mijn tas zitten sleutels. In mijn jas",
@@ -1209,11 +1188,11 @@
                 },
                 {
                     "vraag": "De melk is bedorven. Misschien",
-                    "antwoorden": ["is dat over datum."]
+                    "antwoorden": ["is dat over de datum."]
                 },
                 {
-                    "vraag": "Daar stad een hond en daar",
-                    "antwoorden": ["stad een kat."]
+                    "vraag": "Hier staat een hond en daar",
+                    "antwoorden": ["staat een kat."]
                 },
                 {
                     "vraag": "Hier lopen veel katten en daar",
@@ -1245,7 +1224,7 @@
                 },
                 {
                     "vraag": "Ijs is lekker in de zomer. In de winter",
-                    "antwoorden": ["vind ik het niet leuk."]
+                    "antwoorden": ["vind ik het niet lekker."]
                 },
                 {
                     "vraag": "De kinderen sporten veel. Thuis",
