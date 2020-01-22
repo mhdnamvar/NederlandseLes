@@ -1260,7 +1260,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Lieve Pim,<br><br>Ik moet boodschappen doen, vlees en groente kopen, maar mijn broer belde me en zei: \"Kun jij zo snel mogelijk naar mijn huis komen?\" Kun jij alsjeblieft boodschappen doen?<br>Ik ben terug om 17:00 uur.<br><br>Groetjes,<br>Nancy"]
+            "antwoorden" : ["Lieve Pim,<br><br>Ik moet boodschappen doen, vlees en groente kopen, maar mijn broer belde me en zei: \"Kun jij zo snel mogelijk naar mijn huis komen?\" Kun jij alsjeblieft boodschappen doen?<br>Ik ben om terug 17:00 uur.<br><br>Groetjes,<br>Nancy"]
         },
         {
             "id": 2,
@@ -1302,7 +1302,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Beste heer Vaasen,<br><br>Ik ben Nancy Van Dijk en ik heb een vraag over vrijedagen. Het is bijna Pinksteren en op maandag is het een officiële vrijedag. Kan ik de rest van de week ook vrij nemen? Ik wil met Kerst wel werken.<br><br>Met vriendelijke groet,<br>Nancy"]
+            "antwoorden" : ["Beste heer Vaasen,<br><br>Ik ben Nancy Van Dijk en ik heb een vraag over vrije dagen. Het is bijna Pinksteren en op maandag is het een officiële vrije dag. Kan ik de rest van de week ook vrij nemen? Ik wil met Kerst wel werken.<br><br>Met vriendelijke groet,<br>Nancy"]
         },
         {
             "id": 4,
@@ -1395,7 +1395,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Lieve Marja,<br><br>Met deze kaartje wil ik je graag bedanken. Je hebt geholpen met verhuizen. Je hebt ook geschilderd en gekookt. Ik wil jou graag helpen als het nodig is.<br>Ik nodig je uit voor een etentje op zaterdag avond om 19:00 uur.<br><br>Groetjes,<br>Nancy"]
+            "antwoorden" : ["Lieve Marja,<br><br>Met dit kaartje wil ik je graag bedanken. Je hebt geholpen met verhuizen. Je hebt ook geschilderd en gekookt. Ik wil jou graag helpen als het nodig is.<br>Ik nodig je uit voor een etentje op zaterdag avond om 19:00 uur.<br><br>Groetjes,<br>Nancy"]
         },
         {
             "id": 8,
@@ -1467,7 +1467,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Beste cursistenadministrateur,<br><br>Ik ben Nancy Van Dijk en ik wil graag beginnen met een cursus Nederlands. In de folder van de Volksuniversiteit zag Ik een leuke cursus Nederlands, maar de folder is niet helemaal duidelijk. Wanneer begint de cursus en hoe lang is dat? Hoe veel kost het? Moet ik een diploma hebben?<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Met vriendelijke groet,<br>Nancy Van Dijk"]
+            "antwoorden" : ["Beste cursistenadministrateur,<br><br>Ik ben Nancy Van Dijk en ik wil graag beginnen met een cursus Nederlands. In de folder van de Volksuniversiteit zag Ik een leuke cursus Nederlands, maar de folder is niet helemaal duidelijk. Wanneer begint de cursus en hoe lang duurt hij? Hoeveel kost het? Moet ik een diploma hebben?<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Met vriendelijke groet,<br>Nancy Van Dijk"]
         }, 
         {
             "id": 11,
@@ -1492,7 +1492,7 @@
                 "Heb je de datumn opgeschreven?",
                 "Ben he de brief goed afgesloten?"
             ],
-            "antwoorden" : ["Beste heer, mevrouw,<br><br>Ik ben Nancy Van Dijk en ik heb in de krant uw advertentie gezien. Daarom schrijf ik een e-mail om vragen over de garage. Hoe veel kost het? Wat is het adres en wanneer is dat beschikbaar?<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Groeten,<br>Nancy Van Dijk"]
+            "antwoorden" : ["Beste heer, mevrouw,<br><br>Ik ben Nancy Van Dijk en ik heb in de krant uw advertentie gezien. Daarom schrijf ik een e-mail om vragen over de garage. Hoe veel kost het? Wat is het adres en wanneer is hij beschikbaar?<br>Mijn telefoonnummer is +31612345678. U kunt ook per e-mail contact met mij opnemen. Mijn e-mailadres is <a href=\"mailto:abc@test.com\">abc@test.com</a>.<br><br>Groeten,<br>Nancy Van Dijk"]
         }, 
         {
             "id": 12,
@@ -1589,8 +1589,8 @@
                 "Vraag aan je man on de kinderen op te halen",
                 "Schrijf hoe laat de kinderen uit school komen",
                 "Schrijf koe laat je thuis bent"
+            "antwoorden" : ["Beste mevrouw Overbeek,<br><br>Ik ben Nancy Van Dijk en ik volg een cursus Nederlands voor gevorderden aan de Volksuniversiteit. Ik ben niet helemaal tevreden over de cursus omdat de groep heel groot is en ik heel weinig leer. De docent is ook ongeduldig tegen de cursisten. Ik schrijf u om een afspraak te maken. Mijn telefoonnummer is 061234567890.<br><br>Met vriendelijke groet,<br>Nancy Van Dijk"]
             ],
-            "antwoorden" : ["Beste mevrouw Overbeek,<br><br>Ik ben Nancy Van Dijk en ik volg een cursus Nederlands voor gevorderden aan de Volksuniversiteit. Ik ben niet helemaal tevreden over de cursus daarom de groep heel groot is en ik heel weinig leer. De docent is ook ongeduldig tegen de cursisten. Ik schrijf u om een afspraak te maken. Mijn telefoonnummer is 061234567890.<br><br>Met vriendelijke groet,<br>Nancy Van Dijk"]
         }
     ]
 }
