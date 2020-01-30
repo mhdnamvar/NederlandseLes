@@ -40,8 +40,7 @@ public enum Section {
     FESTIVALS("Feestdagen in Nederland"),
     CHARACTERS("Karaktereigenschappen"),
     RELATIONSHIPS("Relatievormen"),
-    EMOTIONS("Emoties benoemen"),
-    SPEAKING("Spreken"),
+    EMOTIONS("Emoties benoemen")
     ;
 
     private String text;

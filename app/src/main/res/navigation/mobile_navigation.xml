@@ -64,5 +64,10 @@
             />
     </fragment>
 
+    <fragment
+        android:id="@+id/navigation_speaking"
+        android:name="com.namvar.nederlandsles.ui.speaking.SpeakingFragment"
+        android:label="Spreken"
+        tools:layout="@layout/fragment_speaking" />
 
 </navigation>

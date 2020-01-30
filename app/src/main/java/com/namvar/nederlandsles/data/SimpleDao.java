@@ -174,12 +174,11 @@ public final class SimpleDao {
             case CHARACTERS: return getCharacters();
             case RELATIONSHIPS: return getRelationships();
             case EMOTIONS: return getEmotions();
-            case SPEAKING: return getSpeaking();
             default: return Collections.emptyList();
         }
     }
 
-    private static List<String> getSpeaking() {
+    public static List<String> getSpeaking() {
         String[] array = {
                 "Reist u vaak met de bus? Vertel ook waarom. Ik reis vaak met de bus, omdat het snel is. ",
                 "Wat vindt u een leuk programma op TV? Vertel ook welk programma u niet leuk vindt. Ik vind programma over dieren het leukste. Ik vind programma’s over oorlog niet leuk.",

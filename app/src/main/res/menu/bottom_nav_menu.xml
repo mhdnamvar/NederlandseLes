@@ -16,4 +16,9 @@
         android:icon="@drawable/ic_card_giftcard_24px"
         android:title="@string/title_cards" />
 
+    <item
+        android:id="@+id/navigation_speaking"
+        android:icon="@drawable/ic_sentiment_very_satisfied_24px"
+        android:title="@string/speaking" />
+
 </menu>
