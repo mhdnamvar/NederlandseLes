@@ -11,16 +11,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
 import com.namvar.nederlandsles.R;
 
-import java.util.List;
 import java.util.Objects;
 
 public class CardsFragment extends Fragment {
@@ -29,11 +26,11 @@ public class CardsFragment extends Fragment {
                              ViewGroup container,
                              Bundle savedInstanceState) {
 
-        CardsViewModel viewModel = ViewModelProviders.of(this).get(CardsViewModel.class);
+        CardsViewModel viewModel = new ViewModelProvider(this).get(CardsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_cards, container, false);
 
         final ListView cards = root.findViewById(R.id.cards);
-        viewModel.getCards().observe(this, strings -> {
+        viewModel.getCards().observe(getViewLifecycleOwner(), strings -> {
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                     Objects.requireNonNull(getContext()),
                     android.R.layout.simple_list_item_1,

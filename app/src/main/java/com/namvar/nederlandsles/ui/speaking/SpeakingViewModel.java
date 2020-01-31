@@ -7,7 +7,6 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
-import com.namvar.nederlandsles.Section;
 import com.namvar.nederlandsles.data.SimpleDao;
 
 import java.util.List;
@@ -27,7 +26,7 @@ public class SpeakingViewModel extends AndroidViewModel {
         }
     }
 
-    public MutableLiveData<List<String>> getItems() {
+    MutableLiveData<List<String>> getItems() {
         return mItems;
     }
 }

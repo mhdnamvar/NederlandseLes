@@ -1,18 +1,8 @@
 package com.namvar.nederlandsles.ui.cards;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentActivity;
-import androidx.lifecycle.ViewModelProviders;
-
 import android.media.AudioManager;
 import android.os.Build;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
 import android.text.Html;
@@ -23,6 +13,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.namvar.nederlandsles.R;
 
@@ -49,7 +46,7 @@ public class ShowCardFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_show_letter, container, false);
-        ShowCardViewModel viewModel = ViewModelProviders.of(this).get(ShowCardViewModel.class);
+        ShowCardViewModel viewModel = new ViewModelProvider(this).get(ShowCardViewModel.class);
         playImageView = root.findViewById(R.id.playImageView);
         htmlView = root.findViewById(R.id.htmlView);
 
@@ -62,7 +59,7 @@ public class ShowCardFragment extends Fragment {
             setTitle(title);
         }
 
-        viewModel.getHtml().observe(this, s -> {
+        viewModel.getHtml().observe(getViewLifecycleOwner(), s -> {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 htmlView.setText(Html.fromHtml(s, Html.FROM_HTML_MODE_COMPACT));
             } else {

@@ -19,7 +19,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.namvar.nederlandsles.R;
 
@@ -46,7 +46,7 @@ public class ShowLetterFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_show_letter, container, false);
-        ShowLetterViewModel viewModel = ViewModelProviders.of(this).get(ShowLetterViewModel.class);
+        ShowLetterViewModel viewModel = new ViewModelProvider(this).get(ShowLetterViewModel.class);
         playImageView = root.findViewById(R.id.playImageView);
         htmlView = root.findViewById(R.id.htmlView);
 
@@ -59,7 +59,7 @@ public class ShowLetterFragment extends Fragment {
             setTitle(title);
         }
 
-        viewModel.getHtml().observe(this, s -> {
+        viewModel.getHtml().observe(getViewLifecycleOwner(), s -> {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 htmlView.setText(Html.fromHtml(s, Html.FROM_HTML_MODE_COMPACT));
             } else {
@@ -137,7 +137,7 @@ public class ShowLetterFragment extends Fragment {
                     "There is no text to convert to speech!",
                     Toast.LENGTH_SHORT).show();
         } else {
-            HashMap<String, String> myHashAlarm = new HashMap<String, String>();
+            HashMap<String, String> myHashAlarm = new HashMap<>();
             myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
             myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "SOME MESSAGE");
             tts.speak(text, TextToSpeech.QUEUE_FLUSH, myHashAlarm);
