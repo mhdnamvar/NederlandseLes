@@ -6,14 +6,12 @@ import android.media.AudioManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.speech.tts.UtteranceProgressListener;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,7 +23,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.namvar.nederlandsles.R;
 
@@ -42,7 +39,6 @@ public class HoofdstukFragment extends Fragment {
     private final static String KEY_SECTION = "section";
     private final static String KEY_DUTCH = "nl_NL";
     private TextView htmlView;
-    private ImageView playImageView;
 
     public static HoofdstukFragment newInstance() {
         return new HoofdstukFragment();
@@ -56,43 +52,18 @@ public class HoofdstukFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_hoofdstuk, container, false);
         final ListView list = root.findViewById(R.id.hoofdstukList);
         htmlView = root.findViewById(R.id.htmlView);
-        playImageView = root.findViewById(R.id.playImageView);
         HoofdstukViewModel viewModel = new ViewModelProvider(this).get(HoofdstukViewModel.class);
 
         Bundle args = getArguments();
         if (args != null) {
             section = args.getString(KEY_SECTION);
-//            if (section >= 10) {
-//                list.setVisibility(View.INVISIBLE);
-//                htmlView.setVisibility(View.VISIBLE);
-//                playImageView.setVisibility(View.VISIBLE);
-//            } else {
-//                list.setVisibility(View.VISIBLE);
-//                htmlView.setVisibility(View.INVISIBLE);
-                playImageView.setVisibility(View.INVISIBLE);
-//            }
             setTitle(args.getString(KEY_SECTION));
         }
 
         viewModel.getList(section).observe(getViewLifecycleOwner(), new Observer<List<String>>() {
             @Override
             public void onChanged(List<String> strings) {
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                        Objects.requireNonNull(getContext()),
-                        android.R.layout.simple_list_item_1,
-                        strings) {
-
-                    @SuppressLint("SetTextI18n")
-                    @Override
-                    public View getView(int position, View convertView, ViewGroup parent) {
-                        View view = super.getView(position, convertView, parent);
-                        TextView textView= view.findViewById(android.R.id.text1);
-                        textView.setTextColor(Color.DKGRAY);
-                        textView.setText((position+1) + ". " + textView.getText());
-                        return view;
-                    }
-                };
-                list.setAdapter(adapter);
+                list.setAdapter(getStringArrayAdapter(strings));
             }
         });
 
@@ -113,17 +84,31 @@ public class HoofdstukFragment extends Fragment {
             }
         });
 
-        playImageView.setOnClickListener(view -> {
-            if (tts.isSpeaking()){
-                tts.stop();
-            } else {
-                speak(htmlView.getText().toString());
-            }
-        });
-
         return root;
     }
+    private ArrayAdapter<String> getStringArrayAdapter(List<String> strings) {
+        return new ArrayAdapter<String>(Objects.requireNonNull(getContext()),
+                android.R.layout.simple_list_item_1, strings) {
 
+            @SuppressLint("SetTextI18n")
+            @NonNull
+            @Override
+            public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                View view = super.getView(position, convertView, parent);
+                TextView textView= view.findViewById(android.R.id.text1);
+                textView.setTextColor(Color.DKGRAY);
+                textView.setText((position+1) + ". " + textView.getText());
+                textView.setHeight(150);
+                String source = textView.getText().toString();
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                    textView.setText(Html.fromHtml(source, Html.FROM_HTML_MODE_COMPACT));
+                } else {
+                    textView.setText(Html.fromHtml(source));
+                }
+                return view;
+            }
+        };
+    }
     private void setupTTS() {
         tts = new TextToSpeech(getContext(), status -> {
             if(status == TextToSpeech.SUCCESS){
@@ -138,32 +123,6 @@ public class HoofdstukFragment extends Fragment {
         });
 
         tts.setSpeechRate(0.6f);
-
-        tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
-            @Override
-            public void onStart(String utteranceId) {
-                Log.d("Voice", utteranceId + ", started" );
-                playImageView.setImageResource(R.drawable.ic_stop_24px);
-            }
-
-            @Override
-            public void onDone(String utteranceId) {
-                Log.d("Voice", utteranceId + ", done" );
-                playImageView.setImageResource(R.drawable.ic_play_circle_outline_24px);
-            }
-
-            @Override
-            public void onError(String utteranceId) {
-                Log.d("Voice", utteranceId);
-            }
-
-            @Override
-            public void onStop(String utteranceId, boolean interrupted) {
-                Log.d("Voice", utteranceId + ", stopped" );
-                playImageView.setImageResource(R.drawable.ic_play_circle_outline_24px);
-            }
-
-        });
     }
 
     private void setTitle(String text) {

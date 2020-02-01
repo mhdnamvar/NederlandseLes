@@ -76,7 +76,7 @@ public class SpeakingFragment extends Fragment {
                         TextView textView= view.findViewById(android.R.id.text1);
                         textView.setTextColor(Color.DKGRAY);
                         textView.setText("<b>"+ (position+1) + ". </b>" + textView.getText());
-                        textView.setHeight(350);
+                        textView.setHeight(300);
                         String source = textView.getText().toString();
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                             textView.setText(Html.fromHtml(source, Html.FROM_HTML_MODE_COMPACT));
