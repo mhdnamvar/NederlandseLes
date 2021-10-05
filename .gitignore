@@ -92,5 +92,6 @@ output.json
 .cxx/
 
 Nederlandseles.jks
+NedelandseLes_old.jks
 app/release/
 .DS_Store
