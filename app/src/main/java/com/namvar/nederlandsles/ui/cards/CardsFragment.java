@@ -18,8 +18,6 @@ import androidx.navigation.Navigation;
 
 import com.namvar.nederlandsles.R;
 
-import java.util.Objects;
-
 public class CardsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -32,7 +30,7 @@ public class CardsFragment extends Fragment {
         final ListView cards = root.findViewById(R.id.cards);
         viewModel.getCards().observe(getViewLifecycleOwner(), strings -> {
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                    Objects.requireNonNull(getContext()),
+                    requireContext(),
                     android.R.layout.simple_list_item_1,
                     strings) {
 

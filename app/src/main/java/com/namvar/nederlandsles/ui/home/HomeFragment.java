@@ -20,7 +20,6 @@ import androidx.navigation.Navigation;
 import com.namvar.nederlandsles.R;
 
 import java.util.List;
-import java.util.Objects;
 
 public class HomeFragment extends Fragment {
 
@@ -38,7 +37,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onChanged(List<String> strings) {
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                        Objects.requireNonNull(getContext()),
+                        requireContext(),
                         android.R.layout.simple_list_item_1,
                         strings) {
 

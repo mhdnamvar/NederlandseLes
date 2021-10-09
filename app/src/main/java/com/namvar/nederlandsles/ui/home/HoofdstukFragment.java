@@ -87,7 +87,7 @@ public class HoofdstukFragment extends Fragment {
         return root;
     }
     private ArrayAdapter<String> getStringArrayAdapter(List<String> strings) {
-        return new ArrayAdapter<String>(Objects.requireNonNull(getContext()),
+        return new ArrayAdapter<String>(requireContext(),
                 android.R.layout.simple_list_item_1, strings) {
 
             @SuppressLint("SetTextI18n")
