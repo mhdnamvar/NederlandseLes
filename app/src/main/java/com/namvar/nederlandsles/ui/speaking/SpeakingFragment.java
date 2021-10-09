@@ -6,7 +6,6 @@ import android.media.AudioManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.speech.tts.UtteranceProgressListener;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -27,7 +26,6 @@ import com.namvar.nederlandsles.R;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
-import java.util.Objects;
 
 public class SpeakingFragment extends Fragment {
 
@@ -65,7 +63,7 @@ public class SpeakingFragment extends Fragment {
     }
 
     private ArrayAdapter<String> getStringArrayAdapter(List<String> strings) {
-        return new ArrayAdapter<String>(Objects.requireNonNull(getContext()),
+        return new ArrayAdapter<String>(requireContext(),
                 android.R.layout.simple_list_item_1, strings) {
 
                     @SuppressLint("SetTextI18n")
