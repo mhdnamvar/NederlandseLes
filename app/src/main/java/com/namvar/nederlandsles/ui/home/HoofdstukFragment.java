@@ -21,7 +21,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.namvar.nederlandsles.R;
@@ -29,13 +28,11 @@ import com.namvar.nederlandsles.R;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
-import java.util.Objects;
 
 public class HoofdstukFragment extends Fragment {
 
     private String section;
     private TextToSpeech tts;
-//    private final static String KEY_SELECTED = "selected";
     private final static String KEY_SECTION = "section";
     private final static String KEY_DUTCH = "nl_NL";
     private TextView htmlView;
@@ -44,6 +41,7 @@ public class HoofdstukFragment extends Fragment {
         return new HoofdstukFragment();
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container,
@@ -60,12 +58,7 @@ public class HoofdstukFragment extends Fragment {
             setTitle(args.getString(KEY_SECTION));
         }
 
-        viewModel.getList(section).observe(getViewLifecycleOwner(), new Observer<List<String>>() {
-            @Override
-            public void onChanged(List<String> strings) {
-                list.setAdapter(getStringArrayAdapter(strings));
-            }
-        });
+        viewModel.getList(section).observe(getViewLifecycleOwner(), strings -> list.setAdapter(getStringArrayAdapter(strings)));
 
         viewModel.getHtml().observe(getViewLifecycleOwner(), s -> {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -87,7 +80,7 @@ public class HoofdstukFragment extends Fragment {
         return root;
     }
     private ArrayAdapter<String> getStringArrayAdapter(List<String> strings) {
-        return new ArrayAdapter<String>(requireContext(),
+        return new ArrayAdapter<>(requireContext(),
                 android.R.layout.simple_list_item_1, strings) {
 
             @SuppressLint("SetTextI18n")
@@ -95,9 +88,9 @@ public class HoofdstukFragment extends Fragment {
             @Override
             public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
                 View view = super.getView(position, convertView, parent);
-                TextView textView= view.findViewById(android.R.id.text1);
+                TextView textView = view.findViewById(android.R.id.text1);
                 textView.setTextColor(Color.DKGRAY);
-                textView.setText((position+1) + ". " + textView.getText());
+                textView.setText((position + 1) + ". " + textView.getText());
                 textView.setHeight(150);
                 String source = textView.getText().toString();
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -135,12 +128,12 @@ public class HoofdstukFragment extends Fragment {
     }
 
     private void speak(String text) {
-        if(text.length() == 0) {
+        if(text.isEmpty()) {
             Toast.makeText(getContext(),
                     "There is no text to convert to speech!",
                     Toast.LENGTH_SHORT).show();
         } else {
-            HashMap<String, String> myHashAlarm = new HashMap<String, String>();
+            HashMap<String, String> myHashAlarm = new HashMap<>();
             myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
             myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "SOME MESSAGE");
             tts.speak(text, TextToSpeech.QUEUE_FLUSH, myHashAlarm);

@@ -23,31 +23,30 @@ import java.util.List;
 
 public class HomeFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container,
                              Bundle savedInstanceState) {
 
-        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+        HomeViewModel homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         final View root = inflater.inflate(R.layout.fragment_home, container, false);
         final ListView chapters = root.findViewById(R.id.chapters);
 
-        homeViewModel.getChapters().observe(getViewLifecycleOwner(), new Observer<List<String>>() {
+        homeViewModel.getChapters().observe(getViewLifecycleOwner(), new Observer<>() {
             @Override
             public void onChanged(List<String> strings) {
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(
                         requireContext(),
                         android.R.layout.simple_list_item_1,
                         strings) {
 
+                    @NonNull
                     @SuppressLint("SetTextI18n")
                     @Override
-                    public View getView(int position, View convertView, ViewGroup parent) {
+                    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
                         View view = super.getView(position, convertView, parent);
-                        TextView textView= view.findViewById(android.R.id.text1);
+                        TextView textView = view.findViewById(android.R.id.text1);
                         textView.setTextColor(Color.DKGRAY);
-                        textView.setText((position+1) + ". " + textView.getText());
+                        textView.setText((position + 1) + ". " + textView.getText());
                         return view;
                     }
                 };
@@ -58,12 +57,11 @@ public class HomeFragment extends Fragment {
         chapters.setOnItemClickListener((parent, view, position, id) -> {
             Log.d("HomeFragment", "pos: " + position);
             Bundle args = new Bundle();
-            args.putString("section", (String)chapters.getItemAtPosition(position));
+            args.putString("section", (String) chapters.getItemAtPosition(position));
             setArguments(args);
             Navigation.findNavController(view).navigate(R.id.navigation_hoofdstuk, args);
         });
-
-
+        
         return root;
     }
 }

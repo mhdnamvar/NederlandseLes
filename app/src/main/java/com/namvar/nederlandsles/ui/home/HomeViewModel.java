@@ -10,10 +10,11 @@ import androidx.lifecycle.MutableLiveData;
 import com.namvar.nederlandsles.Section;
 
 import java.util.List;
+import java.util.Objects;
 
 public class HomeViewModel extends AndroidViewModel {
 
-    private MutableLiveData<List<String>> mChapters;
+    private final MutableLiveData<List<String>> mChapters;
 
     public HomeViewModel(@NonNull Application application) {
         super(application);
@@ -21,8 +22,7 @@ public class HomeViewModel extends AndroidViewModel {
         try{
             mChapters.setValue(Section.listValues());
         } catch (Exception e) {
-            e.printStackTrace();
-            Log.d("HomeViewModel", e.getLocalizedMessage());
+            Log.d("HomeViewModel", Objects.requireNonNull(e.getLocalizedMessage()));
         }
     }
 

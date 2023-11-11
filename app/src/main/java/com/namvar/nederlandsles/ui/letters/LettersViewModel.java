@@ -9,18 +9,18 @@ import com.namvar.nederlandsles.Section;
 import com.namvar.nederlandsles.data.SimpleDao;
 
 import java.util.List;
+import java.util.Objects;
 
 public class LettersViewModel extends ViewModel {
 
-    private MutableLiveData<List<String>> mLetters;
+    private final MutableLiveData<List<String>> mLetters;
 
     public LettersViewModel() {
         mLetters = new MutableLiveData<>();
         try{
             mLetters.setValue(SimpleDao.getLetters());
         } catch (Exception e) {
-            e.printStackTrace();
-            Log.d("LettersViewModel", e.getLocalizedMessage());
+            Log.d("LettersViewModel", Objects.requireNonNull(e.getLocalizedMessage()));
         }
     }
 

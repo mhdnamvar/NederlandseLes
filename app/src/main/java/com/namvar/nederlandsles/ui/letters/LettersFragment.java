@@ -31,21 +31,25 @@ public class LettersFragment extends Fragment {
 
 
         LettersViewModel viewModel = new ViewModelProvider(this).get(LettersViewModel.class);
-        viewModel.getLetters().observe(getViewLifecycleOwner(), new Observer<List<String>>() {
+        viewModel.getLetters().observe(getViewLifecycleOwner(), new Observer<>() {
             @Override
             public void onChanged(List<String> strings) {
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(
                         requireContext(),
                         android.R.layout.simple_list_item_1,
                         strings) {
 
+                    @NonNull
                     @SuppressLint("SetTextI18n")
                     @Override
-                    public View getView(int position, View convertView, ViewGroup parent) {
+                    public View getView(int position,
+                                        View convertView,
+                                        @NonNull ViewGroup parent) {
                         View view = super.getView(position, convertView, parent);
-                        TextView textView= view.findViewById(android.R.id.text1);
+                        TextView textView = view.findViewById(android.R.id.text1);
                         textView.setTextColor(Color.DKGRAY);
-                        textView.setText((position+1) + ". " + textView.getText());
+                        textView.setText((position + 1) + ". " + textView.getText());
+
                         return view;
                     }
                 };

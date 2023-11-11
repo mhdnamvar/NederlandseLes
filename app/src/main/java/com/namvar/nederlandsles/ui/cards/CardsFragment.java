@@ -29,18 +29,24 @@ public class CardsFragment extends Fragment {
 
         final ListView cards = root.findViewById(R.id.cards);
         viewModel.getCards().observe(getViewLifecycleOwner(), strings -> {
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(
                     requireContext(),
                     android.R.layout.simple_list_item_1,
                     strings) {
 
+                @NonNull
                 @SuppressLint("SetTextI18n")
                 @Override
-                public View getView(int position, View convertView, ViewGroup parent) {
+                public View getView(
+                        int position,
+                        View convertView,
+                        @NonNull ViewGroup parent) {
+
                     View view = super.getView(position, convertView, parent);
-                    TextView textView= view.findViewById(android.R.id.text1);
+                    TextView textView = view.findViewById(android.R.id.text1);
                     textView.setTextColor(Color.DKGRAY);
-                    textView.setText((position+1) + ". " + textView.getText());
+                    textView.setText((position + 1) + ". " + textView.getText());
+
                     return view;
                 }
             };
@@ -50,7 +56,7 @@ public class CardsFragment extends Fragment {
         cards.setOnItemClickListener((parent, view, position, id) -> {
             Log.d("CardsFragment", "pos: " + position);
             Bundle args = new Bundle();
-            args.putString("cardTitle", (String)cards.getItemAtPosition(position));
+            args.putString("cardTitle", (String) cards.getItemAtPosition(position));
             args.putInt("cardNo", position);
             setArguments(args);
             Navigation.findNavController(view).navigate(R.id.navigation_show_card, args);
