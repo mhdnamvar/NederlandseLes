@@ -40,8 +40,7 @@ public enum Section {
     FESTIVALS("Feestdagen in Nederland"),
     CHARACTERS("Karaktereigenschappen"),
     RELATIONSHIPS("Relatievormen"),
-    EMOTIONS("Emoties benoemen")
-    ;
+    EMOTIONS("Emoties benoemen");
 
     private String text;
     private static final Map<String, Section> lookup = new HashMap<>();
@@ -68,9 +67,9 @@ public enum Section {
         return lookup.get(text);
     }
 
-    public static List<String> listValues(){
+    public static List<String> listValues() {
         List<String> list = new ArrayList<>();
-        for (Section s: values()){
+        for (Section s : values()) {
             list.add(s.getText());
         }
         return list;

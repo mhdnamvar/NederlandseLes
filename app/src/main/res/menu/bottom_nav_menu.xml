@@ -21,4 +21,9 @@
         android:icon="@drawable/ic_sentiment_very_satisfied_24px"
         android:title="@string/speaking" />
 
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/settings" />
+
 </menu>

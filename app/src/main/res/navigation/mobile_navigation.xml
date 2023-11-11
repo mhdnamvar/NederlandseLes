@@ -30,38 +30,36 @@
         tools:layout="@layout/fragment_hoofdstuk">
         <argument
             android:name="section"
-            app:argType="string"
-            android:defaultValue="@null" />
+            android:defaultValue="@null"
+            app:argType="string" />
     </fragment>
 
-    <fragment android:id="@+id/navigation_show_letter"
+    <fragment
+        android:id="@+id/navigation_show_letter"
         android:name="com.namvar.nederlandsles.ui.letters.ShowLetterFragment"
         android:label="Briefje"
         tools:layout="@layout/fragment_show_letter">
         <argument
             android:name="letterTitle"
-            app:argType="string"
             android:defaultValue="@null"
-            />
+            app:argType="string" />
         <argument
             android:name="letterNo"
-            app:argType="integer"
-            />
+            app:argType="integer" />
     </fragment>
 
-    <fragment android:id="@+id/navigation_show_card"
+    <fragment
+        android:id="@+id/navigation_show_card"
         android:name="com.namvar.nederlandsles.ui.cards.ShowCardFragment"
         android:label="Kaarten"
         tools:layout="@layout/fragment_show_card">
         <argument
             android:name="cardTitle"
-            app:argType="string"
             android:defaultValue="@null"
-            />
+            app:argType="string" />
         <argument
             android:name="cardNo"
-            app:argType="integer"
-            />
+            app:argType="integer" />
     </fragment>
 
     <fragment
@@ -69,5 +67,17 @@
         android:name="com.namvar.nederlandsles.ui.speaking.SpeakingFragment"
         android:label="Spreken"
         tools:layout="@layout/fragment_speaking" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.namvar.nederlandsles.ui.settings.SettingsFragment"
+        android:label="Instellingen"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_privacy_policy"
+        android:name="com.namvar.nederlandsles.ui.settings.PrivacyPolicyFragment"
+        android:label="Privacy policy"
+        tools:layout="@layout/fragment_privacy_policy" />
 
 </navigation>

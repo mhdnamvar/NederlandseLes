@@ -1,22 +1,21 @@
-package com.namvar.nederlandsles.ui.cards;
+package com.namvar.nederlandsles.ui.settings;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.namvar.nederlandsles.TermsAndConditionsDialogFragment;
 import com.namvar.nederlandsles.data.SimpleDao;
 
-public class ShowCardViewModel extends ViewModel {
+public class PrivacyPolicyViewModel extends ViewModel {
+
     private final MutableLiveData<String> mHtml;
 
-    public ShowCardViewModel() {
+    public PrivacyPolicyViewModel() {
         this.mHtml = new MutableLiveData<>();
+        this.mHtml.setValue(TermsAndConditionsDialogFragment.PRIVACY_POLICY);
     }
 
     public MutableLiveData<String> getHtml() {
         return mHtml;
-    }
-
-    public void setHtml(int no) {
-        this.mHtml.setValue(SimpleDao.getCard(no));
     }
 }

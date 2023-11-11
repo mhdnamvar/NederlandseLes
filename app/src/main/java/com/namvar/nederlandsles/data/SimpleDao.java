@@ -59,7 +59,7 @@ public final class SimpleDao {
     public static List<String> getSentence(int section) {
         try {
             JSONArray hoofdstukken = jsonObject.getJSONArray("hoofdstukken");
-            if(section > hoofdstukken.length()) {
+            if (section > hoofdstukken.length()) {
                 return Collections.emptyList();
             }
             List<String> examples = new ArrayList<>();
@@ -68,7 +68,7 @@ public final class SimpleDao {
                 JSONObject exercise = exercises.getJSONObject(i);
                 String question = exercise.getString("vraag");
                 JSONArray answers = exercise.getJSONArray("antwoorden");
-                if (answers.length() > 0 ) {
+                if (answers.length() > 0) {
                     examples.add(question + " " + answers.getString(0));
                 }
             }
@@ -129,7 +129,7 @@ public final class SimpleDao {
                 "Beste familie Gerritsen,<br><br>Gecondoleerd met het verlies van uw vader, ik wens jullie veel sterkte. Ik kom met mijn man naar de begrafenis.<br><br>Met vriendelijke groet,<br>Nancy Van Dijk",
                 "Lieve Peter en Wanda,<br><br>Gefeliciteerd met juillie niuewe huis<br><br>Groetjes,<br>Nancy"
         };
-        if (no >= 0 && no < array.length){
+        if (no >= 0 && no < array.length) {
             return array[no];
         } else {
             return "";
@@ -138,44 +138,43 @@ public final class SimpleDao {
     }
 
     public static List<String> get(Section s) {
-        switch (s) {
-            case SENTENCES: return getSentence(0);
-            case SENTENCES_TWO_VERBS: return getSentence(1);
-            case SENTENCES_CONJUCTION: return getSentence(2);
-            case SENTENCES_OMDAT: return getSentence(3);
-            case SENTENCES_ALS: return getSentence(4);
-            case SENTENCES_DAT: return getSentence(5);
-            case SENTENCES_DAAROM: return getSentence(6);
-            case SENTENCES_QUESTIONS_WORD: return getSentence(7);
-            case SENTENCES_NO_QUESTIONS_WORD: return getSentence(8);
-            case SENTENCES_INVERSION: return getSentence(9);
-            case NEGATIVES: return getNegatives();
-            case PREPOSITIONS: return getPrepositions();
-            case DAYS_OF_THE_WEEK: return getDaysOfTheWeek();
-            case MONTHS: return getMonth();
-            case OPEN_HOURS: return getAskingOpenHours();
-            case APPOINTMENT: return getAppointments();
-            case NOT_UNDERSTOOD: return getNotUnderstood();
-            case SEASONS: return getSeasons();
-            case IN_RESTAURANT: return getInRestaurant();
-            case ASKING_QUESTIONS: return getAskingQuestions();
-            case LIKE_IT_OR_NOT: return getLikeOrNot();
-            case PRICE: return getPriceQuestions();
-            case CHECK_PAY: return getCheckPay();
-            case COMPARATIVES: return getComparatives();
-            case BUSY_PHRASES: return getBusyPhrases();
-            case SOMETHING_NICE: return getIetsLeuks();
-            case TRANSPORT: return getTransport();
-            case CLOTHES: return getClothes();
-            case HERE_THERE: return getHereAndThere();
-            case COMPLEMENT: return getComplements();
-            case REACTION_TO_PHRASES: return getReactionToPhrases();
-            case FESTIVALS: return getFestivals();
-            case CHARACTERS: return getCharacters();
-            case RELATIONSHIPS: return getRelationships();
-            case EMOTIONS: return getEmotions();
-            default: return Collections.emptyList();
-        }
+        return switch (s) {
+            case SENTENCES -> getSentence(0);
+            case SENTENCES_TWO_VERBS -> getSentence(1);
+            case SENTENCES_CONJUCTION -> getSentence(2);
+            case SENTENCES_OMDAT -> getSentence(3);
+            case SENTENCES_ALS -> getSentence(4);
+            case SENTENCES_DAT -> getSentence(5);
+            case SENTENCES_DAAROM -> getSentence(6);
+            case SENTENCES_QUESTIONS_WORD -> getSentence(7);
+            case SENTENCES_NO_QUESTIONS_WORD -> getSentence(8);
+            case SENTENCES_INVERSION -> getSentence(9);
+            case NEGATIVES -> getNegatives();
+            case PREPOSITIONS -> getPrepositions();
+            case DAYS_OF_THE_WEEK -> getDaysOfTheWeek();
+            case MONTHS -> getMonth();
+            case OPEN_HOURS -> getAskingOpenHours();
+            case APPOINTMENT -> getAppointments();
+            case NOT_UNDERSTOOD -> getNotUnderstood();
+            case SEASONS -> getSeasons();
+            case IN_RESTAURANT -> getInRestaurant();
+            case ASKING_QUESTIONS -> getAskingQuestions();
+            case LIKE_IT_OR_NOT -> getLikeOrNot();
+            case PRICE -> getPriceQuestions();
+            case CHECK_PAY -> getCheckPay();
+            case COMPARATIVES -> getComparatives();
+            case BUSY_PHRASES -> getBusyPhrases();
+            case SOMETHING_NICE -> getIetsLeuks();
+            case TRANSPORT -> getTransport();
+            case CLOTHES -> getClothes();
+            case HERE_THERE -> getHereAndThere();
+            case COMPLEMENT -> getComplements();
+            case REACTION_TO_PHRASES -> getReactionToPhrases();
+            case FESTIVALS -> getFestivals();
+            case CHARACTERS -> getCharacters();
+            case RELATIONSHIPS -> getRelationships();
+            case EMOTIONS -> getEmotions();
+        };
     }
 
     public static List<String> getSpeaking() {
@@ -348,7 +347,7 @@ public final class SimpleDao {
         return new ArrayList<>(Arrays.asList(array));
     }
 
-        private static List<String> getClothes() {
+    private static List<String> getClothes() {
         String[] array = {
                 "Ik draag een rok.",
                 "Ik heb een jurk aan.",
@@ -654,7 +653,7 @@ public final class SimpleDao {
     public static void dumpLetters() {
         String tag = "Brieven";
         for (int i = 0; i < SimpleDao.getLetters().size(); i++) {
-            Log.d(tag, "(" + i + ") "  + SimpleDao.getLetters().get(i));
+            Log.d(tag, "(" + i + ") " + SimpleDao.getLetters().get(i));
             String letter = SimpleDao.getLetter(i);
             Log.d(tag, letter);
         }
@@ -663,7 +662,7 @@ public final class SimpleDao {
     public static void dumpCards() {
         String tag = "Kaarten";
         for (int i = 0; i < SimpleDao.getCards().size(); i++) {
-            Log.d(tag, "(" + i + ") "  + SimpleDao.getCards().get(i));
+            Log.d(tag, "(" + i + ") " + SimpleDao.getCards().get(i));
             String card = SimpleDao.getCard(i);
             Log.d(tag, card);
         }

@@ -5,4 +5,7 @@
     <string name="title_cards">Kaarten</string>
     <string name="todo">TODO</string>
     <string name="speaking">Spreken</string>
+    <string name="settings">Instellingen</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">Disagree</string>
 </resources>
