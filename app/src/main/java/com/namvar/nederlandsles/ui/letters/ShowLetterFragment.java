@@ -23,7 +23,6 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.namvar.nederlandsles.R;
 
-import java.util.HashMap;
 import java.util.Locale;
 
 public class ShowLetterFragment extends Fragment {
@@ -70,7 +69,7 @@ public class ShowLetterFragment extends Fragment {
         setupTTS();
 
         playImageView.setOnClickListener(view -> {
-            if (tts.isSpeaking()){
+            if (tts.isSpeaking()) {
                 tts.stop();
             } else {
                 speak(htmlView.getText().toString());
@@ -90,7 +89,7 @@ public class ShowLetterFragment extends Fragment {
                 }
             }
             else
-                Log.e("Voice", "Initilization Failed!");
+                Log.e("ShowLetterFragment", "Initialization Failed!");
         });
 
         tts.setSpeechRate(speechRate);
@@ -98,24 +97,24 @@ public class ShowLetterFragment extends Fragment {
         tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
             @Override
             public void onStart(String utteranceId) {
-                Log.d("Voice", utteranceId + ", started" );
+                Log.d("ShowLetterFragment", utteranceId + ", started" );
                 playImageView.setImageResource(R.drawable.ic_stop_24px);
             }
 
             @Override
             public void onDone(String utteranceId) {
-                Log.d("Voice", utteranceId + ", done" );
+                Log.d("ShowLetterFragment", utteranceId + ", done" );
                 playImageView.setImageResource(R.drawable.ic_play_circle_outline_24px);
             }
 
             @Override
             public void onError(String utteranceId) {
-                Log.d("Voice", utteranceId);
+                Log.d("ShowLetterFragment", utteranceId);
             }
 
             @Override
             public void onStop(String utteranceId, boolean interrupted) {
-                Log.d("Voice", utteranceId + ", stopped" );
+                Log.d("ShowLetterFragment", utteranceId + ", stopped" );
                 playImageView.setImageResource(R.drawable.ic_play_circle_outline_24px);
             }
 
@@ -132,15 +131,19 @@ public class ShowLetterFragment extends Fragment {
     }
 
     private void speak(String text) {
-        if(text.length() == 0) {
+        if (text.isEmpty()) {
             Toast.makeText(getContext(),
                     "There is no text to convert to speech!",
                     Toast.LENGTH_SHORT).show();
         } else {
-            HashMap<String, String> myHashAlarm = new HashMap<>();
-            myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
-            myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "SOME MESSAGE");
-            tts.speak(text, TextToSpeech.QUEUE_FLUSH, myHashAlarm);
+            String utteranceId = "SOME MESSAGE";
+
+            Bundle params = new Bundle();
+            params.putString(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
+            params.putString(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, utteranceId);
+            params.putInt(TextToSpeech.Engine.KEY_PARAM_VOLUME, 1);
+
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, params, utteranceId);
         }
     }
 

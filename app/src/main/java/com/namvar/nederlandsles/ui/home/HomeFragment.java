@@ -46,7 +46,6 @@ public class HomeFragment extends Fragment {
                         View view = super.getView(position, convertView, parent);
                         TextView textView = view.findViewById(android.R.id.text1);
                         textView.setTextColor(Color.DKGRAY);
-                        textView.setText((position + 1) + ". " + textView.getText());
                         return view;
                     }
                 };
@@ -59,7 +58,7 @@ public class HomeFragment extends Fragment {
             Bundle args = new Bundle();
             args.putString("section", (String) chapters.getItemAtPosition(position));
             setArguments(args);
-            Navigation.findNavController(view).navigate(R.id.navigation_hoofdstuk, args);
+            Navigation.findNavController(view).navigate(R.id.navigation_phrases, args);
         });
         
         return root;

@@ -45,7 +45,6 @@ public class CardsFragment extends Fragment {
                     View view = super.getView(position, convertView, parent);
                     TextView textView = view.findViewById(android.R.id.text1);
                     textView.setTextColor(Color.DKGRAY);
-                    textView.setText((position + 1) + ". " + textView.getText());
 
                     return view;
                 }

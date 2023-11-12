@@ -1244,7 +1244,7 @@
     "brieven": [
         {
             "id": 1,
-            "titel" : "Briefje: Boodschappen doen",
+            "titel" : "🛒 Boodschappen doen",
             "omschrijving": "Je bent allen thuis. Je moet nog boodschappen halen, vlees en groente. Dan gaat de telefoon. Je broer Harry belt. Hij vraagt of je snel even kunt komen. Obver een half uur is je man Kees thuis. Je schrijft een briefje voor hem.",
             "opdracht": ["Schrijf waarom je weg bent", 
                 "Schrijf hoe laar ke weer thius bent", 
@@ -1264,7 +1264,7 @@
         },
         {
             "id": 2,
-            "titel" : "Briefje: Een uitnodiging afzeggen",
+            "titel" : "😕 Een uitnodiging afzeggen",
             "omschrijving": "Je collega Hans is jarig. Hij jeeft je uitnodigd voor het verjaardasfeest. Je kan niet komen want je kinderen zijn ziek. Schrijg je collega een briegje en leg de situatie uit.",
             "opdracht": [
                 "Bedank je collega voor de uitnodiging", 
@@ -1285,7 +1285,7 @@
         },
         {
             "id": 3,
-            "titel" : "Briefje: Vrij vragen",
+            "titel" : "📴 Vrij vragen",
             "omschrijving": "Het is bijna Pinksteren. Op maandag is het een officiële vrije dag. Je wilt de rest van de week ook vrij zijn. Schrijf een briefje aan je baas, Peter Vaasen. Je wilt met Kerst wel werken",
             "opdracht": [
                 "Schrijf aan je baas",
@@ -1306,7 +1306,7 @@
         },
         {
             "id": 4,
-            "titel" : "Briefje: Hulpen op schoolreis",
+            "titel" : "🚸 Hulpen op schoolreis",
             "omschrijving": "Over twee weeken is er een schoolreisje op de school van je dochter Saskia. Zij zit in groep 8. De school vraagt moeders en vaders om mee te helpen tijdens het schoolreisje. Jij wilt graag meehelpen. De meester van je dochter heet Jan van Oostrum.",
             "opdracht": [
                 "Schrijf een briefje aan de meester van de klas van je dochter",
@@ -1329,7 +1329,7 @@
         },
         {
             "id": 5,
-            "titel" : "Briefje: Overlast - lawaai",
+            "titel" : "📢 Overlast - lawaai",
             "omschrijving": "Je geeft morgenavond een feest. Er komen veel mensen. Er zal dus wat lawai zijn en veel muziek. Het feest duurt tot 24:00 uur. Je belt aan bij de buren Henry en Willem. Je wilt de buren vertelen over het feest. Je wil ze ook uitnodigen. De buren zijn niet thuis.",
             "opdracht": [
                 "Schrijf een kort briefje aan je buren",
@@ -1353,7 +1353,7 @@
         },
         {
             "id": 6,
-            "titel" : "Briefje: Overlast - vuil",
+            "titel" : "🚮 Overlast - vuil",
             "omschrijving": "Je gaat naar he werk. Voor de deur staan elke week op donderdag vuilniszakken. De vuilnisman komt vrijdagochtend. De vogels maken de zakken kapot en de straat wordt vies. Je schrijf een briefje aan alle buren in je straat. Je vraagt om de zakken vrijdagochtend buiten te zetten als de vuilnisman komt en niet eerder. Je bedankt je buren.",
             "opdracht": [
                 "Schrijf een kort briefje voor alle buren",
@@ -1376,7 +1376,7 @@
         },
         {
             "id": 7,
-            "titel" : "Briefje: Bedanken",
+            "titel" : "🙏 Bedanken",
             "omschrijving": "Je hebt een nieuwe flat. Je vriendin Marja heeft geholpen me verhuizen. Zij heeft ook geschilderd en gekookt. Jij schrijf haar een kaartje om te bedanken voor haar hulp.",
             "opdracht": [
                 "Schrijf een briefje aan je vriendin",
@@ -1399,7 +1399,7 @@
         },
         {
             "id": 8,
-            "titel" : "Officiële brief schrijven: Sollicitatie",
+            "titel" : "📄 Sollicitatie",
             "omschrijving": "U zoekt een leuke baan. In de krant vindt u een vacature. De bloemenzaak in het centrum van uw stad zoekt een verkoper/verkoopster. U schrijft een sollicitatiebrief.",
             "opdracht": [
                 "Schrijf een sollicitatiebrief",
@@ -1422,7 +1422,7 @@
         },
         {
             "id": 9,
-            "titel" : "Officiële brief schrijven: Aanmelding",
+            "titel" : "✍️ Aanmelding",
             "omschrijving": "U wilt graag een cursus doen. Bij de Volksuniversiteit heeft u een leuke cursus gezin. U schrijft een brief aan de Volksuniversiteit. U meldt zich aan voor de cursus Nederlands in oktober. Het nummer van de cursus is: N5050.",
             "opdracht": [
                	"Schrijf een brief aan studentenadministratie",
@@ -1446,7 +1446,7 @@
         },
         {
             "id": 10,
-            "titel" : "Officiële brief schrijven: Informatie vragen",
+            "titel" : "ℹ️ Informatie vragen",
             "omschrijving": "U wilt een cursus Nederlands beginnen. U vraagt een folder van de Volksuniversiteit aan. In de folder van de Volksuniversiteit ziet u een leuke cursus Nederlands. De folder is niet zo duidelijk en u wilt nog een paar dingen weten.",
             "opdracht": [
                 "Schrijf een brief aan de cursistenadministratie van de Volksuniversiteit",
@@ -1471,7 +1471,7 @@
         }, 
         {
             "id": 11,
-            "titel" : "Email: Garage huren",
+            "titel" : "🅿️ Garage huren",
             "omschrijving": "U wilt een nieuwe auto. U wilt een garage huren. U bent huurder van woningbouwvereniging Zayaz. U hebt in de krant een interessante advertentie gezien. U schrijft een email naar de woningbouwvereniging.",
             "opdracht": [
                 "Schrijf een email naar woningbouwvereniging Zayaz",
@@ -1496,7 +1496,7 @@
         }, 
         {
             "id": 12,
-            "titel" : "Email: Kinderen van school halen",
+            "titel" : "🚍 Kinderen van school halen",
             "omschrijving": "Je bent op je werk. Je moet overwerken tot 17:00 uur. Je bent pas thuis om 17:30 uur. Je moet je kinderen Tanja en Patrivk van school halen on 15:15 uur. Schrijf een email aan je man Robert en vraag hem om de kinderen op te halen.",
             "opdracht": [
                 "Schrijf een email naar woningbouwvereniging Zayaz",
@@ -1521,7 +1521,7 @@
         }, 
         {
             "id": 13,
-            "titel" : "Email: Boek terugvragen",
+            "titel" : "📚 Boek terugvragen",
             "omschrijving": "Je hebt je KNS-boek uitgeleend aan je medecursiste Jenny. Zij heeft het boek al 2 weken. Je moet leren voor het inburgeringsexamen en je wilt het boek terug.",
             "opdracht": [
                 "Schrijf een email aan je medercursiste",
@@ -1545,7 +1545,7 @@
         }, 
         {
             "id": 14,
-            "titel" : "Email: Vrienden uitnodigen",
+            "titel" : "🏡 Vrienden uitnodigen",
             "omschrijving": "U hebt net verhuisd. U wilt graag uw vrienden uitnodigen voor een etentje bij u thuis. U schrijft een email aan uw vrienden Caroline, Peter, Francine en Maartje.",
             "opdracht": [
                 "Schrijf een email aan je medercursiste",
@@ -1569,7 +1569,7 @@
         }, 
         {
             "id": 14,
-            "titel" : "Email: Klacht cursus",
+            "titel" : "😕 Klacht cursus",
             "omschrijving": "U volgt een cursus Nederlands voor gevorderden aan de Volksuniversiteit. U bent helemaal tevreden over der cursus. De groep is heel groot en u leert heel weinig. De docent is ongeduldig tegen de cursisten.",
             "opdracht": [
                 "Schrijf een email aan de mevrouw Overbeek, directeur van de Volksuniversiteit",

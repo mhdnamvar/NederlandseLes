@@ -11,12 +11,12 @@ import com.namvar.nederlandsles.data.SimpleDao;
 import java.util.List;
 import java.util.Objects;
 
-public class HoofdstukViewModel extends ViewModel {
+public class PhrasesViewModel extends ViewModel {
 
     private final MutableLiveData<List<String>> mList;
     private final MutableLiveData<String> mHtml;
 
-    public HoofdstukViewModel() {
+    public PhrasesViewModel() {
         this.mList = new MutableLiveData<>();
         this.mHtml = new MutableLiveData<>();
     }
@@ -25,7 +25,7 @@ public class HoofdstukViewModel extends ViewModel {
         try {
             mList.setValue(SimpleDao.get(Section.get(sectionName)));
         } catch (Exception e) {
-            Log.d("HoofdstukViewModel", Objects.requireNonNull(e.getLocalizedMessage()));
+            Log.d("PhrasesViewModel", Objects.requireNonNull(e.getLocalizedMessage()));
         }
         return mList;
     }

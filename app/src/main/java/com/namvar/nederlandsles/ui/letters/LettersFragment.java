@@ -29,7 +29,6 @@ public class LettersFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_letters, container, false);
         final ListView letters = root.findViewById(R.id.letters);
 
-
         LettersViewModel viewModel = new ViewModelProvider(this).get(LettersViewModel.class);
         viewModel.getLetters().observe(getViewLifecycleOwner(), new Observer<>() {
             @Override
@@ -48,7 +47,6 @@ public class LettersFragment extends Fragment {
                         View view = super.getView(position, convertView, parent);
                         TextView textView = view.findViewById(android.R.id.text1);
                         textView.setTextColor(Color.DKGRAY);
-                        textView.setText((position + 1) + ". " + textView.getText());
 
                         return view;
                     }
@@ -60,7 +58,7 @@ public class LettersFragment extends Fragment {
         letters.setOnItemClickListener((parent, view, position, id) -> {
             Log.d("LettersFragment", "pos: " + position);
             Bundle args = new Bundle();
-            args.putString("letterTitle", (String)letters.getItemAtPosition(position));
+            args.putString("letterTitle", (String) letters.getItemAtPosition(position));
             args.putInt("letterNo", position);
             setArguments(args);
             Navigation.findNavController(view).navigate(R.id.navigation_show_letter, args);

@@ -23,7 +23,6 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.namvar.nederlandsles.R;
 
-import java.util.HashMap;
 import java.util.Locale;
 
 public class ShowCardFragment extends Fragment {
@@ -35,10 +34,6 @@ public class ShowCardFragment extends Fragment {
     private TextToSpeech tts;
     private TextView htmlView;
     private ImageView playImageView;
-
-    public static ShowCardFragment newInstance() {
-        return new ShowCardFragment();
-    }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -98,24 +93,24 @@ public class ShowCardFragment extends Fragment {
         tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
             @Override
             public void onStart(String utteranceId) {
-                Log.d("Voice", utteranceId + ", started" );
+                Log.d("ShowCardFragment", utteranceId + ", started" );
                 playImageView.setImageResource(R.drawable.ic_stop_24px);
             }
 
             @Override
             public void onDone(String utteranceId) {
-                Log.d("Voice", utteranceId + ", done" );
+                Log.d("ShowCardFragment", utteranceId + ", done" );
                 playImageView.setImageResource(R.drawable.ic_play_circle_outline_24px);
             }
 
             @Override
             public void onError(String utteranceId) {
-                Log.d("Voice", utteranceId);
+                Log.d("ShowCardFragment", utteranceId);
             }
 
             @Override
             public void onStop(String utteranceId, boolean interrupted) {
-                Log.d("Voice", utteranceId + ", stopped" );
+                Log.d("ShowCardFragment", utteranceId + ", stopped" );
                 playImageView.setImageResource(R.drawable.ic_play_circle_outline_24px);
             }
 
@@ -132,15 +127,15 @@ public class ShowCardFragment extends Fragment {
     }
 
     private void speak(String text) {
-        if(text.length() == 0) {
+        if(text.isEmpty()) {
             Toast.makeText(getContext(),
                     "There is no text to convert to speech!",
                     Toast.LENGTH_SHORT).show();
         } else {
-            HashMap<String, String> myHashAlarm = new HashMap<String, String>();
-            myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
-            myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "SOME MESSAGE");
-            tts.speak(text, TextToSpeech.QUEUE_FLUSH, myHashAlarm);
+            Bundle params = new Bundle();
+            params.putString(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
+            params.putString(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "SOME MESSAGE");
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, params, "SOME MESSAGE");
         }
     }
 

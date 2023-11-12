@@ -24,10 +24,10 @@
         tools:layout="@layout/fragment_cards" />
 
     <fragment
-        android:id="@+id/navigation_hoofdstuk"
-        android:name="com.namvar.nederlandsles.ui.home.HoofdstukFragment"
+        android:id="@+id/navigation_phrases"
+        android:name="com.namvar.nederlandsles.ui.home.PhrasesFragment"
         android:label="hoofdstuk"
-        tools:layout="@layout/fragment_hoofdstuk">
+        tools:layout="@layout/fragment_phrases">
         <argument
             android:name="section"
             android:defaultValue="@null"

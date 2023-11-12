@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 public final class SimpleDao {
 
@@ -38,7 +39,7 @@ public final class SimpleDao {
             }
             jsonObject = new JSONObject(writer.toString());
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.d("SimpleDao", Objects.requireNonNull(e.getLocalizedMessage()));
         }
     }
 
@@ -51,19 +52,19 @@ public final class SimpleDao {
             }
             return titles;
         } catch (JSONException e) {
-            e.printStackTrace();
+            Log.d("SimpleDao", Objects.requireNonNull(e.getLocalizedMessage()));
         }
         return Collections.emptyList();
     }
 
     public static List<String> getSentence(int section) {
         try {
-            JSONArray hoofdstukken = jsonObject.getJSONArray("hoofdstukken");
-            if (section > hoofdstukken.length()) {
+            JSONArray phrases = jsonObject.getJSONArray("hoofdstukken");
+            if (section > phrases.length()) {
                 return Collections.emptyList();
             }
             List<String> examples = new ArrayList<>();
-            JSONArray exercises = hoofdstukken.getJSONObject(section).getJSONArray("oefeningen");
+            JSONArray exercises = phrases.getJSONObject(section).getJSONArray("oefeningen");
             for (int i = 0; i < exercises.length(); i++) {
                 JSONObject exercise = exercises.getJSONObject(i);
                 String question = exercise.getString("vraag");
@@ -74,7 +75,7 @@ public final class SimpleDao {
             }
             return examples;
         } catch (JSONException e) {
-            e.printStackTrace();
+            Log.d("SimpleDao", Objects.requireNonNull(e.getLocalizedMessage()));
         }
         return Collections.emptyList();
     }
@@ -88,7 +89,7 @@ public final class SimpleDao {
             }
             return titles;
         } catch (JSONException e) {
-            e.printStackTrace();
+            Log.d("SimpleDao", Objects.requireNonNull(e.getLocalizedMessage()));
         }
         return Collections.emptyList();
     }
@@ -102,19 +103,19 @@ public final class SimpleDao {
                 return answers.getString(0);
             }
         } catch (JSONException e) {
-            e.printStackTrace();
+            Log.d("SimpleDao", Objects.requireNonNull(e.getLocalizedMessage()));
         }
         return "";
     }
 
     public static List<String> getCards() {
         String[] array = {
-                "De verjaardag",
-                "De geboorte",
-                "Het huwelijk",
-                "De ziekte",
-                "Het examen",
-                "Het overlijden",
+                "🎂 De verjaardag",
+                "🍼 De geboorte",
+                "💍 Het huwelijk",
+                "🤒 De ziekte",
+                "📖 Het examen",
+                "💐 Het overlijden",
         };
         return new ArrayList<>(Arrays.asList(array));
     }
@@ -502,10 +503,10 @@ public final class SimpleDao {
 
     private static List<String> getSeasons() {
         String[] array = {
-                "De lente - het voorjaar",
-                "De zomer",
-                "De herfst - het najaar",
-                "De winter"
+                "🌿 De lente - het voorjaar",
+                "⛱️ De zomer",
+                "🍁 De herfst - het najaar",
+                "❄️ De winter"
         };
         return new ArrayList<>(Arrays.asList(array));
     }
@@ -549,31 +550,31 @@ public final class SimpleDao {
 
     private static List<String> getMonth() {
         String[] array = {
-                "januari",
-                "februari",
-                "maart",
-                "april",
-                "mei",
-                "juni",
-                "juli",
-                "augustus",
-                "september",
-                "oktober",
-                "november",
-                "december",
+                "❄️ januari",
+                "💕 februari",
+                "🌷 maart",
+                "🌼 april",
+                "🌸 mei",
+                "☀️ juni",
+                "🌞 juli",
+                "🌻 augustus",
+                "🍂 september",
+                "🎃 oktober",
+                "🍁 november",
+                "🌲 december",
         };
         return new ArrayList<>(Arrays.asList(array));
     }
 
     private static List<String> getDaysOfTheWeek() {
         String[] array = {
-                "maandag",
-                "dinsdag",
-                "woensdag",
-                "donderdag",
-                "vrijdag",
-                "zaterdag",
-                "zondag"
+                "🌝 maandag",
+                "🌅 dinsdag",
+                "🌳 woensdag",
+                "🌺 donderdag",
+                "🎉 vrijdag",
+                "🌟 zaterdag",
+                "🌞 zondag"
         };
         return new ArrayList<>(Arrays.asList(array));
     }
@@ -679,9 +680,4 @@ public final class SimpleDao {
         }
     }
 
-    public static void dumpData() {
-        dumpSections();
-        dumpCards();
-        dumpLetters();
-    }
 }

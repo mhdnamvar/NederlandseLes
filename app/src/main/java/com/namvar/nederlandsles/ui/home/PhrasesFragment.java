@@ -25,11 +25,10 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.namvar.nederlandsles.R;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
-public class HoofdstukFragment extends Fragment {
+public class PhrasesFragment extends Fragment {
 
     private String section;
     private TextToSpeech tts;
@@ -37,20 +36,16 @@ public class HoofdstukFragment extends Fragment {
     private final static String KEY_DUTCH = "nl_NL";
     private TextView htmlView;
 
-    public static HoofdstukFragment newInstance() {
-        return new HoofdstukFragment();
-    }
-
     @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_hoofdstuk, container, false);
-        final ListView list = root.findViewById(R.id.hoofdstukList);
+        View root = inflater.inflate(R.layout.fragment_phrases, container, false);
+        final ListView list = root.findViewById(R.id.phrases);
         htmlView = root.findViewById(R.id.htmlView);
-        HoofdstukViewModel viewModel = new ViewModelProvider(this).get(HoofdstukViewModel.class);
+        PhrasesViewModel viewModel = new ViewModelProvider(this).get(PhrasesViewModel.class);
 
         Bundle args = getArguments();
         if (args != null) {
@@ -73,12 +68,13 @@ public class HoofdstukFragment extends Fragment {
         list.setOnItemClickListener((parent, view, position, id) -> {
             String text = ((TextView) (view)).getText().toString();
             if (text.length() > 2) {
-                speak(text.substring(text.indexOf(".")+1));
+                speak(text.substring(text.indexOf(".") + 1));
             }
         });
 
         return root;
     }
+
     private ArrayAdapter<String> getStringArrayAdapter(List<String> strings) {
         return new ArrayAdapter<>(requireContext(),
                 android.R.layout.simple_list_item_1, strings) {
@@ -90,7 +86,6 @@ public class HoofdstukFragment extends Fragment {
                 View view = super.getView(position, convertView, parent);
                 TextView textView = view.findViewById(android.R.id.text1);
                 textView.setTextColor(Color.DKGRAY);
-                textView.setText((position + 1) + ". " + textView.getText());
                 textView.setHeight(150);
                 String source = textView.getText().toString();
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -102,17 +97,17 @@ public class HoofdstukFragment extends Fragment {
             }
         };
     }
+
     private void setupTTS() {
         tts = new TextToSpeech(getContext(), status -> {
-            if(status == TextToSpeech.SUCCESS){
+            if (status == TextToSpeech.SUCCESS) {
                 int result = tts.setLanguage(new Locale(KEY_DUTCH));
-                if(result == TextToSpeech.LANG_MISSING_DATA ||
-                        result == TextToSpeech.LANG_NOT_SUPPORTED){
-                    Log.e("Voice", "This Language is not supported");
+                if (result == TextToSpeech.LANG_MISSING_DATA ||
+                        result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                    Log.e("PhrasesFragment", "This Language is not supported");
                 }
-            }
-            else
-                Log.e("Voice", "Initilization Failed!");
+            } else
+                Log.e("PhrasesFragment", "Initialization Failed!");
         });
 
         tts.setSpeechRate(0.6f);
@@ -128,22 +123,22 @@ public class HoofdstukFragment extends Fragment {
     }
 
     private void speak(String text) {
-        if(text.isEmpty()) {
+        if (text.isEmpty()) {
             Toast.makeText(getContext(),
                     "There is no text to convert to speech!",
                     Toast.LENGTH_SHORT).show();
         } else {
-            HashMap<String, String> myHashAlarm = new HashMap<>();
-            myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
-            myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "SOME MESSAGE");
-            tts.speak(text, TextToSpeech.QUEUE_FLUSH, myHashAlarm);
+            Bundle params = new Bundle();
+            params.putString(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
+            params.putString(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "SOME MESSAGE");
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, params, "SOME MESSAGE");
         }
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        Log.d("Voice", "onStop called" );
+        Log.d("PhrasesFragment", "onStop called");
         tts.stop();
     }
 }
