@@ -89,7 +89,7 @@ public class SpeakingFragment extends Fragment {
                     Log.e("Voice", "This Language is not supported");
                 }
             } else
-                Log.e("Voice", "Initilization Failed!");
+                Log.e("Voice", "Initialization Failed!");
         });
 
         tts.setSpeechRate(speechRate);
