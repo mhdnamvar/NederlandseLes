@@ -68,7 +68,7 @@ public class PhrasesFragment extends Fragment {
         list.setOnItemClickListener((parent, view, position, id) -> {
             String text = ((TextView) (view)).getText().toString();
             if (text.length() > 2) {
-                speak(text.substring(text.indexOf(".") + 1));
+                speak(text.substring(2));
             }
         });
 
